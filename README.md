@@ -64,11 +64,13 @@ If the last book in the current dictionary doesn't have a 'final_summary' key an
 
 # Cite
 
-`@misc{chang2023booookscore,
+```
+@misc{chang2023booookscore,
       title={BooookScore: A systematic exploration of book-length summarization in the era of LLMs}, 
       author={Yapei Chang and Kyle Lo and Tanya Goyal and Mohit Iyyer},
       year={2023},
       eprint={2310.00785},
       archivePrefix={arXiv},
       primaryClass={cs.CL}
-}`
+}
+```
