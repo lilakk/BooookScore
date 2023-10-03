@@ -55,11 +55,11 @@ def compress(response, summary, chunk, templates, summary_len, word_limit, num_c
         compressed_summary = response
         print(f"TRIMMED SUMMARY: {compressed_summary}\n")
         actual_words = len(compressed_summary.split())
-        current_tokens = len(tokenizer(compressed_summary)['input_ids'])
+        current_tokens = count_tokens(compressed_summary)
         print(f"EXPECTED WORDS: {expected_words} | ACTUAL WORDS: {actual_words} | CURRENT TOKENS: {current_tokens}\n\n")
 
         if compressed_summary[-1] not in ['.', '?', '!', '\"', '\''] \
-        or len(tokenizer(compressed_summary)['input_ids']) >= summary_len \
+        or count_tokens(compressed_summary) >= summary_len \
         or actual_words < int(expected_words * 0.8) or actual_words > int(expected_words * 1.2):
             print(f"INVALID TRIMMED SUMMARY, CONTINUE TO NEXT ATTEMPT\n\n")
             chunk_trims += 1
