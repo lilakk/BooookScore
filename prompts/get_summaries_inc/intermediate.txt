@@ -1,0 +1,19 @@
+Below is a segment from a story:
+
+---
+
+{}
+
+---
+
+Below is a summary of the story up until this point:
+
+---
+
+{}
+
+---
+
+We are going over segments of a story sequentially to gradually update one comprehensive summary of the entire plot. You are required to update the summary to incorporate any new vital information in the current excerpt. This information may relate to key events, backgrounds, settings, characters, their objectives, and motivations. You must briefly introduce characters, places, and other major elements if they are being mentioned for the first time in the summary. The story may feature non-linear narratives, flashbacks, switches between alternate worlds or viewpoints, etc. Therefore, you should organize the summary so it presents a consistent and chronological narrative. Despite this step-by-step process of updating the summary, you need to create a summary that seems as though it is written in one go. The updated summary could include multiple paragraphs.
+
+Updated summary:

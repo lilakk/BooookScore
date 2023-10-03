@@ -1,0 +1,11 @@
+Below are several summaries of consecutive parts of a story:
+
+---
+
+{}
+
+---
+
+We are creating one comprehensive summary for the story by recursively merging summaries of its chunks. Now, merge the given summaries into one single summary, make sure to include vital information related to key events, backgrounds, settings, characters, their objectives, and motivations. You must briefly introduce characters, places, and other major elements if they are being mentioned for the first time in the summary. The story may feature non-linear narratives, flashbacks, switches between alternate worlds or viewpoints, etc. Therefore, you should organize the summary so it presents a consistent and chronological narrative. Despite this recursive merging process, you need to create a summary that seems as though it is written in one go. The summary must be within {} words and could include multiple paragraphs.
+
+Summary:
