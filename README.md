@@ -12,23 +12,29 @@ In `scripts/utils.py`, add your OpenAI API key at the top. By default the model 
 
 # Pre-process data
 
-Before running the data pre-processing script, you need to have a `data/all_books.pkl` file with a dictionary, where keys are book names and values are full texts of the books. Refer to `data/example_all_books.pkl` for an example. Once you have this file ready, run the following command to chunk the data:
+Before running the data pre-processing script, you need to have a pickle file with a dictionary, where keys are book names and values are full texts of the books. Refer to `data/example_all_books.pkl` for an example. Once you have this file ready, run the following command to chunk the data:
 
-`python3 scripts/chunk_data.py --chunk_size CHUNK_SIZE`
+`python3 scripts/chunk_data.py --input_path INPUT_PATH --chunk_size CHUNK_SIZE`
+
+- `input_path` should be set to the pickle file described above.
 
 # Obtain summaries
 
 ## Incremental summaries
 
-`python3 scripts/get_inc_summaries.py --model MODEL --max_context_len MAX_CONTEXT_LEN --chunk_size CHUNK_SIZE`
+`python3 scripts/get_inc_summaries.py --input_path INPUT_PATH --save_path SAVE_PATH --max_context_len MAX_CONTEXT_LEN --chunk_size CHUNK_SIZE`
 
-Summaries will be saved to `incremental_summary/incremental_summaries.json`. If the running script is interrupted and you want to pick up where you left off, simply run the command again.
+- `input_path` should be set to a pickle file containing chunked data where chunk size = `chunk_size`.
+
+If the running script is interrupted and you want to pick up where you left off, simply run the command again.
 
 ## Hierarchical summaries
 
-`python3 scripts/get_hier_summaries.py --model MODEL --max_context_len MAX_CONTEXT_LEN --chunk_size CHUNK_SIZE`
+`python3 scripts/get_hier_summaries.py --input_path INPUT_PATH --save_path SAVE_PATH --max_context_len MAX_CONTEXT_LEN --chunk_size CHUNK_SIZE`
 
-Summaries will be saved to `summaries/MODEL-CHUNK_SIZE-SUMMARY_STRATEGY`. If the running script is interrupted and you want to pick up where you left off, you'll need modify the output json file before you re-run. The json file is structured as follows:
+- `input_path` should be set to a pickle file containing chunked data where chunk size = `chunk_size`.
+
+If the running script is interrupted and you want to pick up where you left off, you'll need modify the output json file before you re-run. The json file is structured as follows:
 
 - nested dictionary
     - (str) book name:
@@ -46,13 +52,14 @@ If the last book in the current dictionary doesn't have a 'final_summary' key an
 
 # Compute BooookScore
 
-`python3 scripts/get_booookscore.py --model MODEL --chunk_size CHUNK_SIZE --summary_strategy SUMMARY_STRATEGY`
+`python3 scripts/get_booookscore.py --input_path INPUT_PATH`
 
-- SUMMARY_STRATEGY should be either "hier" or "inc".
+- `input_path` should be set to a json file with book names as keys and final summaries as values (e.g., any file ending with `-cleaned.json` in the `summaries` folder).
+- GPT-4 annotations will be saved to a file with the same name as the input file in the `gpt4_annotations` directory.
 
 # Note
 
-- GPT-4 annotations will be uploaded soon after some reformatting.
+- GPT-4 annotations for existing summaries will be uploaded soon after some reformatting.
 - Files with intermediate summaries for incremental updating will be uploaded after some reformatting.
 
 # Cite

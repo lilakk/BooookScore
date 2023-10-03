@@ -11,14 +11,10 @@ from scripts.utils import obtain_response
 model = SentenceTransformer('all-MiniLM-L6-v2')
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--model", type=str)
-parser.add_argument("--chunk_size", type=int)
-parser.add_argument("--summary_strategy", type=str, choices=['inc', 'hier'])
+parser.add_argument("--input_path", type=str)
 args = parser.parse_args()
 
-MODEL = args.model
-SUMMARY_STRATEGY = args.summary_strategy
-CHUNK_SIZE = args.chunk_size
+INPUT_PATH = args.input_path
 WORD_RATIO = 0.65
 
 all_labels = ['entity omission', 'event omission', 'causal omission', 'salience', 'discontinuity', 'duplication', 'inconsistency', 'language']
@@ -64,8 +60,8 @@ def validate_response(response):
 
 
 def get_annotations():
-    data = json.load(open(f"summaries/{MODEL}-{CHUNK_SIZE}-{SUMMARY_STRATEGY}-cleaned.json", 'r'))
-    save_path = f"gpt4-annotations/{MODEL}-{CHUNK_SIZE}-{SUMMARY_STRATEGY}.json"
+    data = json.load(open(INPUT_PATH, 'r'))
+    save_path = f"gpt4_annotations/{os.path.basename(INPUT_PATH)}"
     spans_questions = defaultdict(dict)
     if os.path.exists(save_path):
         spans_questions = json.load(open(save_path, 'r'))
@@ -87,7 +83,6 @@ def get_annotations():
             print(f"MAX LEN: {max_len}")
 
             response = obtain_response(prompt, max_tokens=max_len, temperature=0, echo=False)
-            response = response['choices'][0]['message']['content'].strip()
             print(f"RESPONSE:\n\n{response}\n")
 
             valid, questions, types = validate_response(response)

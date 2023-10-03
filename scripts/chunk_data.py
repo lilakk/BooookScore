@@ -9,9 +9,11 @@ tokenizer = GPT2Tokenizer.from_pretrained('gpt2')
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--chunk_size", type=int, default=2048)
+parser.add_argument("--input_path", type=str, default="data/all_books.pkl")
 args = parser.parse_args()
 
 CHUNK_SIZE = args.chunk_size
+INPUT_PATH = args.input_path
 
 save_path = f"data/all_books_chunked_{CHUNK_SIZE}.pkl"
 
@@ -54,7 +56,7 @@ def truncate(text, chunk_size):
 
 
 def process_books(path, chunk_size):
-    books = pickle.load(open('data/all_books.pkl', 'rb'))
+    books = pickle.load(open(INPUT_PATH, 'rb'))
 
     new_data = {}
     if os.path.exists(path):

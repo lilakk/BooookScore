@@ -12,13 +12,15 @@ from scripts.utils import get_response, count_tokens
 tokenizer = GPT2Tokenizer.from_pretrained('gpt2')
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--model", type=str)  # needed for specifying the save path
+parser.add_argument("--input_path", type=str)
+parser.add_argument("--save_path", type=str)
 parser.add_argument("--max_context_len", type=int)
 parser.add_argument("--chunk_size", type=int, default=2048)
 parser.add_argument("--max_summary_len", type=int, default=900)
 args = parser.parse_args()
 
-MODEL = args.model
+INPUT_PATH = args.input_path
+SAVE_PATH = args.save_path
 CHUNK_SIZE = args.chunk_size
 MAX_CONTEXT_LEN = args.max_context_len
 MAX_SUMMARY_LEN = args.max_summary_len
@@ -27,10 +29,6 @@ WORD_RATIO = 0.65
 init_template = open("prompts/get_summaries_hier/init.txt", "r").read()
 template = open("prompts/get_summaries_hier/merge.txt", "r").read()
 context_template = open("prompts/get_summaries_hier/merge_context.txt", "r").read()
-
-all_books = pickle.load(open("data/all_books.pkl", "rb"))
-
-save_path = f"outputs/summaries_inc/{MODEL}-{CHUNK_SIZE}-hier.json"
 
 
 def check_summary_validity(summary, token_limit):
@@ -163,7 +161,7 @@ def recursive_summary(book, summaries, level, chunks, summary_limits):
         summaries_dict[level].append(summary)
         i += 1
 
-        json.dump(summaries, open(save_path, 'w'))
+        json.dump(summaries, open(SAVE_PATH, 'w'))
 
     # If the summaries still too large, recursively call the function for the next level
     if len(summaries_dict[level]) > 1:
@@ -197,13 +195,11 @@ def summarize_book(book, chunks, summaries):
 
 
 def get_hierarchical_summaries():
-    data_path = f'data/all_books_chunked_{CHUNK_SIZE}.pkl'
-    data = pickle.load(open(data_path, 'rb'))
-
+    data = pickle.load(open(INPUT_PATH, 'rb'))
     summaries = defaultdict(dict)
-    if os.path.exists(save_path):
+    if os.path.exists(SAVE_PATH):
         print("Loading existing summaries...")
-        summaries = json.load(open(save_path, 'r'))
+        summaries = json.load(open(SAVE_PATH, 'r'))
         # convert all keys into int
         for book in summaries:
             summaries[book]['summaries_dict'] = defaultdict(list, {int(k): v for k, v in summaries[book]['summaries_dict'].items()})
@@ -225,7 +221,7 @@ def get_hierarchical_summaries():
             }
         final_summary, summaries = summarize_book(book, chunks, summaries)
         summaries[book]['final_summary'] = final_summary
-        with open(save_path, 'w') as f:
+        with open(SAVE_PATH, 'w') as f:
             json.dump(summaries, f)
 
 
