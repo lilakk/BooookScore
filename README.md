@@ -59,8 +59,7 @@ If the last book in the current dictionary doesn't have a 'final_summary' key an
 
 # Note
 
-- GPT-4 annotations for existing summaries will be uploaded soon after some reformatting.
-- Files with intermediate summaries for incremental updating will be uploaded after some reformatting.
+- GPT-4 and human annotations for existing summaries will be uploaded soon after some reformatting.
 
 # Cite
 
