@@ -2,8 +2,8 @@ This repo hosts the code for [BooookScore: A systematic exploration of book-leng
 
 # Updates
 
-- 2023/10/10 Upload files containing intermediate incremental summaries; upload GPT-4 and human annotations.
-- 2023/10/03 Initial commit.
+- `2023/10/10` Upload files containing intermediate incremental summaries; upload GPT-4 and human annotations.
+- `2023/10/03` Initial commit.
 
 
 # Configure environment
@@ -62,10 +62,6 @@ If the last book in the current dictionary doesn't have a 'final_summary' key an
 
 - `input_path` should be set to a json file with book names as keys and final summaries as values (e.g., any file ending with `-cleaned.json` in the `summaries` folder).
 - GPT-4 annotations will be saved to a file with the same name as the input file in the `gpt4_annotations` directory.
-
-# Note
-
-- GPT-4 and human annotations for existing summaries will be uploaded soon after some reformatting.
 
 # Cite
 
