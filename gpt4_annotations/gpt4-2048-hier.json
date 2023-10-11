@@ -1,0 +1,2236 @@
+{
+    "yellowface.epub": {
+        "The story reaches its climax when June agrees to meet someone claiming to be Athena at the Exorcist steps.": {
+            "questions": "What are the Exorcist steps? Why are they called that?",
+            "types": [
+                "entity omission"
+            ]
+        },
+        "Instead, she finds Candice, a former publishing employee who blames June for ruining her life.": {
+            "questions": "Why does Candice blame June for ruining her life?",
+            "types": [
+                "causal omission"
+            ]
+        }
+    },
+    "a-day-of-fallen-night.epub": {
+        "She becomes involved with the powerful Kuposa family and has a secret affair.": {
+            "questions": "Who is she having a secret affair with? How does this affair relate to the main storyline?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        },
+        "Tunuva and Esbar, members of the secretive Priory, face challenges due to their romantic involvement, Siyu's childbirth, and the political implications of Canthe, a mage from another realm, joining their ranks.": {
+            "questions": "Who is Siyu? How is Siyu related to Tunuva and Esbar? What are the political implications of Canthe joining their ranks?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "Meanwhile, Wulf and his companions investigate the actions of Lord Robart, a regent suspected of suspicious activities.": {
+            "questions": "Who are Wulf's companions? What are the suspicious activities Lord Robart is suspected of?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "As the story unfolds, Dumai discovers her true heritage as the daughter of Emperor Jorodu and sets off on a dangerous mission with Nikeya to acquire knowledge and power from a mysterious astronomer, guided by a mysterious voice and the quest to defeat sinister creatures.": {
+            "questions": "Who is Nikeya? What is the connection between the mysterious astronomer and defeating sinister creatures?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        },
+        "She also seeks advice from her mother, Queen Sabran, on ruling and faces her strange illness.": {
+            "questions": "What is the strange illness Glorian is facing?",
+            "types": [
+                "entity omission"
+            ]
+        },
+        "Meanwhile, Dumai and Nikeya struggle to protect Seiiki from wyrms and the red sickness, with Dumai returning to find her sister Suzumai on the throne and the River Lord acting as regent.": {
+            "questions": "Who is Suzumai? What is the red sickness? Who is the River Lord?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "Elsewhere, Dumai learns of her sister's capture and attempts to save her with the help of a group of dragons.": {
+            "questions": "Who captured Dumai's sister? Why was she captured?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "Years later, Tunuva confronts Canthe, a witch who had caused her immense pain and suffering but claims that she did it out of love for Tunuva.": {
+            "questions": "What kind of pain and suffering did Canthe cause Tunuva? How did Canthe's actions show love for Tunuva?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "With the help of her friends and family, Tunuva must decide whether she can forgive Canthe and find peace amidst the chaos wrought by the Dreadmount and the creatures it had unleashed upon the world.": {
+            "questions": "What is the Dreadmount? What kind of creatures did it unleash upon the world?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "The characters must ultimately rely on their courage, resilience, and alliances to overcome adversities, confront mysterious rocks, political intrigue, dragons, and a terrifying beast emerging from Mount Yeltalay.": {
+            "questions": "What are the mysterious rocks? Why are they significant?",
+            "types": [
+                "entity omission",
+                "salience"
+            ]
+        }
+    },
+    "a-girl-called-samson.epub": {
+        "She faces various challenges, such as narrowly avoiding trouble during a secret costume party thrown by Agrippa.": {
+            "questions": "What is the significance of the secret costume party? How does it relate to the main storyline?",
+            "types": [
+                "salience",
+                "causal omission"
+            ]
+        },
+        "As Deborah recovers from a serious illness, they make a plan for her to wait for John in Lenox once the war is over, with the hope of reuniting and living a new life together.": {
+            "questions": "Who is John? Is John supposed to be General Paterson?",
+            "types": [
+                "entity omission",
+                "inconsistency"
+            ]
+        }
+    },
+    "a-house-with-good-bones.epub": {
+        "Soon, their house falls into a sinkhole, and odd creatures called the underground children - the offspring of Elgar - attack the family.": {
+            "questions": "Who is Elgar? How are the underground children related to the family?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        }
+    },
+    "a-likely-story.epub": {
+        "Concurrently, Isabelle's ex-boyfriend, Brian, a U.S. attorney, secretly harbors ambitions and regrets not being there for Isabelle when she needs him.": {
+            "questions": "What are Brian's ambitions? How is this detail relevant to the story?",
+            "types": [
+                "entity omission",
+                "salience"
+            ]
+        },
+        "He spends his days in isolation, obsessing over fan mail and researching his symptoms online.": {
+            "questions": "What symptoms is Ward experiencing? Why is he researching them online?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        },
+        "Isabelle accuses Ward of ruining her life, as he admits to sabotaging the sale of her first book to teach her a lesson.": {
+            "questions": "What lesson was Ward trying to teach Isabelle by sabotaging the sale of her first book?",
+            "types": [
+                "causal omission"
+            ]
+        }
+    },
+    "age-of-vice.epub": {
+        "Sunny's life takes a turn when he starts seeing a girl named Neda Kapur, a 22-year-old reporter working at The Post in Delhi, and becomes involved in a family feud.": {
+            "questions": "What is the family feud about? How does it affect Sunny and Neda's relationship?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "Sunny's friend, Gautam, causes a car accident that leads to entanglement for all involved.": {
+            "questions": "What kind of entanglement? How does the car accident affect the characters?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "Neda moves to London, where she has an abortion.": {
+            "questions": "Why does Neda have an abortion? Who is the father of the child?",
+            "types": [
+                "event omission",
+                "entity omission"
+            ]
+        },
+        "After a car crash that left their friend Ajay behind, Sunny, Gautam, and Neda turn to Tinu for help.": {
+            "questions": "Who is Tinu? What kind of help do they need from Tinu? How is Ajay left behind?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "Bunty, Sunny's father, prepares him for a new life without drugs.": {
+            "questions": "What led Sunny to use drugs in the first place? How does Bunty help him prepare for a new life without drugs?",
+            "types": [
+                "causal omission",
+                "event omission"
+            ]
+        },
+        "Sunny's past catches up with him, leading him to aid in an illegal land acquisition deal with Dinesh.": {
+            "questions": "What is Sunny's past that catches up with him? Who is Dinesh?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "Sunny's actions result in protests and political consequences, straining his relationship with Dinesh.": {
+            "questions": "What actions did Sunny take that led to protests and political consequences? Who is Dinesh?",
+            "types": [
+                "event omission",
+                "entity omission"
+            ]
+        },
+        "After receiving a mysterious envelope, an ambush leaves Sunny kidnapped by the Oaf and the Incubus.": {
+            "questions": "Who are the Oaf and the Incubus? Why did they kidnap Sunny? What was in the mysterious envelope?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "The Oaf reveals Sunny's past actions destroyed his life, and the Incubus shares his own tale of tragedy and revenge.": {
+            "questions": "Who are the Oaf and the Incubus? How are they connected to Sunny?",
+            "types": [
+                "entity omission"
+            ]
+        },
+        "Sunil, also known as Chotu Raj, becomes powerful and feared, especially after a brutal murder that leaves an entire town terrified.": {
+            "questions": "Who does Chotu Raj murder? Why does he commit the murder?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "Sunil meets warlord Himmatgiri in the Terai forests, deepening his sense of dread and disconnection from his own identity.": {
+            "questions": "Who is Himmatgiri? What is the significance of their meeting? How does it relate to the main storyline?",
+            "types": [
+                "entity omission",
+                "salience"
+            ]
+        },
+        "Ajay is sent on a mission to kill Sunil Rastogi to save his sister, who he believes is being held captive in a brothel.": {
+            "questions": "Who sent Ajay on the mission? How did he find out about his sister being held captive?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "The story ends with Ajay on a bus to Manali, hoping to vanish into the mountains, while watching a newsflash about the incident on TV at a dhaba.": {
+            "questions": "What incident is being shown on the newsflash?",
+            "types": [
+                "event omission"
+            ]
+        }
+    },
+    "all-the-dangerous-things.epub": {
+        "She also grapples with the possibility that she might have inherited the same dangerous condition as her mother.": {
+            "questions": "What is the dangerous condition that her mother had?",
+            "types": [
+                "entity omission"
+            ]
+        },
+        "In the end, Isabelle becomes convinced that Valerie is responsible for Mason's disappearance and imagines her taking the child without a struggle, possibly as part of a wider conspiracy involving another woman, Abigail Fisher.": {
+            "questions": "How does Isabelle come to the conclusion that Valerie is responsible for Mason's disappearance? What is the connection between Valerie and Abigail Fisher?",
+            "types": [
+                "causal omission",
+                "entity omission"
+            ]
+        },
+        "Detective Waylon Dozier helps Isabelle produce a podcast to uncover the truth about Ben and his actions.": {
+            "questions": "Who is Detective Waylon Dozier? Is he the same person as Waylon Spencer mentioned earlier in the summary?",
+            "types": [
+                "entity omission",
+                "inconsistency"
+            ]
+        }
+    },
+    "ander-and-santi-were-here.epub": {
+        "AJ's family and friends are deeply affected by these stories, and AJ becomes more empathetic towards them.": {
+            "questions": "What stories are being referred to?",
+            "types": [
+                "entity omission"
+            ]
+        },
+        "AJ decides to sell prints of their murals to raise money for an unspecified plan, possibly to help Santi.": {
+            "questions": "What is the unspecified plan? How does it relate to helping Santi?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        }
+    },
+    "atalanta.epub": {
+        "There, Meleager kills the boar and, in her defense, his uncle and cousin.": {
+            "questions": "Why does Meleager kill his uncle and cousin in Atalanta's defense? What happened that led to this situation?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "This act dooms both himself and his relationship with Atalanta.": {
+            "questions": "What act specifically dooms Meleager and his relationship with Atalanta?",
+            "types": [
+                "event omission"
+            ]
+        }
+    },
+    "black-cake.epub": {
+        "Etta Pringle, a famous swimmer connected to their parents, prepares for a fundraising swim and speaks at a public event about environmental concerns.": {
+            "questions": "What is Etta Pringle's connection to the main characters' parents? Why is this detail included?",
+            "types": [
+                "entity omission",
+                "salience"
+            ]
+        }
+    },
+    "camp-zero.epub": {
+        "In another remote location called White Alice, a group of female researchers led by Sal discovers they are part of a living experiment and decides to seek refuge in Dominion Lake.": {
+            "questions": "What is the living experiment they are part of? Why do they decide to seek refuge in Dominion Lake?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        },
+        "Rose works as a hostess in the controversial Loop Club, eventually joining Damien in an exclusive arrangement.": {
+            "questions": "What is the Loop Club? Why is it controversial? What is the exclusive arrangement with Damien?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "At the same time, Grant tries to engage his disinterested students at Vandal College and uncovers the poorly run work site and underfunded camp of the Diggers, led by Foreman.": {
+            "questions": "What is the connection between Grant's students and the Diggers' camp? How does he uncover the camp?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "Back in White Alice, Sal's engineer becomes pregnant, and the group raises the baby, Aurora, collectively in secret.": {
+            "questions": "Who is Sal's engineer? How did she become pregnant?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "Rose continues her relationship with Meyer and waits for the Barber, a man from her past.": {
+            "questions": "Who is the Barber? What is his significance in Rose's life?",
+            "types": [
+                "entity omission"
+            ]
+        },
+        "In Dominion Lake, Rose continues her secret relationship with the Barber, and the Foreman tries to kill her.": {
+            "questions": "Who is the Barber? Why does the Foreman try to kill Rose?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        },
+        "Judith saves Rose by killing the Foreman.": {
+            "questions": "Who is Judith? Who is the Foreman and why is he trying to kill Rose?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "The Blooms clean up the murder scene and dispose of the body in a frozen lake.": {
+            "questions": "Who is the Foreman? Why did he try to kill Rose? Why did Judith kill the Foreman?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "Meanwhile, four women from White Alice travel through the Dene Nation's territory, seeking oil to save their station from freezing.": {
+            "questions": "What is the Dene Nation's territory? Why do they need oil specifically to save their station from freezing?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        },
+        "The Blooms venture out into the melting snow and come across a boy named Genesis working in a grocery store.": {
+            "questions": "How do the Blooms come across Genesis? What is the significance of Genesis in the story?",
+            "types": [
+                "event omission",
+                "salience"
+            ]
+        },
+        "Nari, a young woman searching for her mother, is distressed when she finds the Barber, a man she has feelings for, dead.": {
+            "questions": "Who is Nari's mother? How is the Barber connected to the story?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "She escapes Meyer, a murderous architect, by stealing an SUV and encountering Willow, who is on a mission to protect White Alice.": {
+            "questions": "Why is Meyer murderous? What did he do?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "They agree to help each other reach the Floating City to stop Damien Mitchell, hoping for a better future on the other side.": {
+            "questions": "What is Damien Mitchell's plan that they want to stop? How is the Floating City connected to their mission?",
+            "types": [
+                "event omission",
+                "entity omission"
+            ]
+        }
+    },
+    "catfish-rolling.epub": {
+        "Upon bringing him back, they are intercepted by a search party led by Yamagata.": {
+            "questions": "Who is Yamagata? What is their role in the story?",
+            "types": [
+                "entity omission"
+            ]
+        }
+    },
+    "central-places.epub": {
+        "After a heated argument with her mother about her actions and choices, Audrey spends a night at Kyle's house, leading to a compromising situation between them.": {
+            "questions": "What is the compromising situation between Audrey and Kyle?",
+            "types": [
+                "event omission"
+            ]
+        },
+        "During their stay, Audrey and Ben's relationship becomes strained, leading to a heated argument and Audrey spending a night at Kyle's house, resulting in a compromising situation between them.": {
+            "questions": "What was the heated argument about? What exactly was the compromising situation between Audrey and Kyle?",
+            "types": [
+                "event omission",
+                "entity omission"
+            ]
+        },
+        "She tries to make amends with those she has hurt, including Kristen and Kyle, and navigates her uncertain future.": {
+            "questions": "Who is Kristen? How did Audrey hurt her?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        }
+    },
+    "chain-gang-all-stars.epub": {
+        "Thurwar and Staxxx share a moment of camaraderie, reminiscing about Sunset, the former Grand Colossal, who was mysteriously killed during a BlackOut Night.": {
+            "questions": "What is a Grand Colossal? What is a BlackOut Night?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "Patricia St. Jean, a medical student from Trinidad, works on understanding the peripheral nervous system and its role in pain sensation.": {
+            "questions": "How does Patricia St. Jean's story connect to the main narrative of Chain Gang All Stars?",
+            "types": [
+                "discontinuity"
+            ]
+        },
+        "However, her work is co-opted for non-lethal deterrents and behavioral modification, leading her to commit arson and attempted murder to destroy her research.": {
+            "questions": "Who co-opted Patricia's work? How does this connect to the main storyline?",
+            "types": [
+                "entity omission",
+                "discontinuity"
+            ]
+        },
+        "On the day of the match, both Hendrix Singer and Simon Craft, as well as Thurwar and Staxxx, walk out to the screaming crowd, filled with determination and anticipation for the upcoming battle.": {
+            "questions": "Who are Hendrix Singer and Simon Craft? How are they related to the main characters and the story?",
+            "types": [
+                "entity omission"
+            ]
+        },
+        "During the match, Thurwar and Staxxx successfully defeat their opponents, but a new rule forces them to fight each other for the title of the strongest Link.": {
+            "questions": "Who implemented the new rule? Why was it introduced?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        }
+    },
+    "city-under-one-roof.epub": {
+        "She later discovers that she and her Chinese mother, Ma, are North Korean and living in the US illegally.": {
+            "questions": "How does Amy discover that she and her mother are North Korean and living in the US illegally?",
+            "types": [
+                "event omission"
+            ]
+        },
+        "Their inquiry leads them to Lonnie, a woman with a troubled past involving the Institute and Chief Sipley's daughter.": {
+            "questions": "What is the Institute? How is Chief Sipley's daughter involved?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "Lonnie accidentally reveals that she buried a severed head but denies responsibility for the crime.": {
+            "questions": "Who is Lonnie? What is her connection to the story and the crime?",
+            "types": [
+                "entity omission"
+            ]
+        },
+        "Meanwhile, in Point Mettier, Amy is worried about Spence and his family's disappearance and connects it to the Village Men and the murder.": {
+            "questions": "Who are the Village Men? How does Amy connect Spence's disappearance to them and the murder?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        },
+        "Debra confesses to the murder of Michael Lovansky, explaining that she shot her abusive father to protect her mother.": {
+            "questions": "Is Michael Lovansky Debra's father or ex-husband? The sentence seems to mix up the relationships.",
+            "types": [
+                "inconsistency",
+                "entity omission"
+            ]
+        },
+        "Despite the boys insisting they don't have their father's drugs or anything else Wolf's men are looking for, Cara is determined to create a lie for the Anchorage PD to tie up loose ends.": {
+            "questions": "What lie is Cara planning to create? Why does she need to create a lie?",
+            "types": [
+                "causal omission",
+                "event omission"
+            ]
+        },
+        "Officer Neworth is skeptical but listens to Cara's explanation.": {
+            "questions": "Who is Officer Neworth? What is their role in the story?",
+            "types": [
+                "entity omission"
+            ]
+        }
+    },
+    "clytemnestra.epub": {
+        "The sisters also learn of a prophecy stating that they will betray their husbands and ultimately be free.": {
+            "questions": "Who tells them about the prophecy? How does this prophecy affect their actions and decisions?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        },
+        "Tragedy strikes when Tantalus is fatally wounded by Agamemnon after Clytemnestra confronts him about a secretive plan.": {
+            "questions": "What is the secretive plan that Clytemnestra confronts Agamemnon about? Why does Agamemnon fatally wound Tantalus?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "Both Tantalus and the baby are killed, and their other sister, Timandra, is injured.": {
+            "questions": "How are Tantalus and the baby killed? What is the secretive plan that Clytemnestra confronts Tantalus about?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "He requests Clytemnestra to bring Iphigenia to Aulis for a marriage to Achilles, but upon their arrival, she becomes suspicious of the circumstances and learns about the need for a sacrifice from Odysseus and Calchas.": {
+            "questions": "What is the purpose of the sacrifice? Why is Iphigenia needed for it?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "The outcome of this event remains unknown, as Clytemnestra's struggle to balance her desire for revenge and protecting her family continues.": {
+            "questions": "What event is being referred to? What is the outcome that remains unknown?",
+            "types": [
+                "event omission",
+                "entity omission"
+            ]
+        }
+    },
+    "deep-as-the-sky-red-as-the-sea.epub": {
+        "She initially lies to Cheung Po about the baby's gender, leading to an argument between the couple that threatens their fragile alliance.": {
+            "questions": "Why does Shek Yeung lie about the baby's gender? What is the significance of the baby's gender in their alliance?",
+            "types": [
+                "causal omission",
+                "event omission"
+            ]
+        },
+        "They manage to break through the enemy's ring formation and escape, while the junks that went through the Tiger Gate are trapped.": {
+            "questions": "What is the Tiger Gate? What are the junks?",
+            "types": [
+                "entity omission"
+            ]
+        },
+        "She questions the reality of prophecies and prayers and contemplates the story of Ma-Zou, a figure from her past who was once a mortal girl named Lam Mak-Neung.": {
+            "questions": "Who is Ma-Zou? What is the significance of Lam Mak-Neung? How does this relate to Shek Yeung's story?",
+            "types": [
+                "entity omission",
+                "salience"
+            ]
+        }
+    },
+    "divine-rivals.epub": {
+        "Roman refuses to be part of the plan.": {
+            "questions": "What plan is Roman refusing to be a part of?",
+            "types": [
+                "event omission"
+            ]
+        },
+        "As they search for Roman, they must avoid Dacre's forces that have taken over Avalon Bluff.": {
+            "questions": "Who is Dacre? Why have his forces taken over Avalon Bluff?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "Forest reveals he was wounded and healed by Dacre, who forced him to fight for him.": {
+            "questions": "Who is Dacre? What is his role in the story?",
+            "types": [
+                "entity omission"
+            ]
+        },
+        "Meanwhile, Dacre discovers a dying Roman and spares his life, taking him into his army as a correspondent.": {
+            "questions": "Who is Dacre? Why does he spare Roman's life?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        }
+    },
+    "drowning.epub": {
+        "Sayid and Noah eventually rescue Chris, connecting her to Sayid's umbilical, but her condition remains uncertain.": {
+            "questions": "Who are Sayid and Noah? What is Sayid's umbilical?",
+            "types": [
+                "entity omission"
+            ]
+        }
+    },
+    "emily-wilde-s-encyclopaedia-of-faeries.epub": {
+        "In the early 1900s, Professor Emily Wilde travels to the remote village of Hrafnsvik in Ljosland to study elusive faeries known as the Hidden Ones.": {
+            "questions": "Where is Ljosland located?",
+            "types": [
+                "entity omission"
+            ]
+        },
+        "Aud quickly changes the narrative, claiming it was an assassination attempt by the former queen's allies.": {
+            "questions": "Who is the former queen? Why is there an assassination attempt?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "They board a ship captained by one of Thora's grandsons, intending to travel first to Loab\u00e6r and then to London.": {
+            "questions": "Who is Thora?",
+            "types": [
+                "entity omission"
+            ]
+        },
+        "In a subplot, the story recounts \"The Golden Ravens,\" an Irish tale about a cursed serving girl who discovers faerie housekeepers in her castle.": {
+            "questions": "How does this subplot relate to the main story? Why is it included in the summary?",
+            "types": [
+                "discontinuity",
+                "salience"
+            ]
+        },
+        "After turning back into her true form, the serving girl escapes, and the prince continues his search, turning himself into a raven as well.": {
+            "questions": "How does this subplot connect to the main story? Why is it included in the summary?",
+            "types": [
+                "discontinuity",
+                "salience"
+            ]
+        },
+        "The story ends with a now-transformed Wendell and Emily presenting their research at a conference, hoping to create a stir in the academic world with their discoveries on the Faerie Folk of Ljosland.": {
+            "questions": "What is the transformation that Wendell and Emily have undergone?",
+            "types": [
+                "entity omission"
+            ]
+        }
+    },
+    "flowerheart.epub": {
+        "Clara learns that her mother may be involved in distributing Euphoria, while the true culprit has evaded the Council's attention.": {
+            "questions": "Who is the true culprit? How is Clara's mother involved in distributing Euphoria?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "She realizes the potion's effects are similar to what Xavier had described and feels her heart breaking as she remembers his confession.": {
+            "questions": "What confession is being referred to? How does it relate to the potion's effects?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        }
+    },
+    "ghost-music.epub": {
+        "Song Yan spends time with Bai Yu, searching for clues about his disappearance and his connection to a talking mushroom ghost.": {
+            "questions": "What is the talking mushroom ghost? How is it connected to Bai Yu?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        },
+        "While staying with Nini, Song Yan learns that Bai Yu is dead.": {
+            "questions": "How did Song Yan find out that Bai Yu is dead? What happened to him?",
+            "types": [
+                "event omission",
+                "entity omission"
+            ]
+        },
+        "She dreams of learning the truth behind Bai Yu's disappearance and reflects on the orange mushrooms and dust that mysteriously seem to connect her to Bai Yu, Julia, and Yunnan, her hometown.": {
+            "questions": "How do the orange mushrooms and dust connect Song Yan to Bai Yu, Julia, and Yunnan? What is the significance of these connections?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        }
+    },
+    "good-night-irene.epub": {
+        "Dorothy becomes involved with a special operations team called the Gray Ghosts and participates in a mission to assassinate a German colonel.": {
+            "questions": "How does Dorothy become involved with the Gray Ghosts? What is their connection to the main storyline?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        }
+    },
+    "greek-lessons.epub": {
+        "The narrative shifts to a man who shares his own experiences, such as being hit in the face with a block of wood and having deep dreamless sleep.": {
+            "questions": "Who is this man? How is he related to the main storyline?",
+            "types": [
+                "entity omission",
+                "discontinuity"
+            ]
+        },
+        "The protagonist's fascination with language began in her childhood but at the age of sixteen, she loses her ability to speak and understand language.": {
+            "questions": "Why does she lose her ability to speak and understand language at the age of sixteen?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "The story alternates among various characters and events in their lives.": {
+            "questions": "Which characters are the story alternating between? What events are being referred to?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "In a deep-sea forest setting, the characters experience a mix of emotions, including fear, sadness, and longing.": {
+            "questions": "What is the deep-sea forest setting? How does it relate to the story?",
+            "types": [
+                "entity omission",
+                "discontinuity"
+            ]
+        }
+    },
+    "greymist-fair.epub": {
+        "Death explains that they had captured Heike's mother, the witch, after she stopped wearing special boots that allowed her to avoid Death.": {
+            "questions": "What is the significance of the special boots? How did they allow Heike's mother to avoid Death?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        }
+    },
+    "gwen-and-art-are-not-in-love.epub": {
+        "Gwen and Gabriel learn that Arthur's father, Lord Delacey, is also involved in the plot.": {
+            "questions": "What plot is Lord Delacey involved in?",
+            "types": [
+                "event omission"
+            ]
+        },
+        "The story culminates in an event where Gabriel delivers a speech that shocks the nation, with the support of his friends and loved ones.": {
+            "questions": "What is the content of Gabriel's speech? Why does it shock the nation?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        }
+    },
+    "heart-of-the-sun-warrior.epub": {
+        "She reluctantly accepts help from Wenzhi and allies, including the mysterious Tao.": {
+            "questions": "Who is Tao? What is their role in the story?",
+            "types": [
+                "entity omission"
+            ]
+        },
+        "She infiltrates the Jade Palace once more, allying with a mysterious woman to free Liwei, in the hope of building a simpler life away from the celestial realm.": {
+            "questions": "Who is the mysterious woman? How is she connected to Xingyin and Liwei?",
+            "types": [
+                "entity omission"
+            ]
+        },
+        "During this, they suffer the tragic loss of Prince Yanming.": {
+            "questions": "Who is Prince Yanming? How is he related to the main characters?",
+            "types": [
+                "entity omission"
+            ]
+        }
+    },
+    "homecoming.epub": {
+        "The townspeople, including Percy Summers, grapple with memories of the disastrous \"Black Sunday\" fires from 1955.": {
+            "questions": "How do the \"Black Sunday\" fires relate to the main storyline? What is their significance?",
+            "types": [
+                "salience",
+                "causal omission"
+            ]
+        },
+        "Jess questions whether their deaths were a terrible accident instead and considers the possibility of other toxins causing their demise.": {
+            "questions": "What toxins are being referred to? How do they relate to the deaths of Isabel and her children?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        }
+    },
+    "honeybees-and-distant-thunder.epub": {
+        "Aya encounters a mysterious boy with exceptional piano skills and reunites with her childhood friend Masaru, who carries a treble-clef embroidered bag from Aa-chan as a good-luck charm.": {
+            "questions": "Who is Aa-chan? What is the significance of the treble-clef embroidered bag?",
+            "types": [
+                "entity omission",
+                "salience"
+            ]
+        }
+    },
+    "how-to-turn-into-a-bird.epub": {
+        "As Ram\u00f3n continues his solitary life on the billboard, he is visited by various people, including Miguel and a group of boys led by Donoso, who end up urinating from the billboard and ignoring the ghostly warnings of a drowned boy named Eduardito.": {
+            "questions": "Who is Donoso? What is the significance of the ghostly warnings from Eduardito?",
+            "types": [
+                "entity omission",
+                "salience"
+            ]
+        },
+        "Meanwhile, interactions between the housing complex's residents and the neighboring homeless community, governed by the god-like figure Bag Man, lead to further tensions.": {
+            "questions": "Who is Bag Man? How does he govern the homeless community? What specific interactions cause tensions between the housing complex residents and the homeless community?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "They suspect Ram\u00f3n is responsible for the boy's disappearance.": {
+            "questions": "Why do they suspect Ram\u00f3n for Jaimito's disappearance?",
+            "types": [
+                "causal omission"
+            ]
+        },
+        "The neighbors respond with anger and violence, attacking the old man and his granddaughter.": {
+            "questions": "Why do the neighbors attack the old man and his granddaughter? What is their motivation?",
+            "types": [
+                "causal omission"
+            ]
+        },
+        "The scene ends with a chaotic fight and a fire consuming the area.": {
+            "questions": "What caused the fire? Who started it?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "A truce is made between the two sides for the boy's wake, but tension remains, and Paulina and Miguel are told they are not welcome.": {
+            "questions": "Who are the two sides? Why are Paulina and Miguel not welcome?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "As they journey, Miguel repeats the names of capitals to remember them and imagines his photo on a missing person flyer.": {
+            "questions": "Why is Miguel repeating the names of capitals? What is the significance of him imagining his photo on a missing person flyer?",
+            "types": [
+                "causal omission",
+                "salience"
+            ]
+        },
+        "Ram\u00f3n commits to drinking for three days and nights to say goodbye to Paulina while an old man from the shanties watches over children playing soccer in the complex.": {
+            "questions": "Why does Ram\u00f3n decide to drink for three days and nights to say goodbye to Paulina? What is the significance of the old man from the shanties watching over children playing soccer?",
+            "types": [
+                "causal omission",
+                "salience"
+            ]
+        }
+    },
+    "i-have-some-questions-for-you.epub": {
+        "As she pieces together memories and examines photos from a party attended by Thalia's friends the night of her murder, the protagonist struggles to reconcile Jerome's potential involvement in Jasmine's assault with their perception of him as a good person.": {
+            "questions": "Who is Jasmine? What is Jerome's connection to the protagonist and Thalia's case?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "The protagonist realizes that Thalia and her husband may have been sleeping together while she waited in the hallway.": {
+            "questions": "Who is the protagonist's husband? How is he connected to Thalia?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        }
+    },
+    "in-the-lives-of-puppets.epub": {
+        "They eventually reach Heaven, a mysterious place where they hope to find the Blue Fairy.": {
+            "questions": "What is Heaven in this context? Is it a location within the City of Electric Dreams?",
+            "types": [
+                "entity omission"
+            ]
+        },
+        "The Blue Fairy agrees to help them, on the condition that they will also help in return.": {
+            "questions": "What kind of help does the Blue Fairy want from them in return?",
+            "types": [
+                "causal omission"
+            ]
+        }
+    },
+    "into-the-light.epub": {
+        "Manny is sent to a place called Reconciliation, where he has a terrible experience and is eventually cast out.": {
+            "questions": "What is Reconciliation? Why is Manny sent there?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "The group discovers that Manny is actually Eli, who was believed to be dead.": {
+            "questions": "Who is Eli? Why was he believed to be dead? How does this revelation impact the story?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "Manny and the Varelas infiltrate Christ's Dominion, where Manny confronts Deacon and his family, demanding the truth about who killed him and wanting to take Elena away from the cult-like community.": {
+            "questions": "How can Manny confront Deacon and his family if he was killed? Is this a metaphorical death or a literal one?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "Elena reveals that she and her family, along with Deacon, killed Manny because he stopped loving them and started questioning the community's beliefs.": {
+            "questions": "How can Elena reveal that she killed Manny if Manny is still alive and searching for her?",
+            "types": [
+                "inconsistency",
+                "entity omission"
+            ]
+        },
+        "He also resolves to figure out who he will be now that Manny Sullivan is dead.": {
+            "questions": "How did Manny Sullivan die? Is Manny actually dead or is it a metaphorical death?",
+            "types": [
+                "event omission",
+                "entity omission"
+            ]
+        }
+    },
+    "isha-unscripted.epub": {
+        "Rohan helps her escape the scene, and they find themselves being chased by angry pub-goers and a terrifying clown, reminiscent of Pennywise from Stephen King's \"It.\"": {
+            "questions": "Why is there a terrifying clown chasing them? What is its relevance to the story?",
+            "types": [
+                "salience",
+                "event omission"
+            ]
+        },
+        "The story also introduces Bhanu, a senior lead UX researcher, who faces challenges in her career, including gender dynamics and dealing with difficult clients.": {
+            "questions": "How does Bhanu's story connect to Isha's and Rohan's journey? What is the significance of her character in the overall narrative?",
+            "types": [
+                "discontinuity",
+                "entity omission"
+            ]
+        }
+    },
+    "lady-tan-s-circle-of-women.epub": {
+        "During the birth of the emperor's son, Meiling suffers a miscarriage and is punished for her weakened state.": {
+            "questions": "Why is Meiling punished for having a miscarriage? What is the reason for her punishment?",
+            "types": [
+                "causal omission"
+            ]
+        },
+        "Yunxian discovers a plot against her involving Doctor Wong, who prescribes a harmful formula to cause Meiling's miscarriage.": {
+            "questions": "Why does Doctor Wong want to cause Meiling's miscarriage? What is his motive?",
+            "types": [
+                "causal omission"
+            ]
+        },
+        "An inquest led by Yunxian's father, a judge, reveals Doctor Wong's numerous misdeeds, and he is sentenced to public humiliation.": {
+            "questions": "What were Doctor Wong's misdeeds? How are they connected to Yunxian and the story?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "Yunxian's father also investigates Spinster Aunt's death, which is connected to the recent crime.": {
+            "questions": "Who is Spinster Aunt? What is the recent crime being referred to?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "Yunxian agrees to Lady Kuo's strict conditions and successfully treats her worm infestation.": {
+            "questions": "What are Lady Kuo's strict conditions? Why does Lady Kuo have a worm infestation?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        },
+        "However, her family line ends tragically, and her work is nearly lost.": {
+            "questions": "What is the tragedy that causes her family line to end? How is her work almost lost?",
+            "types": [
+                "event omission",
+                "entity omission"
+            ]
+        }
+    },
+    "lies-we-sing-to-the-sea.epub": {
+        "Leto awakens on the island of Pandou, transformed into a creature like Melantho, a being created by Poseidon.": {
+            "questions": "What kind of creature is Leto transformed into? What are the characteristics of a being created by Poseidon?",
+            "types": [
+                "entity omission"
+            ]
+        },
+        "Mathias, Leto, and Melantho journey through the hills of Ithaca, with multiple failed attempts on Mathias's life.": {
+            "questions": "Who is trying to kill Mathias during their journey?",
+            "types": [
+                "entity omission"
+            ]
+        },
+        "Meanwhile, Leto and Melantho investigate a potential threat to their lives.": {
+            "questions": "What is the potential threat they are investigating? How did they become aware of it?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "Melantho and Leto decide to seek Mathias's help in killing Alexios, who plans to kill twelve marked girls.": {
+            "questions": "Who is Alexios? Why does he plan to kill twelve marked girls?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "With five days left to break the curse, they face challenges, while also grappling with the mysterious connection between Mathias and Melantho.": {
+            "questions": "What is the mysterious connection between Mathias and Melantho? How does it affect the story?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        },
+        "In a heartbreaking turn of events, Mathias drinks a potion to ensure a quick, painless death and walks into the ocean with Leto.": {
+            "questions": "Why does Mathias decide to drink the potion and walk into the ocean with Leto? What is the purpose of this action?",
+            "types": [
+                "causal omission",
+                "event omission"
+            ]
+        }
+    },
+    "lone-women.epub": {
+        "Throughout her journey, Adelaide grapples with her past, her mysterious steamer trunk that causes people around her to disappear, and the racial tensions that exist in her new environment.": {
+            "questions": "How does the steamer trunk cause people to disappear? What is the significance of the trunk in the story?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        },
+        "The next morning, Adelaide wakes up to find her cabin in disarray and Matthew being attacked by a mysterious creature with leathery skin and sharp teeth, which has been a part of her life since childhood.": {
+            "questions": "What is the nature of this mysterious creature? Why has it been a part of Adelaide's life since childhood?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        },
+        "Adelaide uses her unique ability to touch the creature's rough, scaled skin without harm, subduing it and saving Matthew.": {
+            "questions": "What is the creature? Why does Adelaide have this unique ability?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        },
+        "The creature from the trunk emerges and attacks the Mudges, ultimately taking down several family members, while Joab and the fifteen-year-old Delmus escape.": {
+            "questions": "What is the creature from the trunk? Why does it attack the Mudges?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        },
+        "Joab becomes Mr. Reed's driver, introducing himself as a man who serves a great king.": {
+            "questions": "Who is Mr. Reed? What is the significance of Joab serving a great king?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        },
+        "Joab and the Stranglers, a vigilante group led by the Reeds, confront three wolfers who they believe were responsible for the deaths of Joab's family.": {
+            "questions": "Who are the Reeds? What are wolfers? How are they connected to the main storyline?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "At the same time, they face the Stranglers and their dark secrets.": {
+            "questions": "Who are the Stranglers? What are their dark secrets?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "In an act of both redemption and self-sacrifice, Adelaide confronts Elizabeth and apologizes for her past failures, ultimately allowing Elizabeth to seemingly consume her.": {
+            "questions": "What does it mean for Elizabeth to \"seemingly consume\" Adelaide? How does this confrontation take place?",
+            "types": [
+                "event omission",
+                "language"
+            ]
+        },
+        "Meanwhile, Mrs. Reed accuses Adelaide's friends of corruption and attempts to hang them in a theatrical spectacle.": {
+            "questions": "What is the basis for Mrs. Reed's accusations of corruption? Why does she want to hang Adelaide's friends?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        }
+    },
+    "lunar-love.epub": {
+        "Olivia also grapples with guilt over an article she wrote criticizing Bennett's company.": {
+            "questions": "Why did Olivia write an article criticizing Bennett's company? What was the content of the article?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "At her sister Nina's wedding, Olivia invites Bennett as her bodyguard.": {
+            "questions": "Why does Olivia need a bodyguard at her sister's wedding? Is there a specific reason or threat?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        }
+    },
+    "maame.epub": {
+        "During this time, Maddie receives encouragement from literary agent Eloise Forrester to continue working on her manuscript.": {
+            "questions": "What manuscript is Maddie working on? When did she start working on it?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        }
+    },
+    "natural-beauty.epub": {
+        "Her relationship with her parents, both pianists who struggled financially, is strained as they now reside in a care facility due to an accident.": {
+            "questions": "What kind of accident led to her parents being in a care facility?",
+            "types": [
+                "event omission"
+            ]
+        },
+        "The protagonist is offered a job at Apothecare, a high-paying and exclusive sex work service, which provides healthcare benefits for employees' families.": {
+            "questions": "How does the protagonist feel about taking the job at Apothecare? What is her reaction to the nature of the work?",
+            "types": [
+                "causal omission",
+                "entity omission"
+            ]
+        },
+        "She takes the job to help pay for her parents' care, but experiences pain and finds black seeds in her body after her first appointment.": {
+            "questions": "What are the black seeds? Why do they appear in her body after the appointment?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "Helen's health deteriorates rapidly, and she is found dead in a hospital with unrecognizable features.": {
+            "questions": "What caused Helen's health to deteriorate? Why are her features unrecognizable?",
+            "types": [
+                "event omission",
+                "entity omission"
+            ]
+        },
+        "The protagonist and Lilith suspect that their employer, Organic Provisions, may be involved in Helen's death.": {
+            "questions": "What is Organic Provisions? How is it related to Holistik?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "The protagonist's parents are found to have advanced kuru, a rare disease associated with cannibalism, due to the supplements they were taking from Holistik.": {
+            "questions": "How did the protagonist's parents get the supplements from Holistik? Were they aware of the risks associated with the supplements?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "The protagonist wakes up with a changed appearance, including webbed hands and green, hairy skin.": {
+            "questions": "How did the protagonist's appearance change so drastically? What caused this transformation?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "A news report reveals Victor's illegal activities, and the protagonist learns the pills and supplements they were taking caused their condition.": {
+            "questions": "What kind of illegal activities was Victor involved in? What specific condition did the pills and supplements cause for the protagonist?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "The protagonist discovers that Victor and Sally were targeting creative, intelligent women to use as test subjects, but their experiments result in death and disfigurement.": {
+            "questions": "Who is Sally? What kind of experiments were they conducting?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "In the aftermath of Victor's operations being exposed, the Holistik franchise becomes more successful than ever.": {
+            "questions": "Why does the exposure of Victor's operations lead to the Holistik franchise becoming more successful?",
+            "types": [
+                "causal omission"
+            ]
+        },
+        "The protagonist goes viral on YouTube for her unique piano technique using her hands like beaks.": {
+            "questions": "How did her hands become like beaks? What caused this transformation?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        }
+    },
+    "paper-names.epub": {
+        "In the end, Tony participates in a photo shoot with Clara, who reassures him and reveals that she was the first to approve his job application years ago.": {
+            "questions": "Who is Clara? What is the significance of the photo shoot and her approving his job application?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        }
+    },
+    "pathogenesis-a-history-of-the-world-in-eight-plagues.epub": {
+        "The story also features significant events such as the Treaty of Paris, the Trojan War, the Yemeni Civil War, inventions like the wheel and various vaccines, and important institutions like universities and international organizations like the World Bank and the World Health Organization (WHO).": {
+            "questions": "How do these events and inventions relate to the main storyline of the impact of microbes on human history? What is their significance in the narrative?",
+            "types": [
+                "salience",
+                "discontinuity"
+            ]
+        },
+        "It also delves into the lives of famous individuals like Donald Trump, George Washington, Xi Jinping, Justinian, William the Conqueror, Keynes, and William Wilberforce.": {
+            "questions": "What is the relevance of these famous individuals to the main storyline? How do they connect to the themes of microbes, human history, and the mysterious number?",
+            "types": [
+                "salience",
+                "discontinuity"
+            ]
+        },
+        "Set in diverse alternate worlds and viewpoints, a mystery surrounding the number 143150124 plays a central role, connecting the characters' objectives and motivations.": {
+            "questions": "Who are the characters involved in this mystery? How does the number 143150124 connect to the rest of the story about microbes and human history?",
+            "types": [
+                "entity omission",
+                "discontinuity"
+            ]
+        },
+        "The characters are determined to uncover the truth behind this number, with the narrative filled with suspense, intrigue, and plot twists.": {
+            "questions": "What is the significance of the number 143150124? How does it relate to the main storyline about microbes and human history?",
+            "types": [
+                "entity omission",
+                "discontinuity"
+            ]
+        },
+        "The story also explores a mysterious number, 143150124, and its significance in the lives of the characters, as they navigate through various events, alternate worlds, and challenges to solve the mystery, resulting in a captivating and engaging read.": {
+            "questions": "How does the mysterious number 143150124 relate to the main storyline about the impact of microbes on human history? Why is it included in the summary?",
+            "types": [
+                "discontinuity",
+                "salience"
+            ]
+        }
+    },
+    "scattered-all-over-the-earth.epub": {
+        "The story also touches on the importance of preserving the environment, as seen in the disappearance of Hiruko's country due to the leveling of the mountains.": {
+            "questions": "What is Hiruko's country? Why were the mountains leveled?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "Tenzo, connected to a woman named Inga Nielsen, works part-time at a sushi restaurant called Samurai and becomes interested in acquiring a second identity through language and knowledge.": {
+            "questions": "Who is Inga Nielsen? How is Tenzo connected to her?",
+            "types": [
+                "entity omission"
+            ]
+        },
+        "He meets Nanook, who reveals his true identity, and they discuss the importance of truth and lies.": {
+            "questions": "What is Nanook's true identity? Why is it significant?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "Nanook is summoned to the police station for questioning but is found innocent.": {
+            "questions": "What was Nanook being questioned for? Why was he summoned to the police station?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "Susanoo, a sushi chef who lost his ability to talk after a traumatic event, remains silent despite their attempts to communicate with him.": {
+            "questions": "What was the traumatic event that caused Susanoo to lose his ability to talk?",
+            "types": [
+                "event omission"
+            ]
+        },
+        "As the group discusses their backgrounds and plans, Akash reveals that he and Susanoo plan to visit a place where they study speech loss.": {
+            "questions": "What is the significance of the place where they study speech loss? How does it relate to the main storyline?",
+            "types": [
+                "salience",
+                "causal omission"
+            ]
+        },
+        "Hiruko, Nanook, and the others agree to go on this journey together.": {
+            "questions": "What journey are they going on? What is the purpose of this journey?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "Knut's mother, who had accused the group of potentially practicing free sex or following a new religion, is no longer present in the restaurant.": {
+            "questions": "Why did Knut's mother accuse the group of practicing free sex or following a new religion? What led to her leaving the restaurant?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        }
+    },
+    "secretly-yours.epub": {
+        "Julian impulsively conducts a children's storytime, driven by his feelings for Hallie, while she works on a landscaping project at the local library in an attempt to move forward.": {
+            "questions": "How does conducting a children's storytime relate to his feelings for Hallie? Why is Hallie working on a landscaping project at the library?",
+            "types": [
+                "causal omission",
+                "event omission"
+            ]
+        },
+        "Natalie's past rivalry with August Cates, a struggling winemaker and former navy SEAL, adds complications as their attraction grows.": {
+            "questions": "How does Natalie's past rivalry with August Cates relate to the main storyline of Hallie and Julian? Why is this detail included?",
+            "types": [
+                "salience"
+            ]
+        }
+    },
+    "seven-faceless-saints.epub": {
+        "Both are descendants of the original saints and are connected to the four guilds that form the city's economy.": {
+            "questions": "Who are the original saints? What are the four guilds?",
+            "types": [
+                "entity omission"
+            ]
+        }
+    },
+    "she-is-a-haunting.epub": {
+        "Jade seeks help from the ghost Cam to understand and defeat Marion.": {
+            "questions": "Who is Marion? What is her role in the story?",
+            "types": [
+                "entity omission"
+            ]
+        },
+        "In a moment of clarity, Ba sacrifices himself by taking the brunt of a fire started by another character, Alma, and walks back into the burning house.": {
+            "questions": "Who is Alma? What is her role in the story?",
+            "types": [
+                "entity omission"
+            ]
+        }
+    },
+    "some-desperate-glory.epub": {
+        "Kyr struggles with her training and fears being assigned to the Nursery, a role she feels is beneath her abilities.": {
+            "questions": "What is the Nursery? Why does Kyr feel it is beneath her abilities?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        },
+        "Kyr faces off against her friend Cleo, who has turned against her, resulting in Kyr and her comrades arriving at Chrysothemis.": {
+            "questions": "Why has Cleo turned against Kyr? What is the significance of arriving at Chrysothemis?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "There, Kyr meets Ursa, who she believes is her sister but is actually a historian named Ursula Marston.": {
+            "questions": "Why does Kyr initially believe Ursa is her sister? What is the significance of Ursula Marston?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        },
+        "Kyr learns about the lies she has been told and decides to stay with Ursa's family, including her son Ally.": {
+            "questions": "What lies has Kyr been told? How does this affect her decision to stay with Ursa's family?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        },
+        "Kyr and Avi's struggles with the Wisdom, a powerful weapon existing across forty-one dimensions, become more complex when they attempt to prevent the destruction of Earth caused by the majo.": {
+            "questions": "What is the Wisdom and how does it work? How did Kyr and Avi come across it?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "However, Magnus, unable to cope with the destruction, commits suicide.": {
+            "questions": "What destruction is Magnus unable to cope with?",
+            "types": [
+                "event omission"
+            ]
+        },
+        "Devastated, Kyr blames Avi and kills him as well.": {
+            "questions": "Why does Kyr blame Avi for Magnus's suicide? What is the reason for her killing Avi?",
+            "types": [
+                "causal omission",
+                "event omission"
+            ]
+        },
+        "Yiso reveals that the Wisdom can intervene with time, and Kyr decides to turn back time to when the majo attacked Earth.": {
+            "questions": "What is the Wisdom? How does it have the ability to intervene with time?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        },
+        "Kyr struggles with her dual memories and identity when she is brought into a new reality as Val, a lieutenant in the Terran Expeditionary.": {
+            "questions": "How did Kyr end up in a new reality as Val? What caused her dual memories and identity?",
+            "types": [
+                "event omission",
+                "entity omission"
+            ]
+        },
+        "Yiso reveals that the Wisdom is broken and causing disastrous consequences throughout the galaxy.": {
+            "questions": "What is the Wisdom? How did it become broken?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "As they venture into the Halls of the Wise, Kyr and her allies confront Admiral Jole, who has implants that allow him to control the Wisdom.": {
+            "questions": "What are the Halls of the Wise? What is the significance of Admiral Jole's implants?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        }
+    },
+    "song-of-silver-flame-like-night.epub": {
+        "The Magician tries to break the Seal on her wrist, causing her immense pain and transporting her and Zen to a bamboo forest.": {
+            "questions": "What is the Seal on Lan's wrist? Why does the Magician want to break it?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        },
+        "Lan agrees to exchange her soul for her mother's once the Silver Dragon has fulfilled its duty, but only her soul and not her mind or body.": {
+            "questions": "Why does Lan want to exchange her soul for her mother's? What is the significance of exchanging only her soul and not her mind or body?",
+            "types": [
+                "causal omission",
+                "entity omission"
+            ]
+        },
+        "Meanwhile, Zen, who has the power of the Black Tortoise, wakes up and finds himself with Sh\u00e0n'j\u016bn, a Medicine disciple.": {
+            "questions": "How did Zen get the power of the Black Tortoise? Who is Sh\u00e0n'j\u016bn and how did Zen end up with him?",
+            "types": [
+                "event omission",
+                "entity omission"
+            ]
+        }
+    },
+    "spare.epub": {
+        "Harry and Meghan decide to sue, but face opposition from within the Palace.": {
+            "questions": "Who are they suing and for what reason?",
+            "types": [
+                "event omission"
+            ]
+        }
+    },
+    "the-adventures-of-amina-al-sirafi.epub": {
+        "Amina and her crew continue to care for Dunya while protecting her from Raksh, who has ulterior motives.": {
+            "questions": "What are Raksh's ulterior motives?",
+            "types": [
+                "entity omission"
+            ]
+        },
+        "Amina discovers that severing a spectral seaweed tether with her meteor blade can strip the fighters of their magical enhancements.": {
+            "questions": "What is a meteor blade? When did Amina acquire it?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "Ultimately, Amina and her friends, with the aid of the marid and the Moon of Saba, defeat Falco and rescue Dunya.": {
+            "questions": "What is the marid? How does the Moon of Saba help them defeat Falco?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        }
+    },
+    "the-bandit-queens.epub": {
+        "Geeta is hesitant but agrees to the plan.": {
+            "questions": "What is the plan that Geeta is hesitant about?",
+            "types": [
+                "event omission"
+            ]
+        },
+        "During a dinner party, Geeta accidentally has the poisoned plate in front of her and decides to save Darshan's life by hiding her contaminated curry.": {
+            "questions": "Why was there a poisoned plate in the first place? Who prepared the poison?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "Despite their own problems, the twins and Saloni express their support for Geeta against Farah's blackmail, believing that once Darshan is gone and Ramesh arrives, Farah will lose her leverage over Geeta.": {
+            "questions": "Who are the twins mentioned in the sentence? How is Farah blackmailing Geeta?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "Geeta suggests they try to change the caste system and bring about equality, starting with getting Khushi on the council.": {
+            "questions": "What council is Geeta referring to? How does getting Khushi on the council relate to changing the caste system?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        },
+        "Ramesh, now blind, suddenly returns, wanting to make amends for his past actions.": {
+            "questions": "Why is Ramesh blind? What happened to him?",
+            "types": [
+                "event omission",
+                "entity omission"
+            ]
+        },
+        "Geeta, Saloni, Farah, and Khushi are eventually held captive by Ramesh and his brother Bada-Bhai (BB), a local businessman who seeks to gain a don reputation.": {
+            "questions": "What is a \"don reputation\"? How did Ramesh and BB capture the women?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        }
+    },
+    "the-collected-regrets-of-clover.epub": {
+        "Clover is hesitant to deceive Claudia about her condition and the true purpose of their visits, but Sebastian pleads with her to give it two weeks, promising to talk to his father about the situation.": {
+            "questions": "What is the deception about Claudia's condition? What is the true purpose of their visits?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        }
+    },
+    "the-covenant-of-water.epub": {
+        "They marry and have a son, Ninan, who dies tragically.": {
+            "questions": "How does Ninan die tragically?",
+            "types": [
+                "event omission"
+            ]
+        },
+        "Tragedy strikes again when Big Ammachi and Baby Mol die peacefully in their sleep.": {
+            "questions": "Who is Baby Mol? How are they related to the main characters?",
+            "types": [
+                "entity omission"
+            ]
+        },
+        "However, Lenin is eventually imprisoned for his involvement with the Naxalite movement, and Mariamma commits to waiting for him.": {
+            "questions": "What is the Naxalite movement? Why was Lenin involved in it?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        }
+    },
+    "the-first-bright-thing.epub": {
+        "Edward returns, now controlling a young girl named Jo, who possesses a powerful illusion Spark.": {
+            "questions": "How does Edward control Jo? Why does he control her?",
+            "types": [
+                "causal omission",
+                "event omission"
+            ]
+        },
+        "He believes he created his own circus for her.": {
+            "questions": "Who is \"he\"? What is the context of creating a circus for her?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        }
+    },
+    "the-girl-who-fell-beneath-the-sea.epub": {
+        "However, Shin, a mysterious god, severs the Red String of Fate, transforming Mina's soul into a magpie and rendering her unable to speak.": {
+            "questions": "Why does Shin sever the Red String of Fate? What is the significance of Mina's soul being transformed into a magpie?",
+            "types": [
+                "causal omission",
+                "entity omission"
+            ]
+        },
+        "They visit the Moon House to ask a goddess to grant a wish from a girl, only to find out the girl is dead, and her prayer was never answered.": {
+            "questions": "Who is the girl whose wish they are trying to grant? Why is her wish important to Mina and Shin's journey?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        }
+    },
+    "the-golden-doves.epub": {
+        "Josie later travels to Rome to continue her search for Snow and unexpectedly encounters Ariana, who had betrayed her and Arlette in the past.": {
+            "questions": "Who is Ariana? What was the nature of her betrayal?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "Josie and Aaron, who poses as a Russian agent, plan to capture Snow at a wedding.": {
+            "questions": "Whose wedding are they planning to capture Snow at?",
+            "types": [
+                "event omission"
+            ]
+        },
+        "Luc and Danae are part of a germ warfare plot, with Danae being Dr.": {
+            "questions": "What is the germ warfare plot? How is Danae connected to Dr. Snow?",
+            "types": [
+                "event omission",
+                "entity omission"
+            ]
+        },
+        "Snow from Ravensbr\u00fcck.": {
+            "questions": "Who is Snow? What is their role in Ravensbr\u00fcck?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "Danae dies while escaping capture, and Josie, Arlette, Thomas, and Bondi return to Paris, where Thomas is treated for being used by Luc and Danae as an \"antibody cow.\"": {
+            "questions": "What is an \"antibody cow\"? How was Thomas used by Luc and Danae in this way?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        },
+        "During Luc's war crimes trial, Josie reunites with Aaron and receives a gift from him before warning Arlette of an upcoming danger.": {
+            "questions": "What is the gift that Josie receives from Aaron? What is the upcoming danger that Josie warns Arlette about?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        }
+    },
+    "the-half-moon.epub": {
+        "As Malcolm's financial situation worsens, he falls behind on bar payments and becomes involved in the disappearance of Charles \"Tripp\" Waggoner, last seen at the Half Moon.": {
+            "questions": "How does Malcolm become involved in Tripp's disappearance? What is his connection to Tripp?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "As they try to find unity and hope, they are approached by federal agents who inquire about Tripp, his partner Charles, and Mark Duro, Tripp's insurance beneficiary.": {
+            "questions": "Who are the federal agents? Why are they inquiring about Tripp, Charles, and Mark Duro?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "They return to New York, their relationship with friends Siobh\u00e1n and Patrick strained due to their reconciliation.": {
+            "questions": "Why is their relationship with Siobh\u00e1n and Patrick strained due to their reconciliation?",
+            "types": [
+                "causal omission"
+            ]
+        }
+    },
+    "the-haunting-of-alejandra.epub": {
+        "Meanwhile, Alejandra's grandmother, Frances, plans to commit suicide by drowning in the Rio Grande to save her family from her darkness, although it is unclear whether she goes through with her plan.": {
+            "questions": "Does Frances have a connection to the demon? Why does she believe that committing suicide will save her family?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        },
+        "In a climactic scene, Alejandra discovers a large clot, seemingly the demon, causing her severe cramps and nausea.": {
+            "questions": "How does Alejandra discover the clot? How is the clot related to the demon?",
+            "types": [
+                "event omission",
+                "entity omission"
+            ]
+        }
+    },
+    "the-house-is-on-fire.epub": {
+        "Della is injured during the confrontation but continues to stand up to Elliott.": {
+            "questions": "What confrontation? Who is Elliott?",
+            "types": [
+                "event omission",
+                "entity omission"
+            ]
+        }
+    },
+    "the-last-pomegranate-tree.epub": {
+        "Saryas ultimately meets his demise due to these events.": {
+            "questions": "What specific events lead to Saryas's demise?",
+            "types": [
+                "event omission"
+            ]
+        },
+        "On his journey, Muzafar seeks guidance from Sayyid Jalal Shams, a tribal leader connected to the mysterious Saryases and other people who are mentioned in cassette tapes.": {
+            "questions": "What is the significance of the cassette tapes? How are the Saryases mysterious?",
+            "types": [
+                "entity omission",
+                "salience"
+            ]
+        },
+        "Yaqub confesses that the other two children are his illegitimate sons born during the revolution and that he and Sayyid Jalal Shams had given them the same name and separated them to protect their secret.": {
+            "questions": "What revolution are they referring to? Why did they need to protect the secret?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        }
+    },
+    "the-last-tale-of-the-flower-bride.epub": {
+        "The girls perform blood rituals and try to enter the Otherworld, seeking to belong to a magical realm.": {
+            "questions": "Who are \"the girls\" referred to in this sentence?",
+            "types": [
+                "entity omission"
+            ]
+        },
+        "They visit the House of Dreams, where the protagonist meets Hippolyta, who taunts him about Indigo's true nature and reveals that she has lost a secret.": {
+            "questions": "What is the secret that Hippolyta reveals Indigo has lost? How does this affect the protagonist?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        },
+        "The protagonist is tempted by the House with false memories, promising to reward him if he finds Azure.": {
+            "questions": "What are the false memories the House tempts the protagonist with? How does the House communicate with the protagonist?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "Indigo's past is slowly revealed, and the protagonist finds a hidden cassette tape with a message from someone named Lyric in Indigo's bedroom.": {
+            "questions": "Who is Lyric? What is the significance of the cassette tape and the message?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "They also discover a hidden braid of hair with a tooth engraved with the letter \"A.\"": {
+            "questions": "Whose hair and tooth are they? What is the significance of the letter \"A\"?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "Azure accidentally discovers a secret mortal habit of Indigo's, which leads her to question her trust in her sister.": {
+            "questions": "What is the secret mortal habit that Azure discovers?",
+            "types": [
+                "entity omission"
+            ]
+        },
+        "The protagonist becomes suspicious of Indigo's role in a mysterious accident that leaves Tati blind and concussed.": {
+            "questions": "What is the mysterious accident? How does it relate to the main storyline?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "Azure's doubts about Indigo and the Otherworld grow stronger, leading to a climax where the sisters confront their relationship's fragility and the protagonist must decide whether to leave the House of Dreams to avoid impending doom.": {
+            "questions": "What is the impending doom? Why does the protagonist have to decide whether to leave the House of Dreams?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "In the final events of the story, the protagonist finds Azure's corpse in a glass casket and learns that their brother is dead.": {
+            "questions": "Who is the protagonist's brother? How is the brother related to the story?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "They touch the casket, revealing a memory of their mother mourning their brother.": {
+            "questions": "Who is \"they\"? Who is the protagonist's brother?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "Indigo, affected by a sedative, confronts the protagonist with a gun.": {
+            "questions": "Why is Indigo affected by a sedative? Who gave her the sedative?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "Despite seeing her true monstrous form, the protagonist feels a connection to Indigo.": {
+            "questions": "What is Indigo's true monstrous form? Why does the protagonist feel a connection to her despite seeing it?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        },
+        "They address her as Azure, causing her to pause.": {
+            "questions": "Why do they address her as Azure? Is she Indigo or Azure?",
+            "types": [
+                "entity omission",
+                "inconsistency"
+            ]
+        },
+        "Azure finally opens up to her husband about her love for the person she once was.": {
+            "questions": "Is Azure the protagonist's wife or is it Indigo? Why is Azure opening up to the protagonist if he is married to Indigo?",
+            "types": [
+                "entity omission",
+                "inconsistency"
+            ]
+        }
+    },
+    "the-marriage-portrait.epub": {
+        "As she adjusts to her new life, Lucrezia suspects that Alfonso intends to kill her and takes her to a fortified building far from Ferrara.": {
+            "questions": "Why does Alfonso take Lucrezia to the fortified building? What leads her to suspect that he intends to kill her?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "Meanwhile, Alfonso mistakenly murders a woman he believes to be his wife, allowing Lucrezia's escape to go undetected.": {
+            "questions": "How did Alfonso mistake another woman for his wife? Why did he decide to murder her?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        }
+    },
+    "the-mimicking-of-known-successes.epub": {
+        "Following the confrontation, Pleiti and an injured Mossa escape from the spaceport and attend meetings discussing the explosion's consequences and the search for a new rector.": {
+            "questions": "What explosion is being referred to? When did it happen?",
+            "types": [
+                "event omission",
+                "discontinuity"
+            ]
+        },
+        "Meanwhile, Porbal and Bolien survive their injuries and turn against Spandal.": {
+            "questions": "What injuries did Porbal and Bolien sustain? When and how did they get injured?",
+            "types": [
+                "event omission",
+                "entity omission"
+            ]
+        }
+    },
+    "the-night-travelers.epub": {
+        "Meanwhile, Irma is arrested and taken to a German jail for alleged war crimes.": {
+            "questions": "What is the connection between Irma's arrest and the main storyline? How does this event impact the characters?",
+            "types": [
+                "causal omission",
+                "event omission"
+            ]
+        },
+        "As Nadine mourns her grandmother's death, Luna explores their family's past through letters and poems, starting to write her own story guided by an unknown voice.": {
+            "questions": "Who is the unknown voice guiding Luna?",
+            "types": [
+                "entity omission"
+            ]
+        }
+    },
+    "the-stolen-heir.epub": {
+        "In a series of confrontations with Queen Annet, Oak, and the Thistlewitch, Wren learns about the power of Mellith's heart and the dangerous ambitions of Lady Nore.": {
+            "questions": "What is Mellith's heart? Who is Queen Annet?",
+            "types": [
+                "entity omission"
+            ]
+        },
+        "The story ends with Wren interacting with a character wearing a leather bridle, drawn to the sound of him screaming her name, as she faces the consequences of her actions and decisions, ultimately determining her true place in the world of Faerie.": {
+            "questions": "Who is the character wearing a leather bridle? Why is he screaming Wren's name?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        }
+    },
+    "the-survivalists.epub": {
+        "She overhears them discussing a \"run\" and James suggests that Aretha should go instead of him.": {
+            "questions": "What is the \"run\" they are discussing? Why does James suggest Aretha should go instead of him?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "Brittany decides to make use of Aretha, despite her reluctance.": {
+            "questions": "What does Brittany want to use Aretha for? What is Aretha reluctant about?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "Aretha joins Brittany and James on a car journey to buy more guns, feeling uneasy about the situation.": {
+            "questions": "Why are they buying more guns? What is the purpose of these guns?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "On vacation in Maine, Aretha and Aaron's trip is interrupted when they learn about the damage to their house.": {
+            "questions": "What kind of damage happened to their house?",
+            "types": [
+                "event omission"
+            ]
+        }
+    },
+    "the-true-love-experiment.epub": {
+        "Later, Fizzy calls Connor to her hotel room for help, making him nervous about being alone with her.": {
+            "questions": "What kind of help does Fizzy need from Connor?",
+            "types": [
+                "event omission"
+            ]
+        },
+        "Amidst these events, a scandal involving another North Star show jeopardizes Fizzy and Connor's careers if their relationship is discovered.": {
+            "questions": "What is the scandal involving another North Star show? How does it relate to Fizzy and Connor's relationship?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        }
+    },
+    "the-wager-a-tale-of-shipwreck-mutiny-and-murder.epub": {
+        "The ordeal of the stranded group of men led by Morris is also recounted, who were eventually found by native Patagonians.": {
+            "questions": "Who is Morris? How did he become the leader of a stranded group of men?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        }
+    },
+    "the-wishing-game.epub": {
+        "They all board the Clock Island Express, a train that takes them to Samhain Station, where it's Halloween every day.": {
+            "questions": "What is the significance of Samhain Station and Halloween in the story? Why is this detail included?",
+            "types": [
+                "salience"
+            ]
+        }
+    },
+    "the-words-that-remain.epub": {
+        "Raimundo grapples with his actions and contemplates leaving his current life behind to avoid the consequences and judgment of others.": {
+            "questions": "What specific actions is Raimundo grappling with? What consequences and judgment is he trying to avoid?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        }
+    },
+    "the-writing-retreat.epub": {
+        "During a chaotic confrontation, Zoe is killed, and the remaining writers continue their work under Roza's watchful eye.": {
+            "questions": "How was Zoe killed? Who killed her?",
+            "types": [
+                "event omission"
+            ]
+        }
+    },
+    "things-i-wish-i-told-my-mother.epub": {
+        "Unfortunately, the happy version of events turns out to be a fantasy, as the story shifts to the reality of Laurie's mother being hospitalized in New Jersey.": {
+            "questions": "What is the happy version of events? How does the story shift from fantasy to reality?",
+            "types": [
+                "event omission",
+                "discontinuity"
+            ]
+        },
+        "The story also features Lorraine and Geraldine, two women who had a lot in common, including having daughters who adored them.": {
+            "questions": "How do Lorraine and Geraldine relate to the main storyline of Laurie and her mother? Why are they included in the summary?",
+            "types": [
+                "salience",
+                "discontinuity"
+            ]
+        },
+        "Both women were widowed twice and spent their later years searching for a third partner.": {
+            "questions": "Who are Lorraine and Geraldine? How do they relate to the main storyline?",
+            "types": [
+                "entity omission",
+                "discontinuity"
+            ]
+        },
+        "Tragically, they died within a year of each other, leaving their families in shock.": {
+            "questions": "Who are Lorraine and Geraldine? How do they relate to the main storyline?",
+            "types": [
+                "entity omission",
+                "discontinuity"
+            ]
+        },
+        "In honor of Lorraine and Geraldine, their daughters, Susan Patterson and Susan DiLallo, have written a book dedicated to them, telling the story of a mother and daughter who learn how to love and communicate with each other before it's too late.": {
+            "questions": "Who are Lorraine and Geraldine? How do they relate to the main story of Laurie and her mother?",
+            "types": [
+                "entity omission",
+                "discontinuity"
+            ]
+        }
+    },
+    "thorne-princess.epub": {
+        "Ransom supports Hallie as she files a complaint against him, leading the two to fall in love despite the difficulties surrounding her family, the Russian gang, and Ransom's haunting past.": {
+            "questions": "Who is Hallie filing a complaint against? Is it against Ransom or her brother-in-law, Craig?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "Ransom's past catches up to him when the Russians kidnap Hallie, using her as bait to seek revenge for Ransom accidentally killing Kozlov's two-year-old son in a back-alley raid.": {
+            "questions": "When did Ransom accidentally kill Kozlov's son? How is this event connected to the main storyline?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "Meanwhile, Francesca receives a note predicting a stolen kiss.": {
+            "questions": "Who sent the note to Francesca? Why is this detail included?",
+            "types": [
+                "entity omission",
+                "salience"
+            ]
+        },
+        "Wolfe interrupts her dance with Angelo, and Francesca becomes desperate to fulfill the note's prediction.": {
+            "questions": "What note's prediction is Francesca trying to fulfill? Why is she desperate to fulfill it?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        }
+    },
+    "tomorrow-and-tomorrow-and-tomorrow.epub": {
+        "During this time, Sadie and Sam's friendship becomes strained due to past secrets and misunderstandings.": {
+            "questions": "What past secrets and misunderstandings are causing the strain in their friendship?",
+            "types": [
+                "event omission"
+            ]
+        },
+        "Despite the deception, Sadie eventually forgives Sam, and they maintain a distant friendship.": {
+            "questions": "What deception is being referred to?",
+            "types": [
+                "event omission"
+            ]
+        }
+    },
+    "tress-of-the-emerald-sea.epub": {
+        "She discovers that Captain Crow is turning the crew into wanted criminals called deadrunners and plans on sailing the dangerous Crimson Sea to cure her disease caused by her connection to the verdant aether.": {
+            "questions": "What is the verdant aether? How does it cause the disease?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        },
+        "Meanwhile, Charlie, who has been turned into a rat named Huck by the Sorceress's curse, assists Tress and her crew.": {
+            "questions": "When and why did the Sorceress turn Charlie into a rat? Is Charlie the same as Huck, the talking rat companion mentioned earlier?",
+            "types": [
+                "event omission",
+                "entity omission"
+            ]
+        }
+    },
+    "unseelie.epub": {
+        "The sisters steal their parents' memories to protect them and escape in Redbrook's wagon, which they rename Destiny.": {
+            "questions": "Why do they need to steal their parents' memories? Who is Redbrook?",
+            "types": [
+                "causal omission",
+                "entity omission"
+            ]
+        },
+        "In the enchanted library of the Mortal's Keep, Seelie frees Gossamer, who then becomes trapped in her mind.": {
+            "questions": "How does Gossamer become trapped in Seelie's mind? Why is this significant to the story?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "In a shocking twist, Seelie awakens in Wildline Manor, where Isolde and Olani now work for Leira.": {
+            "questions": "How did Seelie end up in Wildline Manor? Why are Isolde and Olani working for Leira now?",
+            "types": [
+                "event omission",
+                "entity omission"
+            ]
+        }
+    },
+    "untethered-sky.epub": {
+        "This feat earns her admiration from Prince Khovash and her ashes, a symbol of her success as a ruhker.": {
+            "questions": "What are \"her ashes\"? How do they symbolize her success as a ruhker?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        },
+        "Prince Khovash invites Ester and Nasmin to a royal feast in the city of Antopolis, hoping to gain support for their cause.": {
+            "questions": "What is their cause that Prince Khovash wants to gain support for?",
+            "types": [
+                "entity omission"
+            ]
+        },
+        "On her journey back to the Royal Mews, Ester encounters a town threatened by a manticore, which she recognizes as the one that caused the deaths of Darius and Minu, and the disgrace of Nasmin and Azar.": {
+            "questions": "Is Darius dead or alive? The summary mentions him being injured but not dead. Who is Azar?",
+            "types": [
+                "inconsistency",
+                "entity omission"
+            ]
+        }
+    },
+    "vera-wong-s-unsolicited-advice-for-murderers.epub": {
+        "Alex admits to his actions, explaining that he did so to protect Vera and learn more about his son.": {
+            "questions": "Why did Alex feel the need to protect Vera? How does killing Marshall help him learn more about his son?",
+            "types": [
+                "causal omission",
+                "entity omission"
+            ]
+        }
+    },
+    "victory-city.epub": {
+        "In the city, the Moroccan traveler Ibn Battuta witnesses the fall of the Madurai sultans before disappearing from history.": {
+            "questions": "What is the significance of Ibn Battuta's presence in the story? Why does he disappear from history?",
+            "types": [
+                "salience",
+                "event omission"
+            ]
+        },
+        "This decision causes chaos and leads to her exile to the enchanted Forest of Women with her daughters, as well as characters Haleya Kote and Grandmaster Li.": {
+            "questions": "Why does the decision to push for women's rights of succession cause chaos? Who are Haleya Kote and Grandmaster Li?",
+            "types": [
+                "causal omission",
+                "entity omission"
+            ]
+        },
+        "In the forest, Pampa Kampana and her daughters adapt to their new lives and magical surroundings.": {
+            "questions": "Why were Pampa Kampana and her daughters exiled to the forest? What caused this exile?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "Meanwhile, Pampa Kampana secretly guides King Deva Raya towards peace, diplomacy, and progress through whispering in his ears.": {
+            "questions": "How does Pampa Kampana manage to secretly guide King Deva Raya if she is in exile in the Forest of Women? What is her motivation for guiding him?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "Throughout the story, Pampa Kampana faces opposition from Nagala Devi and Tirumala Devi, the senior queen.": {
+            "questions": "Who is Nagala Devi? What is the nature of their opposition to Pampa Kampana?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "After the empire's destruction stemming from Aliya Rama Raya's scheming and the Battle of Talikota, Pampa Kampana completes her book and buries it among the rubble, emphasizing the power of words in spite of the empire's downfall.": {
+            "questions": "Who is Aliya Rama Raya? What was his role in the empire's destruction?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        }
+    },
+    "we-don't-swim-here.epub": {
+        "In a separate storyline, Francisco Cruz, an 18-year-old student at Fordham University, is desperately trying to reach a hospital.": {
+            "questions": "How does Francisco's storyline connect to the main plot involving Bronwyn and Anais? Why is he trying to reach a hospital?",
+            "types": [
+                "discontinuity",
+                "event omission"
+            ]
+        },
+        "He is disoriented and experiencing strange visions, and he can't remember what led to his current situation.": {
+            "questions": "How is Francisco Cruz connected to the main storyline of Bronwyn and Anais? Why is he experiencing strange visions and disorientation?",
+            "types": [
+                "discontinuity",
+                "entity omission"
+            ]
+        },
+        "He hears an unsettling skittering sound and senses a growing fear.": {
+            "questions": "What is causing the skittering sound? How is this related to the main storyline?",
+            "types": [
+                "entity omission",
+                "discontinuity"
+            ]
+        },
+        "Cisco tries to use his phone, but there's no signal.": {
+            "questions": "How is Cisco's storyline connected to Bronwyn and Anais' story? Why is he experiencing strange visions and black rot?",
+            "types": [
+                "discontinuity",
+                "entity omission"
+            ]
+        },
+        "He sees a picture of himself with a girl on his phone wallpaper, but he can't remember who she is.": {
+            "questions": "Who is the girl in the picture? How is she related to Cisco or the main storyline?",
+            "types": [
+                "entity omission",
+                "discontinuity"
+            ]
+        },
+        "Cisco is experiencing a terrifying situation where he snaps between worlds and is being pursued by a creature.": {
+            "questions": "How is Cisco's storyline connected to Bronwyn and Anais' story? What is the creature pursuing him?",
+            "types": [
+                "discontinuity",
+                "entity omission"
+            ]
+        },
+        "He is also suffering from black rot, which is spreading through his veins.": {
+            "questions": "What is black rot? How did Cisco get it? How is it related to the main storyline?",
+            "types": [
+                "entity omission",
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "Anais discovers that Locke, a friend of Anais and Bronwyn, was shot, contradicting the official story of his death.": {
+            "questions": "What was the official story of Locke's death? How does this discovery impact the story?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "Meanwhile, Molly Grace and her group team up with Sheriff Lewis to sacrifice two people to the lake every decade to appease Sweetie's spirit.": {
+            "questions": "Why do they believe sacrificing people will appease Sweetie's spirit? How did this ritual start?",
+            "types": [
+                "causal omission",
+                "event omission"
+            ]
+        }
+    },
+    "what-happens-next.epub": {
+        "Her actions lead to a confrontation with Mr. Potter and a possible heart attack.": {
+            "questions": "Who has a possible heart attack? Mr. Potter or Dora?",
+            "types": [
+                "entity omission"
+            ]
+        },
+        "The story then shifts to focus on Cleo Clemmons, who has been on the run from her past and taken on several odd jobs to make ends meet.": {
+            "questions": "Why are we suddenly switching to a new character? How does Cleo's story connect to Faith's investigation of Heather's disappearance?",
+            "types": [
+                "discontinuity"
+            ]
+        },
+        "Her latest task is to work for Deacon Tremblay, a wealthy man with a famous name, helping to organize his grandmother's home.": {
+            "questions": "How does Cleo's story connect to Faith's investigation? Why is Cleo's story introduced in the summary?",
+            "types": [
+                "discontinuity"
+            ]
+        },
+        "Cleo is hired to manage a project at Castle Moreau, Deacon's grandmother's castle.": {
+            "questions": "How does Cleo's story connect to Faith's investigation? Why is Cleo's story introduced in the summary?",
+            "types": [
+                "discontinuity"
+            ]
+        },
+        "As Cleo embarks on this new chapter at Castle Moreau, she faces numerous challenges and questions, but remains determined to face them head-on.": {
+            "questions": "How does Cleo's story connect to Faith's investigation? Why is her story introduced at the end of the summary?",
+            "types": [
+                "discontinuity"
+            ]
+        },
+        "The mysterious and eerie atmosphere of Castle Moreau adds to Cleo's growing unease about her new role.": {
+            "questions": "How does Cleo's story connect to Faith's investigation? Why is Cleo's story introduced in the summary?",
+            "types": [
+                "discontinuity"
+            ]
+        },
+        "The story reveals the tragic truth behind Heather's disappearance and brings closure to her family, while also introducing a new character, Cleo Clemmons, and her mysterious new job at Castle Moreau.": {
+            "questions": "How does Cleo Clemmons' story connect to the main storyline of Heather's disappearance? Why is her story introduced at the end of the summary?",
+            "types": [
+                "discontinuity",
+                "entity omission"
+            ]
+        }
+    },
+    "while-time-remains.epub": {
+        "She continues to deliver speeches about her experiences, encountering silence and lack of action from prominent individuals she meets at events like Campfire and the Met Gala.": {
+            "questions": "What is Campfire? Why are these events mentioned?",
+            "types": [
+                "entity omission",
+                "salience"
+            ]
+        }
+    },
+    "witch-king.epub": {
+        "They make their way to a city on the far side of a river, using wallwalkers.": {
+            "questions": "What are wallwalkers? How do they help the group reach the city?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        }
+    },
+    "wrong-place-wrong-time.epub": {
+        "Meanwhile, Ryan, a new officer, works on cases related to organized crime operations.": {
+            "questions": "Is Ryan the same person as Kelly, Jen's husband? How does his work on organized crime cases connect to the main storyline?",
+            "types": [
+                "entity omission",
+                "discontinuity"
+            ]
+        },
+        "In one of Jen's time jumps, she attempts to prevent a burglary and save her family.": {
+            "questions": "What is the significance of this particular time jump and burglary? How does it relate to the main storyline?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "When Jen returns to her present time, she finds her husband is still a policeman but now goes by the name Ryan.": {
+            "questions": "Why does Kelly change his name to Ryan? Is there a reason for this change?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        }
+    }
+}
