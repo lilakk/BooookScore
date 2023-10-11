@@ -1,5 +1,11 @@
 This repo hosts the code for [BooookScore: A systematic exploration of book-length summarization in the era of LLMs](https://arxiv.org/abs/2310.00785). More updates coming soon.
 
+# Updates
+
+- 2023/10/10 Upload files containing intermediate incremental summaries; upload GPT-4 and human annotations.
+- 2023/10/03 Initial commit.
+
+
 # Configure environment
 
 1. Create virtual environment with `python3 -m virtualenv myenv`.
