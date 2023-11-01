@@ -1,5 +1,6 @@
 import os
 import pickle
+import json
 import tqdm
 import argparse
 from utils import obtain_response, count_tokens
@@ -80,7 +81,7 @@ def get_summaries():
 
     new_data = {}
     if os.path.exists(SAVE_PATH):
-        new_data = pickle.load(open(SAVE_PATH, "rb"))
+        new_data = json.load(open(SAVE_PATH, "r"))
     
     for i, book in tqdm.tqdm(enumerate(data), total=len(data), desc="Iterating over books"):
         if book in new_data and len(new_data[book]) >= len(data[book]):
@@ -91,7 +92,7 @@ def get_summaries():
         prev_summary = None
         if len(new_data) > i:
             new_chunks = new_data[book]
-            prev_summary = new_chunks[-1]['summary']
+            prev_summary = new_chunks[-1]
         dd = data[book]
         summary_len = min(MAX_SUMMARY_LEN, 1200)
         word_limit = int(summary_len * WORD_RATIO)
@@ -111,7 +112,6 @@ def get_summaries():
             
             response = obtain_response(prompt, max_tokens=summary_len, temperature=0.5)
             print(f"\n\nCHUNK SUMMARY:\n{response}\n\n")
-            print(f"EXPECTED WORDS: {num_words}")
             actual_words = len(response.split())
             print(f"ACTUAL WORDS: {actual_words}")
             
@@ -125,26 +125,24 @@ def get_summaries():
                 compressed_summary, response, chunk_trims, skipped = compress(response, prev_summary, chunk, templates, summary_len, word_limit, num_chunks, j)
                 num_trims += chunk_trims
                 skipped_chunks += skipped
-                new_chunks[j - 1]['summary'] = compressed_summary
+                new_chunks[j - 1] = compressed_summary
 
-            new_chunk['chunk'] = chunk
-            new_chunk['summary'] = response
-            prev_summary = new_chunk['summary']
-            new_chunks.append(new_chunk)
+            prev_summary = response
+            new_chunks.append(response)
 
             if (j + 1) % 5 == 0:
                 new_data[book] = new_chunks
                 print(f"saving data for book {i} at chunk {j}...")
-                pickle.dump(new_data, open(SAVE_PATH, 'wb'))
+                json.dump(new_data, open(SAVE_PATH, 'w'))
             
         new_data[book] = new_chunks
-        pickle.dump(new_data, open(SAVE_PATH, 'wb'))
+        json.dump(new_data, open(SAVE_PATH, 'w'))
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--input_path", type=str, help="path to the pickle file containing the chunked data")
-    parser.add_argument("--save_path", type=str, help="path to the pickle file to save the data")
+    parser.add_argument("--save_path", type=str, help="path to the json file to save the data")
     parser.add_argument("--max_context_len", type=int, help="max content length of the model")
     parser.add_argument("--chunk_size", type=int, default=2048)
     parser.add_argument("--max_summary_len", type=int, default=900, help="max length of the final summary")

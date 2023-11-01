@@ -103,7 +103,7 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
     parser.add_argument("--chunk_size", type=int, default=2048)
-    parser.add_argument("--input_path", type=str, default="/work/pi_miyyer_umass_edu/yapeichang/books/text/all_books.pkl")
+    parser.add_argument("--input_path", type=str)
     args = parser.parse_args()
 
     CHUNK_SIZE = args.chunk_size

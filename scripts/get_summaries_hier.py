@@ -51,7 +51,7 @@ def summarize(texts, token_limit, level):
         if attempts == 6:
             print("Failed to generate valid summary after 6 attempts, skipping")
             return response
-        print("Invalid summary, retrying...")
+        print(f"Invalid summary, retrying: attempt {attempts}")
         response = obtain_response(prompt, max_tokens=token_limit, temperature=1)
         print(f"SUMMARY:\n\n---\n\n{response}\n\n---\n\n")
         attempts += 1
@@ -209,7 +209,7 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
     parser.add_argument("--input_path", type=str, help="path to the pickle file containing the chunked data")
-    parser.add_argument("--save_path", type=str, help="path to the pickle file to save the data")
+    parser.add_argument("--save_path", type=str, help="path to the json file to save the data")
     parser.add_argument("--max_context_len", type=int, help="max content length of the model")
     parser.add_argument("--chunk_size", type=int, default=2048)
     parser.add_argument("--max_summary_len", type=int, default=900, help="max length of the final summary")
