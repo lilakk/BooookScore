@@ -2,23 +2,7 @@ import os
 import pickle
 import tqdm
 import argparse
-from scripts.utils import obtain_response, count_tokens
-
-parser = argparse.ArgumentParser()
-parser.add_argument("--input_path", type=str)
-parser.add_argument("--save_path", type=str)
-parser.add_argument("--max_context_len", type=int)
-parser.add_argument("--chunk_size", type=int, default=2048)
-parser.add_argument("--max_summary_len", type=int, default=900)
-args = parser.parse_args()
-
-INPUT_PATH = args.input_path
-SAVE_PATH = args.save_path
-MAX_CONTEXT_LEN = args.max_context_len
-MAX_SUMMARY_LEN = args.max_summary_len
-CHUNK_SIZE = args.chunk_size
-WORD_RATIO = 0.65
-SUMMARY_TEMP = 0.5
+from utils import obtain_response, count_tokens
 
 
 def compress(response, summary, chunk, templates, summary_len, word_limit, num_chunks, j):
@@ -66,7 +50,7 @@ def compress(response, summary, chunk, templates, summary_len, word_limit, num_c
         
         num_words = int(word_limit * (j + 1) / num_chunks)
         prompt = templates['template'].format(chunk, compressed_summary, num_words, num_words)
-        response = obtain_response(prompt, max_tokens=summary_len, temperature=SUMMARY_TEMP)
+        response = obtain_response(prompt, max_tokens=summary_len, temperature=0.5)
 
         dic[actual_words] = {
             'compressed_summary': compressed_summary,
@@ -80,9 +64,8 @@ def compress(response, summary, chunk, templates, summary_len, word_limit, num_c
     return compressed_summary, response, chunk_trims, 0
 
 
-def get_summaries(path):
-    data_path = f'data/all_books_chunked_{CHUNK_SIZE}.pkl'
-    data = pickle.load(open(data_path, 'rb'))
+def get_summaries():
+    data = pickle.load(open(INPUT_PATH, 'rb'))
 
     with open("prompts/get_summaries_inc/init.txt", "r") as f:
         init_template = f.read()
@@ -96,8 +79,8 @@ def get_summaries(path):
     skipped_chunks = 0
 
     new_data = {}
-    if os.path.exists(path):
-        new_data = pickle.load(open(path, "rb"))
+    if os.path.exists(SAVE_PATH):
+        new_data = pickle.load(open(SAVE_PATH, "rb"))
     
     for i, book in tqdm.tqdm(enumerate(data), total=len(data), desc="Iterating over books"):
         if book in new_data and len(new_data[book]) >= len(data[book]):
@@ -126,7 +109,7 @@ def get_summaries(path):
             else:
                 prompt = template.format(chunk, prev_summary)
             
-            response = obtain_response(prompt, max_tokens=summary_len, temperature=SUMMARY_TEMP)
+            response = obtain_response(prompt, max_tokens=summary_len, temperature=0.5)
             print(f"\n\nCHUNK SUMMARY:\n{response}\n\n")
             print(f"EXPECTED WORDS: {num_words}")
             actual_words = len(response.split())
@@ -152,7 +135,26 @@ def get_summaries(path):
             if (j + 1) % 5 == 0:
                 new_data[book] = new_chunks
                 print(f"saving data for book {i} at chunk {j}...")
-                pickle.dump(new_data, open(path, 'wb'))
+                pickle.dump(new_data, open(SAVE_PATH, 'wb'))
             
         new_data[book] = new_chunks
-        pickle.dump(new_data, open(path, 'wb'))
+        pickle.dump(new_data, open(SAVE_PATH, 'wb'))
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--input_path", type=str, help="path to the pickle file containing the chunked data")
+    parser.add_argument("--save_path", type=str, help="path to the pickle file to save the data")
+    parser.add_argument("--max_context_len", type=int, help="max content length of the model")
+    parser.add_argument("--chunk_size", type=int, default=2048)
+    parser.add_argument("--max_summary_len", type=int, default=900, help="max length of the final summary")
+    args = parser.parse_args()
+
+    INPUT_PATH = args.input_path
+    SAVE_PATH = args.save_path
+    MAX_CONTEXT_LEN = args.max_context_len
+    MAX_SUMMARY_LEN = args.max_summary_len
+    CHUNK_SIZE = args.chunk_size
+    WORD_RATIO = 0.65
+
+    get_summaries()

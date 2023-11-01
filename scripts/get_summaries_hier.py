@@ -7,28 +7,7 @@ import argparse
 import json
 import math
 from collections import defaultdict
-from scripts.utils import get_response, count_tokens
-
-tokenizer = GPT2Tokenizer.from_pretrained('gpt2')
-
-parser = argparse.ArgumentParser()
-parser.add_argument("--input_path", type=str)
-parser.add_argument("--save_path", type=str)
-parser.add_argument("--max_context_len", type=int)
-parser.add_argument("--chunk_size", type=int, default=2048)
-parser.add_argument("--max_summary_len", type=int, default=900)
-args = parser.parse_args()
-
-INPUT_PATH = args.input_path
-SAVE_PATH = args.save_path
-CHUNK_SIZE = args.chunk_size
-MAX_CONTEXT_LEN = args.max_context_len
-MAX_SUMMARY_LEN = args.max_summary_len
-WORD_RATIO = 0.65
-
-init_template = open("prompts/get_summaries_hier/init.txt", "r").read()
-template = open("prompts/get_summaries_hier/merge.txt", "r").read()
-context_template = open("prompts/get_summaries_hier/merge_context.txt", "r").read()
+from utils import obtain_response, count_tokens
 
 
 def check_summary_validity(summary, token_limit):
@@ -51,13 +30,13 @@ def summarize(texts, token_limit, level):
         if len(context) > 0 and level > 0:
             prompt = context_template.format(context, text, word_limit)
     print(f"PROMPT:\n\n---\n\n{prompt}\n\n---\n\n")
-    response = get_response(prompt).strip()
+    response = obtain_response(prompt, max_tokens=token_limit, temperature=0.5)
     print(f"SUMMARY:\n\n---\n\n{response}\n\n---\n\n")
 
     while len(response) == 0:
         print("Empty summary, retrying in 10 seconds...")
         time.sleep(10)
-        response = get_response(prompt).strip()
+        response = obtain_response(prompt, max_tokens=token_limit, temperature=0.5)
         print(f"SUMMARY:\n\n---\n\n{response}\n\n---\n\n")
 
     attempts = 0
@@ -73,7 +52,7 @@ def summarize(texts, token_limit, level):
             print("Failed to generate valid summary after 6 attempts, skipping")
             return response
         print("Invalid summary, retrying...")
-        response = get_response(prompt).strip()
+        response = obtain_response(prompt, max_tokens=token_limit, temperature=1)
         print(f"SUMMARY:\n\n---\n\n{response}\n\n---\n\n")
         attempts += 1
     return response
@@ -225,4 +204,26 @@ def get_hierarchical_summaries():
             json.dump(summaries, f)
 
 
-get_hierarchical_summaries()
+if __name__ == "__main__":
+    tokenizer = GPT2Tokenizer.from_pretrained('gpt2')
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--input_path", type=str, help="path to the pickle file containing the chunked data")
+    parser.add_argument("--save_path", type=str, help="path to the pickle file to save the data")
+    parser.add_argument("--max_context_len", type=int, help="max content length of the model")
+    parser.add_argument("--chunk_size", type=int, default=2048)
+    parser.add_argument("--max_summary_len", type=int, default=900, help="max length of the final summary")
+    args = parser.parse_args()
+
+    INPUT_PATH = args.input_path
+    SAVE_PATH = args.save_path
+    CHUNK_SIZE = args.chunk_size
+    MAX_CONTEXT_LEN = args.max_context_len
+    MAX_SUMMARY_LEN = args.max_summary_len
+    WORD_RATIO = 0.65
+
+    init_template = open("prompts/get_summaries_hier/init.txt", "r").read()
+    template = open("prompts/get_summaries_hier/merge.txt", "r").read()
+    context_template = open("prompts/get_summaries_hier/merge_context.txt", "r").read()
+
+    get_hierarchical_summaries()

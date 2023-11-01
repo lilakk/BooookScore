@@ -5,18 +5,6 @@ from transformers import GPT2Tokenizer
 import tqdm
 import argparse
 
-tokenizer = GPT2Tokenizer.from_pretrained('gpt2')
-
-parser = argparse.ArgumentParser()
-parser.add_argument("--chunk_size", type=int, default=2048)
-parser.add_argument("--input_path", type=str, default="data/all_books.pkl")
-args = parser.parse_args()
-
-CHUNK_SIZE = args.chunk_size
-INPUT_PATH = args.input_path
-
-save_path = f"data/all_books_chunked_{CHUNK_SIZE}.pkl"
-
 
 def find_puncutations(text, comma=False):
     if comma:
@@ -110,5 +98,16 @@ def process_books(path, chunk_size):
     return new_data
 
 
-path = f'data/all_books_chunked_{CHUNK_SIZE}.pkl'
-process_books(path, CHUNK_SIZE)
+if __name__ == "__main__":
+    tokenizer = GPT2Tokenizer.from_pretrained('gpt2')
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--chunk_size", type=int, default=2048)
+    parser.add_argument("--input_path", type=str, default="/work/pi_miyyer_umass_edu/yapeichang/books/text/all_books.pkl")
+    args = parser.parse_args()
+
+    CHUNK_SIZE = args.chunk_size
+    INPUT_PATH = args.input_path
+
+    save_path = f"data/all_books_chunked_{CHUNK_SIZE}.pkl"  # change this as you like
+    process_books(save_path, CHUNK_SIZE)

@@ -12,7 +12,7 @@ def count_tokens(text):
 
 
 def get_response(prompt: str, max_tokens = 0, temperature = 0.1, top_p = 1, n = 1, logprobs = 1, stop = None, echo = False):
-    response = openai.ChatCompletion.create(model="gpt-4",
+    response = openai.ChatCompletion.create(model="gpt-4",  # NOTE: change this as you need
                                         messages=[
                                             {"role": "user", "content": prompt}
                                         ],
@@ -21,7 +21,7 @@ def get_response(prompt: str, max_tokens = 0, temperature = 0.1, top_p = 1, n = 
     return response
 
 
-def obtain_response(prompt: str, max_tokens = 0, temperature = 0.5, echo = False):
+def obtain_response(prompt: str, max_tokens: int, temperature: float, echo = False):
     response = None
     num_attemps = 0
     while response is None:
