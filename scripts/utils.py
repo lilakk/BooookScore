@@ -33,7 +33,7 @@ def obtain_response(
     prompt: str,
     max_tokens: int = 1024,
     temperature: float = 0.1,
-    model_name: str = "gpt-4-turbo-preview",
+    model_name: str = "gpt-4",
     echo: bool = False
 ):
     response = None
