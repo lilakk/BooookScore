@@ -13,7 +13,7 @@ from collections import defaultdict
 
 from scripts.utils import obtain_response
 
-DEFAULT_CACHE_DIR = "gpt4_annotations"
+DEFAULT_CACHE_DIR = "gpt4_annotations/v2"
 DEFAULT_MODEL_NAME = "gpt-4-turbo-preview"
 DEFAULT_TEMPLATE_PATH = "prompts/get_gpt4_annotations_v2.txt"
 DEFAULT_BATCH_SIZE = 10
