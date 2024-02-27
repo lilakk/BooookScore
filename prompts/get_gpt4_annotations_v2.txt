@@ -1,4 +1,4 @@
-Given a book summary and a sentence from that summary, determine if that sentence causes any confusion. Types of confusion include the following:
+Given a book summary and sentences from that summary, determine if those sentences cause any confusion. Types of confusion include the following:
 
 - Entity omission: an entity, real or abstract (person, object, place, concept, etc.) is mentioned, but key details are missing or unclear
 - Event omission: an event is mentioned, but key details are missing or unclear
@@ -14,9 +14,9 @@ For something to qualify as a confusion, it must meet these two conditions:
 1. Without resolving the confusion, readers would struggle substantially to grasp the main narrative, or the summary would appear incoherent.
 2. The confusion can't be resolved solely using the information provided in the summary.
 
-If the given sentence involves confusion that meets these two qualifications, ask relevant clarifying questions and provide the confusion types. There can be multiple questions, and keep in mind that a sentence may involve multiple types of confusion. If the given sentence doesn't involve any confusion, simply say "no confusion". Some examples are provided below, followed by the summary and sentence that you need to annotate.
+If the given sentences involve confusion that meets these two qualifications, ask relevant clarifying questions and provide the confusion types. There can be multiple questions, and keep in mind that a sentence may involve multiple types of confusion. If the given sentences do not involve any confusion, simply put null as questions and types. Some examples are provided below, followed by the summary and sentences that you need to annotate.
 
-Answer in JSON list as in example below.
+Answer with a JSON list as in examples below.
 
 ---
 
@@ -361,4 +361,4 @@ Proctor's life continues as he navigates the challenges of his new role as an ac
 {sentences}
 
 
-[Your responses] Determine if it the sentences above involve confusion that can't be clarified using information from any part of the given summary, and those which, if left unresolved, would make the summary highly incoherent or significantly hinder readers from understanding the main storyline. If you don't identify any confusion like that, simply say place null for both questions and types in your response.
+[Your responses] Determine if the sentences above involve confusion that can't be clarified using information from any part of the given summary, and those which, if left unresolved, would make the summary highly incoherent or significantly hinder readers from understanding the main storyline. If you don't identify any confusion like that, simply say place null for both questions and types in your response.
