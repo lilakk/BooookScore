@@ -1,0 +1,364 @@
+Given a book summary and sentences from that summary, determine if those sentences cause any confusion. Types of confusion include the following:
+
+- Entity omission: an entity, real or abstract (person, object, place, concept, etc.) is mentioned, but key details are missing or unclear
+- Event omission: an event is mentioned, but key details are missing or unclear
+- Causal omission: the reason or motivation for something is missing or unclear
+- Salience: inclusion of trivial details that do not contribute to the main storyline
+- Discontinuity: an interruption in the flow of the narrative, including but not restricted to: sudden jumps between perspectives, time periods, or settings; poor transition between sentences or paragraphs; sentences or paragraphs that seem out of place; illogical sentence order or summary structure
+- Duplication: redundant repetition of similar information
+- Inconsistency: two parts of the summary contain contradicting information
+- Language: grammar issues; confusing wording or phrasing; etc.
+
+For something to qualify as a confusion, it must meet these two conditions:
+
+1. Without resolving the confusion, readers would struggle substantially to grasp the main narrative, or the summary would appear incoherent.
+2. The confusion can't be resolved solely using the information provided in the summary.
+
+If the given sentences involve confusion that meets these two qualifications, ask relevant clarifying questions and provide the confusion types. There can be multiple questions, and keep in mind that a sentence may involve multiple types of confusion. If the given sentences do not involve any confusion, simply put null as questions and types. Some examples are provided below, followed by the summary and sentences that you need to annotate.
+
+Answer with a JSON list as in examples below.
+
+---
+
+[Example summary 1]
+
+In the small town of Elm Avenue, teenage twins Aida and Salma are inseparable. When Aida mysteriously disappears, Salma recounts their childhood and the search for her sister begins. Sightings of Aida surface, but each time, witnesses mistake Salma for her missing twin. As the search continues, their parents' strained relationship is revealed, as well as Aida's secret relationship with a boy named Marlon. Despite their mother's obsession with Marlon as a suspect, he is cleared when numerous sightings of Aida appear across the country. A hiker eventually discovers Aida's boots, which leads to the sad conclusion that Aida has died. The family holds a private funeral for her, and the story explores the emotional impact of her disappearance and death.
+
+Meanwhile, the focus shifts to a new character, Fausto, and his relationship with Paz, as they navigate life in a hurricane-ravaged Miami neighborhood. Fausto and Paz become involved in illegal activities, running drugs for a man named Anibal. Fausto convinces Paz to continue their dangerous lifestyle with the promise of a better future together. Tensions rise as their actions put them at odds with Paz's father, Silvio, and Fausto's family. The story also introduces a character named Padre Miguelangel, who becomes involved in the couple's drug-running activities by accepting their dirty money for the church. As Fausto's criminal life catches up to him, he flees to Colombia, leaving Paz behind with the drug money and a heavy heart.
+
+In Colombia, Fausto meets a woman through a matchmaking agency, and they begin a relationship that leads to marriage. The woman moves to the United States with Fausto, where they face challenges in their relationship, including cultural misunderstandings and her longing for her family and life back in Colombia. Fausto's secretive nature and their desire to have a baby put additional strain on their marriage.
+
+The story then shifts to a new setting in Havana, Cuba, where a young man named Vladi navigates his relationships with two women, Natasha and Lily. Vladi aspires to be a writer but struggles with writer's block. Natasha's mother receives an offer from the government to buy their property, and she decides to use the money to send Natasha and Vladi to the United States. The couple must now confront their feelings for each other and the challenges of leaving their home country. Through it all, their love for their daughter keeps the couple together, even as they face their individual struggles and conflicts. As Vladi's relationship with both Natasha and Lily deepens, he questions his feelings for each of them, leading to a complicated love triangle. As their departure to the United States nears, Vladi wrestles with the decision of whether to be open about his feelings for Lily or to commit to Natasha. This decision becomes all the more difficult as Vladi considers the sacrifices he and Natasha will have to make to start their new life together in the United States.
+
+The story follows a woman named Indiana, who works in a factory and reminisces about her past life and relationships. Indiana shares an apartment with Soraya and has a crush on her coworker, Edgar. The factory workers are excited about the upcoming Christmas party, with Indiana planning to wear a stunning dress. The story explores Indiana's longing for love and her connection with Edgar as they grow closer and share their hopes and dreams. However, tragedy strikes when a van driven by Rusty pins Indiana against the factory wall, severely injuring her legs and pelvis. As she recovers, the story explores the emotional and physical pain she endures and how her relationships with those around her change as a result of the accident.
+
+The story goes to Havana, Cuba, and follows a taxi driver named Margarito "Mago" who feels unappreciated by his partner, Florencia. Their relationship is strained due to Florencia's vanity and her constant belittling of Mago. One day, Mago picks up a group of young girls who discuss their experiences with foreign men. He wonders if Florencia might have had similar experiences. Mago eventually meets a mysterious woman whom he'd encountered before, and they develop a connection as they both visit the San Lazaro church and hospital. Mago visits his father, who suffers from leprosy and memory loss, and reflects on his family history, relationships, and personal struggles. The story delves into Mago's feelings of loneliness and his search for connection while navigating the complexities of his relationships and the world around him.
+
+In New York City, a woman named Sara meets a man named Juan after her therapy session, and they bond over their shared Colombian heritage and the similarities between the rain in New York and Colombia. They share a brief encounter in a coffee shop, discussing their lives and experiences, highlighting their desire for connection. The story concludes with Sara reflecting on her encounter with Juan and her journey for connection, love, and healing. Over time, Juan reveals his dark past in Colombia, including his kidnapping, which left him deeply scarred. While listening to Juan's harrowing ordeals, Sara finds herself relating to his pain, having experienced her own trauma. Throughout their time together, Sara and Juan explore their pasts, finding a unique bond and sense of comfort in each other's company, as the story moves through its diverse and interconnected characters and settings.
+
+
+[Example sentences]
+1. In the small town of Elm Avenue, teenage twins Aida and Salma are inseparable.
+2. When Aida mysteriously disappears, Salma recounts their childhood and the search for her sister begins.
+3. Meanwhile, the focus shifts to a new character, Fausto, and his relationship with Paz, as they navigate life in a hurricane-ravaged Miami neighborhood.
+4. Fausto and Paz become involved in illegal activities, running drugs for a man named Anibal.
+5. The story also introduces a character named Padre Miguelangel, who becomes involved in the couple's drug-running activities by accepting their dirty money for the church.
+6. In Colombia, Fausto meets a woman through a matchmaking agency, and they begin a relationship that leads to marriage.
+7. Through it all, their love for their daughter keeps the couple together, even as they face their individual struggles and conflicts.
+8. As Vladi's relationship with both Natasha and Lily deepens, he questions his feelings for each of them, leading to a complicated love triangle.
+9. However, tragedy strikes when a van driven by Rusty pins Indiana against the factory wall, severely injuring her legs and pelvis.
+10. The story concludes with Sara reflecting on her encounter with Juan and her journey for connection, love, and healing.
+11. Over time, Juan reveals his dark past in Colombia, including his kidnapping, which left him deeply scarred.
+12. The woman moves to the United States with Fausto, where they face challenges in their relationship, including cultural misunderstandings and her longing for her family and life back in Colombia.
+13. They share a brief encounter in a coffee shop, discussing their lives and experiences, highlighting their desire for connection.
+
+[Example responses 1]
+[
+    {{
+        "sentence_num": 1,
+        "sentence": "In the small town of Elm Avenue, teenage twins Aida and Salma are inseparable.",
+        "questions": null,
+        "types": null
+    }},
+    {{
+        "sentence_num": 2,
+        "sentence": "When Aida mysteriously disappears, Salma recounts their childhood and the search for her sister begins.",
+        "questions": null,
+        "types": null
+    }},
+    {{
+        "sentence_num": 3,
+        "sentence": "Meanwhile, the focus shifts to a new character, Fausto, and his relationship with Paz, as they navigate life in a hurricane-ravaged Miami neighborhood.",
+        "questions": "Why are we suddenly switching to a new character? Does Aida have any connections with Fausto?",
+        "types": "discontinuity"
+    }},
+    {{
+        "sentence_num": 4,
+        "sentence": "Fausto and Paz become involved in illegal activities, running drugs for a man named Anibal.",
+        "questions": null,
+        "types": null
+    }},
+    {{
+        "sentence_num": 5,
+        "sentence": "The story also introduces a character named Padre Miguelangel, who becomes involved in the couple's drug-running activities by accepting their dirty money for the church.",
+        "questions": "What is the significance of the Padre character in the story? Why is he included?",
+        "types": "salience"
+    }},
+    {{
+        "sentence_num": 6,
+        "sentence": "In Colombia, Fausto meets a woman through a matchmaking agency, and they begin a relationship that leads to marriage.",
+        "questions": null,
+        "types": null
+    }},
+    {{
+        "sentence_num": 7,
+        "sentence": "Through it all, their love for their daughter keeps the couple together, even as they face their individual struggles and conflicts.",
+        "questions": "Why is the daughter introduced here and not earlier?",
+        "types": "discontinuity"
+    }},
+    {{
+        "sentence_num": 8,
+        "sentence": "As Vladi's relationship with both Natasha and Lily deepens, he questions his feelings for each of them, leading to a complicated love triangle.",
+        "questions": null,
+        "types": null
+    }},
+    {{
+        "sentence_num": 9,
+        "sentence": "However, tragedy strikes when a van driven by Rusty pins Indiana against the factory wall, severely injuring her legs and pelvis.",
+        "questions": "Who is Rusty?",
+        "types": "entity omission"
+    }},
+    {{
+        "sentence_num": 10,
+        "sentence": "The story concludes with Sara reflecting on her encounter with Juan and her journey for connection, love, and healing.",
+        "questions": "Why is the story conclusion in the middle of the paragraph and not at the end?",
+        "types": "discontinuity"
+    }},
+    {{
+        "sentence_num": 11,
+        "sentence": "Over time, Juan reveals his dark past in Colombia, including his kidnapping, which left him deeply scarred.",
+        "questions": null,
+        "types": null
+    }},
+    {{
+        "sentence_num": 12,
+        "sentence": "The woman moves to the United States with Fausto, where they face challenges in their relationship, including cultural misunderstandings and her longing for her family and life back in Colombia.",
+        "questions": "Does the woman have a name? What happens with Paz?",
+        "types": "entity omission, event omission"
+    }},
+    {{
+        "sentence_num": 13,
+        "sentence": "They share a brief encounter in a coffee shop, discussing their lives and experiences, highlighting their desire for connection.",
+        "questions": null,
+        "types": null
+    }}
+]
+
+[Example summary 2]
+
+Proctor Bennett, a ferryman in Prospera, assists people transitioning to new lives upon retirement. Struggling with dreams and discontent, his wife Elise suggests a change in his work. He meets a young girl named Caeli and forms a bond with her. Proctor is assigned the retirement of his estranged father and discovers a boat his father built as a tribute to Proctor's late mother, Cynthia. His father panics and flees, resulting in a chaotic chase on the pier.
+
+Deciding to quit being a ferryman, Proctor teaches Caeli how to swim. Proctor's superior, Amos Cordell, submits an incident report for his father's retirement. A mysterious man introduces Proctor to "Arrivalism." He learns that their old friend Warren, a medic, will join him and Elise for a concert. Uncertain about Warren's intentions, Proctor's future remains unclear.
+
+At the concert, Proctor meets Thea Dimopolous, an intriguing woman, and they flirt. However, he returns to Elise, adding tension to his uncertain future. Proctor discovers that Otto Winspear, from the State Security Service, interrogates his trainee, Jason Kim. Proctor seeks answers from his mother-in-law, Callista, about the investigation. Proctor and Jason visit his father's house, finding Proctor's old empty room and evidence of a recent paint job.
+
+Amos and Nabil West inform Proctor that the watchman he assaulted on the wharf has died, and Proctor is considered responsible. Jason Kim, his trainee, provides evidence against him. Proctor's life becomes more uncertain as he and Thea discover that Caeli seemingly does not exist. He faces consequences as his marriage struggles and his connection to Thea deepens.
+
+During a mission to find Caeli, Proctor is captured by watchmen while Thea escapes. Amidst chaos, Proctor experiences strange dreams and finds himself in a house where he weeps into a dress with a storm raging outside. Thea and an unknown man rescue him, hiding in a cabin where Thea watches over Proctor. He discovers that his health is failing, with a 9% life expectancy. Desperate, Proctor removes the monitor from his body, risking injury. With Thea's help, he survives but remains determined to find Caeli.
+
+Proctor ends up in a facility known as the Nursery. Intent on finding answers, he navigates challenges and deceptions in the Nursery. Aurelia Voss recognizes Proctor, and he finds a map that may unravel the mysteries of the facility.
+
+Rescued by Thea and Stefano, Proctor reunites with his mother, Cynthia, who he thought was dead. She reveals her involvement with the Arrivalist movement and that she faked her death for her work. She explains that Proctor's father also knew and worked with the movement. Proctor confronts his past and relationships while navigating the hidden Annex underground resistance network. He confronts Otto, learning that Elise is on her way to an "exciting new life" with Warren.
+
+During a car chase, Proctor's life is turned upside down. His search for Caeli leads him to Elise, who is experiencing strange dreams. Proctor and Thea believe Elise's dreams are the key to finding Caeli, setting out to uncover the truth. They must confront the true nature of their world as Proctor finds himself in a war, determined to reach Elise, who is caught in the chaos.
+
+Proctor is shot multiple times by Otto, who takes Elise hostage. As he lies dying, he hears Cynthia shoot at Otto. Proctor clings to hope, believing that he has found Caeli when Elise calls out her name. As the dream world dissolves, Cynthia comforts Proctor, accepting his fate.
+
+As the colonists prepare to leave, Proctor decides to stay behind and care for the remaining investors in stasis. Despite protests, he remains determined to fulfill his duty. In a farewell, Proctor marries his brother Malcolm to Cynthia and says goodbye to his loved ones. As the boat departs, Proctor is alone with his uncertain future.
+
+In the new settlement, Thea adjusts to her life, working hard and finding solace in nature. She meets Pappi, a fellow colonist, and they discuss their experiences and the mysteries of the planet. The colonists find purpose in their new lives on the alien world. Proctor, now an academy director, deals with students and school issues, seeking help from Callista to fund a roof replacement.
+
+Proctor returns home and finds Elise working in her backyard studio. They discuss their daughter's whereabouts and their plans for the evening. They prepare to celebrate their daughter Caeli's eighth birthday, enjoying dinner, cake, and presents before going sailing at Caeli's request. They return home, and Proctor tucks Caeli in, reminiscing about the day and wishing her a happy birthday.
+
+Proctor's life continues as he navigates the challenges of his new role as an academy director. He deals with school issues, such as funding for a roof replacement, and seeks help from his mother-in-law, Callista. Meanwhile, Proctor and Elise continue to search for their daughter Caeli, whose existence remains uncertain. They celebrate her eighth birthday, spending time together as a family and going sailing at Caeli's request. As Proctor tucks Caeli in, he reflects on the day and the challenges he has faced, wishing her a happy birthday and embracing the uncertainty of his future.
+
+
+[Example sentences 2]
+1. Proctor Bennett, a ferryman in Prospera, assists people transitioning to new lives upon retirement.
+2. Struggling with dreams and discontent, his wife Elise suggests a change in his work.
+3. Deciding to quit being a ferryman, Proctor teaches Caeli how to swim.
+4. A mysterious man introduces Proctor to "Arrivalism."
+5. Uncertain about Warren's intentions, Proctor's future remains unclear.
+6. At the concert, Proctor meets Thea Dimopolous, an intriguing woman, and they flirt.
+7. Amos and Nabil West inform Proctor that the watchman he assaulted on the wharf has died, and Proctor is considered responsible.
+8. Jason Kim, his trainee, provides evidence against him.
+9. Proctor's life becomes more uncertain as he and Thea discover that Caeli seemingly does not exist.
+10. He faces consequences as his marriage struggles and his connection to Thea deepens.
+11. During a mission to find Caeli, Proctor is captured by watchmen while Thea escapes.
+12. Thea and an unknown man rescue him, hiding in a cabin where Thea watches over Proctor.
+13. Desperate, Proctor removes the monitor from his body, risking injury.
+14. With Thea's help, he survives but remains determined to find Caeli.
+15. She reveals her involvement with the Arrivalist movement and that she faked her death for her work.
+16. She explains that Proctor's father also knew and worked with the movement.
+17. During a car chase, Proctor's life is turned upside down.
+18. His search for Caeli leads him to Elise, who is experiencing strange dreams.
+19. Proctor and Thea believe Elise's dreams are the key to finding Caeli, setting out to uncover the truth.
+20. As the dream world dissolves, Cynthia comforts Proctor, accepting his fate.
+21. In a farewell, Proctor marries his brother Malcolm to Cynthia and says goodbye to his loved ones.
+22. They discuss their daughter's whereabouts and their plans for the evening.
+23. They prepare to celebrate their daughter Caeli's eighth birthday, enjoying dinner, cake, and presents before going sailing at Caeli's request.
+24. As the boat departs, Proctor is alone with his uncertain future.
+25. He deals with school issues, such as funding for a roof replacement, and seeks help from his mother-in-law, Callista.
+26. They prepare to celebrate their daughter Caeli's eighth birthday, enjoying dinner, cake, and presents before going sailing at Caeli's request.
+
+[Example responses 2]
+[
+    {{
+        "sentence_num": 1,
+        "sentence": "Proctor Bennett, a ferryman in Prospera, assists people transitioning to new lives upon retirement.",
+        "questions": "Where or what is Prospera?",
+        "types": "entity omission"
+    }},
+    {{
+        "sentence_num": 2,
+        "sentence": "Struggling with dreams and discontent, his wife Elise suggests a change in his work.",
+        "questions": null,
+        "types": null
+    }},
+    {{
+        "sentence_num": 3,
+        "sentence": "Deciding to quit being a ferryman, Proctor teaches Caeli how to swim.",
+        "questions": "How does quitting being a ferryman relate to teaching a girl how to swim?",
+        "types": "discontinuity, causal omission"
+    }},
+    {{
+        "sentence_num": 4,
+        "sentence": "A mysterious man introduces Proctor to 'Arrivalism.'",
+        "questions": "Who is this mysterious man? What is Arrivalism? Why is this detail included?",
+        "types": "entity omission, salience"
+    }},
+    {{
+        "sentence_num": 5,
+        "sentence": "Uncertain about Warren's intentions, Proctor's future remains unclear.",
+        "questions": null,
+        "types": null
+    }},
+    {{
+        "sentence_num": 6,
+        "sentence": "At the concert, Proctor meets Thea Dimopolous, an intriguing woman, and they flirt.",
+        "questions": null,
+        "types": null
+    }},
+    {{
+        "sentence_num": 7,
+        "sentence": "Amos and Nabil West inform Proctor that the watchman he assaulted on the wharf has died, and Proctor is considered responsible.",
+        "questions": "Who is Nabil West? When did Proctor assault a watchman?",
+        "types": "entity omission, event omission"
+    }},
+    {{
+        "sentence_num": 8,
+        "sentence": "Jason Kim, his trainee, provides evidence against him.",
+        "questions": null,
+        "types": null
+    }},
+    {{
+        "sentence_num": 9,
+        "sentence": "Proctor's life becomes more uncertain as he and Thea discover that Caeli seemingly does not exist.",
+        "questions": "Why is Thea back in the picture? Didn't Proctor return to Elise? How is it that Caeli seems to not exist?",
+        "types": "discontinuity, inconsistency, entity omission"
+    }},
+    {{
+        "sentence_num": 10,
+        "sentence": "He faces consequences as his marriage struggles and his connection to Thea deepens.",
+        "questions": "What type of consequences?",
+        "types": "entity omission"
+    }},
+    {{
+        "sentence_num": 11,
+        "sentence": "During a mission to find Caeli, Proctor is captured by watchmen while Thea escapes.",
+        "questions": "Is Caeli lost? What happened to Caeli?",
+        "types": "entity omission, event omission"
+    }},
+    {{
+        "sentence_num": 12,
+        "sentence": "Thea and an unknown man rescue him, hiding in a cabin where Thea watches over Proctor.",
+        "questions": null,
+        "types": null
+    }},
+    {{
+        "sentence_num": 13,
+        "sentence": "Desperate, Proctor removes the monitor from his body, risking injury.",
+        "questions": "What monitor? Why does he have a monitor?",
+        "types": "entity omission, causal omission"
+    }},
+    {{
+        "sentence_num": 14,
+        "sentence": "With Thea's help, he survives but remains determined to find Caeli.",
+        "questions": null,
+        "types": null
+    }},
+    {{
+        "sentence_num": 15,
+        "sentence": "She reveals her involvement with the Arrivalist movement and that she faked her death for her work.",
+        "questions": "What is the Arrivalist movement?",
+        "types": "entity omission"
+    }},
+    {{
+        "sentence_num": 16,
+        "sentence": "She explains that Proctor's father also knew and worked with the movement.",
+        "questions": null,
+        "types": null
+    }},
+    {{
+        "sentence_num": 17,
+        "sentence": "During a car chase, Proctor's life is turned upside down.",
+        "questions": "Why is there a car chase? Who is chasing who?",
+        "types": "event omission, causal omission, discontinuity"
+    }},
+    {{
+        "sentence_num": 18,
+        "sentence": "His search for Caeli leads him to Elise, who is experiencing strange dreams.",
+        "questions": null,
+        "types": null
+    }},
+    {{
+        "sentence_num": 19,
+        "sentence": "Proctor and Thea believe Elise's dreams are the key to finding Caeli, setting out to uncover the truth.",
+        "questions": null,
+        "types": null
+    }},
+    {{
+        "sentence_num": 20,
+        "sentence": "As the dream world dissolves, Cynthia comforts Proctor, accepting his fate.",
+        "questions": "When does the dream world begin? What is a dream and what is real? What is Proctor's fate?",
+        "types": "discontinuity, entity omission"
+    }},
+    {{
+        "sentence_num": 21,
+        "sentence": "In a farewell, Proctor marries his brother Malcolm to Cynthia and says goodbye to his loved ones.",
+        "questions": "If Cynthia is his mother and Malcolm is his brother, how can a mother and son marry? With what authority does Proctor marry these two?",
+        "types": "inconsistency, event omission"
+    }},
+    {{
+        "sentence_num": 22,
+        "sentence": "They discuss their daughter's whereabouts and their plans for the evening.",
+        "questions": null,
+        "types": null
+    }},
+    {{
+        "sentence_num": 23,
+        "sentence": "They prepare to celebrate their daughter Caeli's eighth birthday, enjoying dinner, cake, and presents before going sailing at Caeli's request.",
+        "questions": "Is Caeli the daughter of Elise and Proctor or a young girl that Proctor meets?",
+        "types": "entity omission, inconsistency"
+    }},
+    {{
+        "sentence_num": 24,
+        "sentence": "As the boat departs, Proctor is alone with his uncertain future.",
+        "questions": "Is Proctor's future uncertain or does how have a position as an academy director?",
+        "types": "inconsistency, entity omission"
+    }},
+    {{
+        "sentence_num": 25,
+        "sentence": "He deals with school issues, such as funding for a roof replacement, and seeks help from his mother-in-law, Callista.",
+        "questions": "Why is the same information repeated in the summary?",
+        "types": "duplication"
+    }},
+    {{
+        "sentence_num": 26,
+        "sentence": "They prepare to celebrate their daughter Caeli's eighth birthday, enjoying dinner, cake, and presents before going sailing at Caeli's request.",
+        "questions": "Does Caeli exist or not?",
+        "types": "entity omission, inconsistency"
+    }}
+]
+
+---
+
+[Your summary]
+{summary}
+
+
+[Your sentences]
+{sentences}
+
+
+[Your responses] Determine if the sentences above involve confusion that can't be clarified using information from any part of the given summary, and those which, if left unresolved, would make the summary highly incoherent or significantly hinder readers from understanding the main storyline. If you don't identify any confusion like that, simply say place null for both questions and types in your response.
