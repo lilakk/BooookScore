@@ -61,7 +61,6 @@ def create_callback(book, cache, cache_path, lock):
             for answer in result:
                 sentence = answer.pop("sentence")
                 cache[book][sentence] = answer
-                print(f"Cache updated: {sentence} -> {answer}")
             cache_temp_path = cache_path + ".tmp"
             with open(cache_temp_path, "w") as w:
                 json.dump(cache, w)
@@ -106,8 +105,8 @@ def calc_booookscore_v2(
                 pool.apply_async(calc_instance, args=task, callback=callback)
                 for task in tasks
             ]
-            for result in results:
-                result.get()
+            # Waiting for all results
+            results = [result.get() for result in results]
 
     scores = dict()
     for book, answers in cache.items():
