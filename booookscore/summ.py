@@ -7,13 +7,14 @@ import math
 import tiktoken
 from tqdm import tqdm
 from collections import defaultdict
-from booookscore.utils import OpenAIClient, count_tokens
+from utils import APIClient, count_tokens
 
 
 class Summarizer():
     def __init__(self,
         model,
-        openai_key,
+        api,
+        api_key,
         summ_path,
         method,
         chunk_size,
@@ -21,7 +22,7 @@ class Summarizer():
         max_summary_len,
         word_ratio=0.65
     ):
-        self.client = OpenAIClient(openai_key, model)
+        self.client = APIClient(api, api_key, model)
         self.summ_path = summ_path
         assert method in ['inc', 'hier']
         self.method = method
@@ -199,10 +200,10 @@ class Summarizer():
             summaries[book] = {
                 'summaries_dict': defaultdict(list)
             }
-        final_summary, summaries = self.summarize_book(book, chunks, summaries)
-        summaries[book]['final_summary'] = final_summary
-        with open(self.summ_path, 'w') as f:
-            json.dump(summaries, f)
+            final_summary, summaries = self.summarize_book(book, chunks, summaries)
+            summaries[book]['final_summary'] = final_summary
+            with open(self.summ_path, 'w') as f:
+                json.dump(summaries, f)
 
     def compress(self, response, summary, chunk, summary_len, word_limit, num_chunks, j):
         chunk_trims = 0
@@ -330,7 +331,8 @@ if __name__ == "__main__":
     parser.add_argument("--book_path", type=str, help="path to the file containing the chunked data")
     parser.add_argument("--summ_path", type=str, help="path to the json file to save the data")
     parser.add_argument("--model", type=str, help="summarizer model")
-    parser.add_argument("--openai_key", type=str, help="path to a txt file storing your OpenAI api key")
+    parser.add_argument("--api", type=str, help="api to use", choices=["openai", "anthropic", "together"])
+    parser.add_argument("--api_key", type=str, help="path to a txt file storing your OpenAI api key")
     parser.add_argument("--method", type=str, help="method for summarization", choices=['inc', 'hier'])
     parser.add_argument("--chunk_size", type=int, default=2048)
     parser.add_argument("--max_context_len", type=int, help="max content length of the model")
@@ -339,7 +341,8 @@ if __name__ == "__main__":
 
     summarizer = Summarizer(
         args.model,
-        args.openai_key,
+        args.api,
+        args.api_key,
         args.summ_path,
         args.method,
         args.chunk_size,

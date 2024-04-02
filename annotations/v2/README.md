@@ -1,0 +1,1 @@
+This directory contains some annotations generated using v2 BooookScore with a batch size of 10.

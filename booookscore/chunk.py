@@ -91,7 +91,7 @@ def process_books(books, chunk_size, output_path):
         else:
             chunks = chunk_text(paragraphs, chunk_size)
             len_diff = count_tokens(''.join(paragraphs).replace('\n', '')) - count_tokens(''.join(chunks).replace('\n', ''))
-            assert len_diff < 100, f"Too much data lost: {len_diff}"
+            assert len_diff == 0, f"Information lost: {len_diff}"
             new_data[book] = chunks
         print(f"{book} chunk sizes: {[count_tokens(c) for c in new_data[book]]}")
         pickle.dump(new_data, open(output_path, 'wb'))
@@ -103,9 +103,9 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--chunk_size", type=int, default=2048)
     parser.add_argument("--input_path", type=str)
+    parser.add_argument("--output_path", type=str)
     parser.add_argument("--include_empty_lines", action="store_true")
     args = parser.parse_args()
 
-    output_path = args.input_path.replace(".pkl", f"_chunked_{args.chunk_size}.pkl")
     books = pickle.load(open(args.input_path, 'rb'))
-    process_books(books, args.chunk_size, output_path)
+    process_books(books, args.chunk_size, args.output_path)

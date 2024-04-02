@@ -1,1 +1,1 @@
-This directory contains all GPT-4 annotations for summaries generated under different configurations.
+This directory contains all GPT-4 annotations for summaries generated under different configurations, as well as the human annotations we obtained on GPT-4 summaries generated with a chunk size of 4096.

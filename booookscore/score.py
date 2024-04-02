@@ -12,20 +12,21 @@ from collections import defaultdict
 from typing import List, Any, Dict, Optional
 from multiprocessing.pool import ThreadPool
 from threading import Lock
-from booookscore.utils import OpenAIClient
+from booookscore.utils import APIClient
 
 
 class Scorer():
     def __init__(self,
         model,
-        openai_key,
+        api,
+        api_key,
         summ_path,
         annot_path,
         template_path,
         v2=False,
         batch_size=10
     ):
-        self.client = OpenAIClient(openai_key, model)
+        self.client = APIClient(api, api_key, model)
         self.summ_path = summ_path
         self.annot_path = annot_path
         self.template_path = template_path
@@ -185,10 +186,11 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--summ_path", type=str, help="must set if you don't have annotations yet")
     parser.add_argument("--annot_path", type=str, help="path to save annotations to")
-    parser.add_argument("--openai_key", type=str, help="path to a txt file storing your OpenAI api key")
+    parser.add_argument("--api", type=str, help="api to use", choices=["openai", "anthropic", "together"])
+    parser.add_argument("--api_key", type=str, help="path to a txt file storing your OpenAI api key")
     parser.add_argument("--model", type=str, default="gpt-4", help="evaluator model")
     parser.add_argument("--v2", action="store_true", help="use v2, which batches sentences during annotation (this setup was not used in the paper)")
-    parser.add_argument("--batch_size", type=int, default=10, help="batch size if v2 is used")
+    parser.add_argument("--batch_size", type=int, help="batch size if v2 is used")
     args = parser.parse_args()
 
     if args.v2:
@@ -197,7 +199,8 @@ if __name__ == "__main__":
         template_path = "prompts/get_annotations.txt"
     scorer = Scorer(
         model=args.model,
-        openai_key=args.openai_key,
+        api=args.api,
+        api_key=args.api_key,
         summ_path=args.summ_path,
         annot_path=args.annot_path,
         template_path=template_path,

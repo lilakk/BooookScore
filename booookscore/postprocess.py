@@ -3,17 +3,18 @@ import pickle
 import json
 import argparse
 from tqdm import tqdm
-from booookscore.utils import OpenAIClient, count_tokens
+from booookscore.utils import APIClient, count_tokens
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--input_path", type=str)
-parser.add_argument("--model", type=str, help="model name", default="gpt-4")
-parser.add_argument("--openai_key", type=str, help="openai key")
-parser.add_argument("--remove_artifacts", action="store_true", help="Whether to explicitly as a model to remove artifacts from summaries")
+parser.add_argument("--model", type=str, help="model name")
+parser.add_argument("--api", type=str, help="api to use", choices=["openai", "anthropic", "together"])
+parser.add_argument("--api_key", type=str, help="path to the api key")
+parser.add_argument("--remove_artifacts", action="store_true", help="whether to explicitly as a model to remove artifacts from summaries")
 args = parser.parse_args()
 
 if args.remove_artifacts:
-    client = OpenAIClient(args.openai_key, args.model)
+    client = APIClient(args.api, args.api_key, args.model)
     with open(f"prompts/remove_artifacts.txt", "r") as f:
         template = f.read()
 
