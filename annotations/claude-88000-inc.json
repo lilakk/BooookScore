@@ -1,0 +1,1541 @@
+{
+    "a-day-of-fallen-night.epub": {
+        "Dumai later travels to Sepul and discovers ominous black rocks that disturb Furtia.": {
+            "questions": "What is the significance of the black rocks? Why do they disturb Furtia?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        },
+        "She returns to Seiiki and sounds a bell to wake ancient dragons before seeking help from alchemist Kiprun.": {
+            "questions": "Why does Dumai need to wake ancient dragons? What is the significance of the alchemist Kiprun?",
+            "types": [
+                "causal omission",
+                "entity omission"
+            ]
+        },
+        "Their leader Saghul sends them to investigate and warn allies.": {
+            "questions": "Who are Tunuva and Esbar? What are their roles in the story?",
+            "types": [
+                "entity omission"
+            ]
+        },
+        "When Siyu disappears with her child, Tunuva resolves to find her despite Esbar's disapproval.": {
+            "questions": "Who are Siyu and Tunuva? What is their relationship to each other and the main storyline?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "Tunuva journeys to Inys in search of Wulf, her long lost son.": {
+            "questions": "How did Tunuva find out that Wulf is her long lost son?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        }
+    },
+    "a-fever-in-the-heartland.epub": {
+        "Upset with the rulings, Stephenson's team got Hines removed from the case.": {
+            "questions": "How did Stephenson's team manage to get Hines removed from the case?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "Imperial Wizard Hiram Evans, who had anointed Stephenson years earlier, gave a speech at the local Chautauqua praising Klan values, though privately upset about the scandal.": {
+            "questions": "What is the local Chautauqua? Why is Hiram Evans upset about the scandal?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        }
+    },
+    "a-girl-called-samson.epub": null,
+    "a-heart-that-works.epub": null,
+    "a-history-of-burning.epub": null,
+    "a-house-with-good-bones.epub": null,
+    "a-likely-story.epub": null,
+    "a-living-remedy-a-memoir.epub": null,
+    "age-of-vice.epub": {
+        "Sunny reveals disturbing details - his mother committed suicide when he was 5 and his dangerous uncle Vicky Wadia abused village girls and implicated a young Sunny.": {
+            "questions": "What does it mean that Vicky Wadia implicated a young Sunny in the abuse of village girls? How was Sunny involved?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "Afterwards, a vengeful Gautam drives recklessly and gets into a serious accident, killing some pedestrians.": {
+            "questions": "Why is Gautam vengeful? What led to the fight at the nightclub?",
+            "types": [
+                "causal omission",
+                "event omission"
+            ]
+        },
+        "To protect Gautam, Sunny knocks Ajay unconscious and takes photos falsely framing Gautam.": {
+            "questions": "Why does Sunny knock Ajay unconscious? How does taking photos falsely frame Gautam?",
+            "types": [
+                "causal omission",
+                "event omission"
+            ]
+        },
+        "Later it is revealed Sunny did this to gain approval from his father.": {
+            "questions": "What specific action did Sunny do to gain approval from his father?",
+            "types": [
+                "event omission"
+            ]
+        }
+    },
+    "all-the-dangerous-things.epub": {
+        "After confronting true crime podcaster Waylon Spencer for lying to her while investigating the case and suspecting her involvement, Isabelle expelled him from her home.": {
+            "questions": "What case is Waylon Spencer investigating? What did he lie about?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "With this knowledge, Isabelle confronts Ben in jail after he is charged with the recent murder of his mistress Valerie.": {
+            "questions": "When did Ben murder Valerie? How did Isabelle find out about the murder?",
+            "types": [
+                "event omission",
+                "entity omission"
+            ]
+        },
+        "The story ends with Isabelle learning that a woman named Abigail Fisher, who secretly took Mason, has now been found and arrested.": {
+            "questions": "How did Abigail Fisher become involved in the story? What was her motive for taking Mason?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        }
+    },
+    "ander-and-santi-were-here.epub": null,
+    "atalanta.epub": {
+        "After many mythic trials, they return and Medea takes revenge on Pelias.": {
+            "questions": "What are the mythic trials? How does Medea take revenge on Pelias? Why does she want revenge?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "Enraged, Meleager kills them, prompting his mother Althaea to burn the log that protects his life, killing him.": {
+            "questions": "What is the significance of the log that protects Meleager's life? How did Althaea obtain it?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        },
+        "Devastated, pregnant Atalanta leaves her son Parthenopaios with villagers and returns to isolation.": {
+            "questions": "How did Atalanta become pregnant? Who is the father of her child?",
+            "types": [
+                "event omission",
+                "entity omission"
+            ]
+        },
+        "Suitors must outrace her or die.": {
+            "questions": "Why must suitors outrace her or die? What is the reason for this condition?",
+            "types": [
+                "causal omission"
+            ]
+        }
+    },
+    "black-cake.epub": {
+        "On the day Coventina was forced to marry a notorious gangster named Cecil \"Little Man\" Henry who had been threatening her family, Little Man suddenly died at the wedding reception.": {
+            "questions": "Why was Coventina forced to marry Little Man? How did Little Man die?",
+            "types": [
+                "causal omission",
+                "event omission"
+            ]
+        }
+    },
+    "camp-zero.epub": null,
+    "catfish-rolling.epub": {
+        "Sora forces herself not to look back at the strange spirits that haunt the zone, determined to cover as much ground as possible before night falls.": {
+            "questions": "What are the strange spirits that haunt the zone? Why are they there?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        }
+    },
+    "central-places.epub": {
+        "Kristen makes it clear she is still upset with Audrey.": {
+            "questions": "What was the reason for Kristen and Audrey's falling out in college?",
+            "types": [
+                "event omission"
+            ]
+        },
+        "Audrey is upset and conflicted, wondering if she slept with Kyle as an attempt to prove her feelings to him after all these years.": {
+            "questions": "When did Audrey sleep with Kyle? Was it mentioned in the summary?",
+            "types": [
+                "event omission"
+            ]
+        }
+    },
+    "chain-gang-all-stars.epub": {
+        "Lawrence uses a torture device called the Influencer to condition Hendrix to withstand more injury in the fights.": {
+            "questions": "What is the Influencer? How does it work?",
+            "types": [
+                "entity omission"
+            ]
+        },
+        "A new inmate named Simon J.": {
+            "questions": "What is Simon J.'s last name? What is his role or significance in the story?",
+            "types": [
+                "entity omission"
+            ]
+        }
+    },
+    "city-under-one-roof.epub": {
+        "A gang led by Wolf arrives in Point Mettier seeking something Lovansky had stolen from them.": {
+            "questions": "What did Lovansky steal from the gang? Why is it important to the story?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "Cara lies to investigators to pin Lovansky's murder solely on Wolf, omitting the boys' involvement.": {
+            "questions": "What involvement did the boys have in Lovansky's murder?",
+            "types": [
+                "event omission"
+            ]
+        },
+        "She discovers photos on Lovansky's phone showing her own family, indicating he had sinister connections.": {
+            "questions": "What are the sinister connections? How are they relevant to the story?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        }
+    },
+    "clytemnestra.epub": null,
+    "deep-as-the-sky-red-as-the-sea.epub": {
+        "She reflects on her own unlikely rise to power after Cheng Yat recruited her from the flower boats.": {
+            "questions": "What are the flower boats? How did Cheng Yat recruit her?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        }
+    },
+    "did-you-hear-about-kitty-karr.epub": null,
+    "divine-rivals.epub": {
+        "Iris gets her first look at the battlefield between Enva's forces and the army of the enemy god Dacre.": {
+            "questions": "Who is Enva? Who is Dacre?",
+            "types": [
+                "entity omission"
+            ]
+        }
+    },
+    "drowning.epub": null,
+    "emily-wilde-s-encyclopaedia-of-faeries.epub": {
+        "The faerie woman explains her people are cursed and trapped, including their king.": {
+            "questions": "What is the curse? Why are they trapped? Who cursed them?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "She implies they are prisoners of some greater power.": {
+            "questions": "Who is the greater power? How are they imprisoned?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "Emily uses a magic cloak to produce a doll that is a token of Ari's home.": {
+            "questions": "What is the significance of the doll? How does it relate to Ari's home?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        },
+        "She realizes this can persuade Ari to give his name.": {
+            "questions": "What is the significance of Ari giving his name? How does the doll persuade Ari to give his name?",
+            "types": [
+                "causal omission",
+                "entity omission"
+            ]
+        },
+        "Ari finally gives in and tells them.": {
+            "questions": "What does Ari give in to? What information does he reveal?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "Emily and Wendell come across a mysterious white tree that seems to be a faerie prison for the Hidden king.": {
+            "questions": "How did they find the mysterious white tree? What led them to it?",
+            "types": [
+                "event omission"
+            ]
+        },
+        "Emily frees him by speaking a magic word she had learned.": {
+            "questions": "Where did Emily learn the magic word? What is the magic word?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "But at the last moment, Emily cannot bring herself to poison the king.": {
+            "questions": "When was poisoning the king mentioned or planned?",
+            "types": [
+                "event omission"
+            ]
+        },
+        "Aud adapts quickly, framing the king's enemies instead.": {
+            "questions": "Who are the king's enemies? How does Aud frame them?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        }
+    },
+    "flowerheart.epub": {
+        "The Council proceeds to punish Xavier for his crimes by removing his magical abilities.": {
+            "questions": "What crimes did Xavier commit?",
+            "types": [
+                "event omission"
+            ]
+        }
+    },
+    "ghost-music.epub": {
+        "When Song Yan returns home, she discovers that the mushroom kits she bought have burst open, filling her cabinets with glowing orange mushrooms.": {
+            "questions": "What is the significance of the mushroom kits? Why did she buy them?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        }
+    },
+    "good-night-irene.epub": null,
+    "greek-lessons.epub": {
+        "He confesses trauma from a past violent incident that left him scarred, and his fear of losing his sight.": {
+            "questions": "What was the past violent incident? How is it related to his fear of losing his sight?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        }
+    },
+    "greymist-fair.epub": {
+        "The doctor can't reveal he is the father due to his connection to Death.": {
+            "questions": "Why does the doctor's connection to Death prevent him from revealing that he is Heike's father?",
+            "types": [
+                "causal omission"
+            ]
+        },
+        "Years later when Heike is older, she confronts the doctor with distrust.": {
+            "questions": "Why does Heike distrust the doctor?",
+            "types": [
+                "causal omission"
+            ]
+        },
+        "Meanwhile, Death reveals their anger toward a witch in the village they believe is preventing them from finding companionship.": {
+            "questions": "Who is Death? Why are they seeking companionship?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        },
+        "Distraught, the doctor stays away from the village for some time.": {
+            "questions": "Why is the doctor distraught? What event caused him to stay away from the village?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "When he returns, he learns that two village children, Hans and Katrina, went into the forest seeking the witch.": {
+            "questions": "Why did Hans and Katrina go into the forest seeking the witch? What was their motivation?",
+            "types": [
+                "causal omission"
+            ]
+        },
+        "Katrina was killed by warg beasts that serve Death.": {
+            "questions": "What are warg beasts? Why do they serve Death?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        },
+        "Later, a boy named Hans gains magic and becomes king of the village.": {
+            "questions": "How does Hans gain magic? Why does he become king of the village? What is the significance of this event in the story?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "With help from Heike and others, the magic is reversed.": {
+            "questions": "What magic is being reversed? How does it affect the village?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        }
+    },
+    "gwen-and-art-are-not-in-love.epub": {
+        "Arthur and Gabriel were together when it happened.": {
+            "questions": "What happened when Arthur and Gabriel were together? What is the event being referred to?",
+            "types": [
+                "event omission",
+                "discontinuity"
+            ]
+        },
+        "After the feast, Gwen finds Arthur collapsed and badly beaten outside the castle.": {
+            "questions": "Why was Arthur beaten? Who attacked him?",
+            "types": [
+                "event omission",
+                "entity omission"
+            ]
+        },
+        "Sid took him to Gwen after Arthur went to an inn with a man and was attacked.": {
+            "questions": "Who is Sid? Why was Arthur attacked?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "She tells Gabriel about Arthur's gesture with the letters.": {
+            "questions": "What gesture did Arthur make with the letters? What is the content of the letters?",
+            "types": [
+                "event omission",
+                "entity omission"
+            ]
+        },
+        "She overhears Arthur's father conspiring and realizes he sent Arthur to spy on them.": {
+            "questions": "What is Arthur's father conspiring about? Who is \"them\" that Arthur was sent to spy on?",
+            "types": [
+                "event omission",
+                "entity omission"
+            ]
+        },
+        "Gabriel reads the incriminating letter.": {
+            "questions": "What is the content of the incriminating letter? Who wrote it and who is it about?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        }
+    },
+    "happy-place.epub": {
+        "This hurts Harriet, who misses her and Wyn's life back in New York.": {
+            "questions": "Did Harriet and Wyn live in New York or San Francisco before visiting Indiana?",
+            "types": [
+                "inconsistency"
+            ]
+        }
+    },
+    "heart-of-the-sun-warrior.epub": {
+        "She reunites with her mother Chang'e on the moon and helps free the four dragons who were forced to take mortal form as rivers on earth.": {
+            "questions": "How does Xingyin reunite with her mother on the moon? Why were the four dragons forced to take mortal form as rivers on earth?",
+            "types": [
+                "event omission",
+                "entity omission"
+            ]
+        },
+        "She gives him the stolen Elixir of Immortality to restore his lost powers.": {
+            "questions": "Where did Xingyin steal the Elixir of Immortality from? Why did Houyi lose his powers?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "However, the elixir tries to pull Houyi to the Celestial Emperor so Xingyin has to suppress it with her magic.": {
+            "questions": "Why does the elixir try to pull Houyi to the Celestial Emperor? How does Xingyin suppress it with her magic?",
+            "types": [
+                "causal omission",
+                "event omission"
+            ]
+        }
+    },
+    "homecoming.epub": {
+        "Becky saw Kurt afterward looking upset.": {
+            "questions": "Why was Kurt upset? What happened during the phone call between Kurt and Matilda?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "Police later became interested in this call between Kurt and Matilda.": {
+            "questions": "Why did the police become interested in the call between Kurt and Matilda? What was the significance of this call?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "He went back to the police and amended his statement.": {
+            "questions": "What was the original statement? What did he change it to?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "He wondered whether Becky Baker had been right when she accused Nora of taking the baby.": {
+            "questions": "When did Becky Baker accuse Nora of taking the baby?",
+            "types": [
+                "event omission"
+            ]
+        }
+    },
+    "honeybees-and-distant-thunder.epub": {
+        "Meanwhile, Jennifer Chan, a talented Juilliard pianist, tries to undermine Aya by implying she's using Masaru.": {
+            "questions": "How is Jennifer implying that Aya is using Masaru? What does she mean by \"using\" him?",
+            "types": [
+                "causal omission",
+                "entity omission"
+            ]
+        }
+    },
+    "how-to-turn-into-a-bird.epub": {
+        "At a housing complex event for Children's Day, they forbid the homeless kids from participating.": {
+            "questions": "Who are \"they\" in this sentence?",
+            "types": [
+                "entity omission"
+            ]
+        }
+    },
+    "i-have-some-questions-for-you.epub": {
+        "After getting criticism online for defending her ex-husband against an artist's accusations and being broken up with by her current boyfriend Yahav, a distressed Bodie goes to the ravine on campus.": {
+            "questions": "What are the artist's accusations against Bodie's ex-husband? How is this related to the main storyline?",
+            "types": [
+                "entity omission",
+                "salience"
+            ]
+        }
+    },
+    "i-want-to-die-but-i-want-to-eat-tteokbokki.epub": null,
+    "in-the-lives-of-puppets.epub": {
+        "The Coachman reveals he formed the museum out of curiosity about humans after his mind was \"opened.\"": {
+            "questions": "What does it mean for the Coachman's mind to be \"opened\"? How did it happen?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "Soon after, Authority agents including a HARP arrive at the house.": {
+            "questions": "What is a HARP?",
+            "types": [
+                "entity omission"
+            ]
+        },
+        "They encounter strange robots along the way.": {
+            "questions": "What kind of strange robots do they encounter? How do these encounters affect their journey?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "The Blue Fairy, a winged machine, questions Victor's motives before agreeing to help in exchange for a secret task.": {
+            "questions": "What is the secret task that the Blue Fairy asks Victor to do?",
+            "types": [
+                "entity omission"
+            ]
+        },
+        "Hap disguises himself as a HARP again to sneak the group into the Benevolent Tower where Giovanni is held.": {
+            "questions": "What is a HARP? How does Hap disguise himself as one?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        }
+    },
+    "into-the-light.epub": {
+        "During a failed \"reconciliation\" ceremony meant to rid Manny of his doubts, he was split into two versions of himself - the Sullivans chose the more devout version and disposed of the original Manny.": {
+            "questions": "How was Manny split into two versions of himself? What does it mean that the Sullivans \"disposed\" of the original Manny?",
+            "types": [
+                "event omission",
+                "entity omission"
+            ]
+        },
+        "However, he recognizes the deceased's sketches as himself.": {
+            "questions": "How did the deceased have sketches of Manny? What is the connection between the deceased and Manny?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "This triggers lost memories of the reconciliation ceremony, making Manny realize he was split in two and the Sullivans disposed of him.": {
+            "questions": "How was Manny split into two? What happened to the other version of Manny?",
+            "types": [
+                "event omission",
+                "entity omission"
+            ]
+        }
+    },
+    "isha-unscripted.epub": {
+        "After a bar fight, Isha flees into an alley where she's attacked by a scary clown.": {
+            "questions": "Why is there a scary clown attacking Isha? What is the relevance of the clown to the story?",
+            "types": [
+                "entity omission",
+                "salience"
+            ]
+        }
+    },
+    "jana-goes-wild.epub": null,
+    "lady-tan-s-circle-of-women.epub": {
+        "Yunxian agrees to diagnose and treat her from afar.": {
+            "questions": "How will Yunxian diagnose and treat the sister-in-law from afar? What methods will she use?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        }
+    },
+    "lies-we-sing-to-the-sea.epub": {
+        "Melantho has been cursed to live on the island Pandou waiting for the twelfth chosen girl to help break the curse.": {
+            "questions": "What is the curse on Melantho? How did she get cursed?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        }
+    },
+    "lone-women.epub": {
+        "They tell Adelaide that Elizabeth went further up the mountain and give her a mysterious drink to aid her.": {
+            "questions": "What is the purpose of the mysterious drink? How does it aid Adelaide?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        },
+        "Adelaide reaches the mouth of a cave where the now enormous Elizabeth awaits.": {
+            "questions": "How did Elizabeth become enormous? What caused this change?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "After the massacre, Adelaide, Bertie, Fiona, newcomer Grace, and young Joab, an accomplice of the Reeds, regroup.": {
+            "questions": "Who is newcomer Grace? When was she introduced in the story?",
+            "types": [
+                "entity omission",
+                "discontinuity"
+            ]
+        }
+    },
+    "lunar-love.epub": {
+        "After a second date on Bennett's boat, they agree to call off a bet about whose matchmaking method is better.": {
+            "questions": "What was the bet about? What were the stakes?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "At a Halloween party, Olivia overhears Bennett declare they are in love, violating their agreement.": {
+            "questions": "What was their agreement?",
+            "types": [
+                "event omission"
+            ]
+        }
+    },
+    "maame.epub": {
+        "She tells him she loves him.": {
+            "questions": "Who is she telling that she loves him? Is it her father?",
+            "types": [
+                "entity omission"
+            ]
+        }
+    },
+    "meet-me-at-the-lake.epub": {
+        "Her best friend Whitney stopped speaking to her.": {
+            "questions": "Why did Whitney stop speaking to Fern?",
+            "types": [
+                "event omission"
+            ]
+        },
+        "However, Will's sister convinces Fern to give him another chance.": {
+            "questions": "Who is Will's sister? What role does she play in the story?",
+            "types": [
+                "entity omission"
+            ]
+        }
+    },
+    "natural-beauty.epub": {
+        "The main character also starts a side job doing \"natural, organic sex work\" at a place called Apothecare run by Saje.": {
+            "questions": "What is \"natural, organic sex work\"? Why does the main character start this side job?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        },
+        "She is given supplements and products by Holistik that start drastically changing her physical appearance.": {
+            "questions": "What kind of changes are happening to her physical appearance? Why are these changes happening?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        },
+        "At her day job, the main character witnesses strange things involving experiments on animals.": {
+            "questions": "What kind of experiments on animals? How is this related to the main storyline?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "Lilith shows her documents suggesting something disturbing involving the company and young women.": {
+            "questions": "What kind of documents are these? What is the disturbing information involving the company and young women?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "Around this time, the main character's parents, who had been in a car accident years earlier, suddenly decline in health.": {
+            "questions": "Why is the car accident mentioned? Is it relevant to their decline in health?",
+            "types": [
+                "salience"
+            ]
+        },
+        "The doctors eventually determine that the Holistik supplements the main character was giving her parents contained human remains, which caused their illness.": {
+            "questions": "How did the main character obtain the supplements? Why was she giving them to her parents?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        }
+    },
+    "paper-names.epub": {
+        "After the recent accidental death of Tammy's father Tony (originally named Tongheng in China), Tammy reported her friend Oliver to the police for being involved in the car accident that killed Tony.": {
+            "questions": "How was Oliver involved in the car accident? Was he the driver or a passenger? Why did Tammy report him to the police?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "Oliver has now been arrested.": {
+            "questions": "Why was Oliver arrested? What specific crime was he charged with?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "Tammy's mother Kuan-yin believes people are complicated and that Oliver was trying to make amends by not paying bail.": {
+            "questions": "Why was Oliver responsible for paying bail? What was his relationship with Tammy's father?",
+            "types": [
+                "event omission",
+                "entity omission"
+            ]
+        }
+    },
+    "pathogenesis-a-history-of-the-world-in-eight-plagues.epub": null,
+    "scattered-all-over-the-earth.epub": {
+        "Knut's mother loves Impressionist art, so Knut elaborated by theorizing about how the orange color in a landscape painting is like orange juice, already processed and energizing, compared to having to peel and eat a real orange.": {
+            "questions": "What does the orange color in a landscape painting have to do with the main storyline? Why is this detail included?",
+            "types": [
+                "salience"
+            ]
+        },
+        "Knut's mother has been very worried about him since he went missing without explanation.": {
+            "questions": "Is the sentence referring to Knut or Nanook being missing?",
+            "types": [
+                "entity omission",
+                "inconsistency"
+            ]
+        },
+        "When Susanoo speaks silently, some friends incredibly claim to understand his unspoken words.": {
+            "questions": "How can Susanoo speak silently? What does it mean to understand unspoken words?",
+            "types": [
+                "language",
+                "entity omission"
+            ]
+        }
+    },
+    "secretly-yours.epub": {
+        "However, Julian disappears into his writing for over 2 weeks after a panic attack when he thinks Hallie is in danger during a fire.": {
+            "questions": "What is Julian writing? Why does he have a panic attack? What is the context of the fire?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "Despite outwardly disliking each other, Natalie seems affected by the news.": {
+            "questions": "What news is affecting Natalie? How is she affected?",
+            "types": [
+                "event omission",
+                "entity omission"
+            ]
+        }
+    },
+    "seven-faceless-saints.epub": null,
+    "she-is-a-haunting.epub": {
+        "She starts sleepwalking and causes a car accident.": {
+            "questions": "How does Jade's sleepwalking cause a car accident?",
+            "types": [
+                "causal omission"
+            ]
+        },
+        "Then she finds a parasite larvae in Lily's head, confirming the house is infecting them.": {
+            "questions": "How did Jade find the parasite larvae in Lily's head? What kind of parasite is it?",
+            "types": [
+                "event omission",
+                "entity omission"
+            ]
+        },
+        "On her 18th birthday, the day of the opening, Jade kisses Florence but something goes wrong, leaving Jade collapsed.": {
+            "questions": "What goes wrong after Jade kisses Florence? Why does Jade collapse?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "Jade wakes up during the opening party to find the house furious over her sabotaging the website by posting the full history of its hauntings.": {
+            "questions": "How can a house be furious? Is it the people in the house or the ghosts that are furious?",
+            "types": [
+                "entity omission",
+                "language"
+            ]
+        },
+        "Her father Ba gets possessed and force feeds Jade and Lily parasites, but Jade's mother arrives and they all try to escape.": {
+            "questions": "What kind of parasites are they being force-fed? How did Ba get possessed?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "However, Ba and a malicious neighbor Alma trap them inside again.": {
+            "questions": "Who is Alma? Why is she malicious and helping Ba trap them?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        }
+    },
+    "some-desperate-glory.epub": {
+        "However, she returns to the station's core to try to rescue her friend Yiso, a majo who was being held captive by station leader Aulus Jole.": {
+            "questions": "What is a majo? Why was Yiso being held captive?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "Jole reveals he intended to escape on the Victrix using Yiso's abilities to manipulate shadowspace engines.": {
+            "questions": "What are shadowspace engines? How do Yiso's abilities relate to manipulating them?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        },
+        "Although the Victrix leaves without them, Yiso manages to temporarily create a pocket universe resembling Avi's clifftop garden where they await their death.": {
+            "questions": "How does Yiso create a pocket universe? What is the significance of it resembling Avi's clifftop garden?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        },
+        "Unexpectedly, Kyr and Yiso end up aboard Yiso's spaceship, the same one they escaped on previously.": {
+            "questions": "How did they end up on Yiso's spaceship? What caused this unexpected event?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "Kyr realizes the ship contains the remnants of the Wisdom machine's intelligence, hinting it had survived Avi's attempt to destroy it.": {
+            "questions": "What is the Wisdom machine? What was Avi's attempt to destroy it?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "The Wisdom-ship reveals it saved Kyr and Yiso due to a safety mechanism.": {
+            "questions": "What is the Wisdom machine? What is the safety mechanism?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "It agrees to keep its continued existence a secret from Yiso.": {
+            "questions": "Why does the Wisdom-ship want to keep its existence a secret from Yiso?",
+            "types": [
+                "causal omission"
+            ]
+        },
+        "Kyr sets the ship on a course to Chrysothemis.": {
+            "questions": "What is Chrysothemis? Why are they going there?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        }
+    },
+    "song-of-silver-flame-like-night.epub": null,
+    "spare.epub": null,
+    "spice-road.epub": {
+        "Imani discovers Qayn has a mysterious connection to the ancient cursed city Hubaal guards.": {
+            "questions": "What is the ancient cursed city? Why is it important to the story?",
+            "types": [
+                "entity omission",
+                "salience"
+            ]
+        },
+        "Reza is distraught when his love Fey is captured.": {
+            "questions": "Who captures Fey? Why is Fey captured?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "Imani leads the others in infiltrating Glaedric's ship as prisoners to find Atheer, but Taha confesses he secretly plans to assassinate Atheer for the Council.": {
+            "questions": "Who is the Council? Why do they want Atheer assassinated?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        }
+    },
+    "the-adventures-of-amina-al-sirafi.epub": {
+        "While trying to rescue the villagers, Amina is briefly captured by Falco, who forces her to ingest a potion before she escapes with her crew's help.": {
+            "questions": "What is the purpose of the potion? What effect does it have on Amina?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        },
+        "In Socotra, Amina enlists Magnun's pirates to rescue her captured crew from Falco.": {
+            "questions": "Who is Magnun? How did Amina come into contact with Magnun's pirates?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "Dunya traps the Moon's power into Falco, but he gains control during an eclipse.": {
+            "questions": "What is the Moon's power? How does Dunya trap it into Falco?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "A mysterious djinn appears and gives Amina books and tools for Dunya, implying the family has magical heritage.": {
+            "questions": "Who is the mysterious djinn? Why does it give Amina books and tools for Dunya?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        }
+    },
+    "the-bandit-queens.epub": {
+        "Afterwards, Geeta returns home to find Ramesh has mysteriously returned after being missing for five years.": {
+            "questions": "Why did Ramesh disappear in the first place? How did he survive for five years?",
+            "types": [
+                "event omission",
+                "entity omission"
+            ]
+        },
+        "During the Diwali festival, Geeta attends Saloni's party and sends Ramesh home alone so Saloni can kill him.": {
+            "questions": "Why does Geeta want Saloni to kill Ramesh? What is her motivation?",
+            "types": [
+                "causal omission"
+            ]
+        },
+        "Ramesh reveals he has been faking his blindness and helping Bada-Bhai take revenge on Geeta for freeing his dogs.": {
+            "questions": "Why does Bada-Bhai want revenge on Geeta for freeing his dogs? How did Geeta free his dogs?",
+            "types": [
+                "causal omission",
+                "event omission"
+            ]
+        }
+    },
+    "the-book-of-everlasting-things.epub": {
+        "Firdaus discovers she is unable to smell the tuberose perfume Samir made for her due to a rare condition, making her feel unworthy of his talents.": {
+            "questions": "What is the rare condition that Firdaus has?",
+            "types": [
+                "entity omission"
+            ]
+        }
+    },
+    "the-collected-regrets-of-clover.epub": null,
+    "the-covenant-of-water.epub": {
+        "However, two nuns soon arrive to take over and make clear that Digby's services are no longer required.": {
+            "questions": "Who sent the nuns? Why do they want to take over Saint Bridget's?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        }
+    },
+    "the-first-bright-thing.epub": {
+        "The Ringmaster laments that she couldn't protect him.": {
+            "questions": "Who is \"him\"? What happened to him?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "She, Odette, and Mauve decide to go back in time to prevent the war that gave rise to the Circus King's powers.": {
+            "questions": "How do they have the ability to go back in time? What war are they trying to prevent?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "Despite Odette's objections, they stop the assassination of Archduke Ferdinand but learn his death was inevitable.": {
+            "questions": "How do they go back in time? Why do they choose to stop the assassination of Archduke Ferdinand specifically?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "Though it pains them both, the Ringmaster gives Jo her coat and sends her to the future with her brother.": {
+            "questions": "Who is Jo's brother? When was he introduced in the story?",
+            "types": [
+                "entity omission",
+                "discontinuity"
+            ]
+        }
+    },
+    "the-girl-who-fell-beneath-the-sea.epub": {
+        "Mina learns Cheong was also sacrificed as the storms started again.": {
+            "questions": "Why was Cheong sacrificed? What is the connection between the sacrifices and the storms?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "Hyeri points out it's odd the curse seems broken yet nothing changed.": {
+            "questions": "What curse is Hyeri referring to? What was expected to change?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "Before Mina can consider this, the death god Shiki arrives, reuniting with his bride Hyeri.": {
+            "questions": "When did Shiki and Hyeri get married? How is their relationship relevant to the main storyline?",
+            "types": [
+                "event omission",
+                "salience"
+            ]
+        }
+    },
+    "the-golden-doves.epub": {
+        "But the plan goes wrong, Ernst dies, and their handler, Th\u00e9r\u00e8se, is shot.": {
+            "questions": "How does the plan go wrong? Why does Ernst die?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "Back in the present, Arlette worries that Father Peter is suspicious of her background.": {
+            "questions": "What is Arlette's background that she is worried about Father Peter discovering?",
+            "types": [
+                "entity omission"
+            ]
+        },
+        "She wants to take her son back to Paris quickly, before he discovers the truth about her aunt Henriette's death years ago in their Paris apartment.": {
+            "questions": "What is the truth about her aunt Henriette's death? Why is it significant to the story?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "They break into the office of a Dr. Ebner and find evidence he is artificially inseminating girls at a secret camp.": {
+            "questions": "Who is Dr. Ebner? How is he connected to the main storyline?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "At a rehearsal luncheon the next day, armed American agents rush in just as Father Peter grabs Arlette and holds her hostage on stage.": {
+            "questions": "Why are armed American agents rushing in? What led to this situation?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "After the incident, Arlette wakes up with a headache, having slept through the rehearsal.": {
+            "questions": "What incident is being referred to? Why did Arlette sleep through the rehearsal?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "She hurries to the wedding venue but finds the guests shaken, saying Father Peter held Arlette hostage before throwing her to the floor.": {
+            "questions": "When did Father Peter hold Arlette hostage? Wasn't she just waking up from sleeping through the rehearsal?",
+            "types": [
+                "event omission",
+                "discontinuity"
+            ]
+        },
+        "Josie and Bondi inform Arlette that the agents actually captured the wrong man, and the real Dr.": {
+            "questions": "Who is Dr. Snow? What is his significance in the story?",
+            "types": [
+                "entity omission"
+            ]
+        },
+        "Snow, responsible for Nazi medical experiments at Ravensbr\u00fcck.": {
+            "questions": "Who is Snow? What is their full name or title?",
+            "types": [
+                "entity omission"
+            ]
+        }
+    },
+    "the-half-moon.epub": {
+        "The police question Malcolm about a missing regular customer named Tripp Waggoner.": {
+            "questions": "Why are the police questioning Malcolm about Tripp Waggoner? What is the significance of Tripp Waggoner in the story?",
+            "types": [
+                "event omission",
+                "salience"
+            ]
+        }
+    },
+    "the-haunting-of-alejandra.epub": {
+        "Now Alejandra plans to sacrifice herself in order to destroy La Llorona once and for all.": {
+            "questions": "How does Alejandra plan to sacrifice herself? What is the connection between her sacrifice and destroying La Llorona?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "She and Cathy prepare for Alejandra's ritual suicide attempt to lure La Llorona so she can destroy the ghost and break the curse.": {
+            "questions": "How does Alejandra plan to destroy La Llorona? What is the significance of the ritual suicide attempt?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        }
+    },
+    "the-house-is-on-fire.epub": {
+        "Jack writes a letter with the claim for newspaper editor Mr. Ritchie.": {
+            "questions": "What claim is Jack writing in the letter?",
+            "types": [
+                "entity omission"
+            ]
+        },
+        "He recounts how he heroically rescued white women from the theater.": {
+            "questions": "Who is \"he\" in this sentence?",
+            "types": [
+                "entity omission"
+            ]
+        }
+    },
+    "the-last-pomegranate-tree.epub": {
+        "Saryas Junior blamed the sisters in white for this and became estranged from the First Saryas when he befriended them.": {
+            "questions": "Who are the sisters in white? Why does Saryas Junior blame them for Muhammad's death?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        },
+        "Their friendship fully broke down when the First Saryas was murdered.": {
+            "questions": "Who murdered the First Saryas? Why was he murdered?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "He cryptically suggests the blind boy Nadim knows more of the story's secrets and warns against trusting the sisters in white, whom he still resents.": {
+            "questions": "Who are the sisters in white? Why does Saryas Junior resent them?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        }
+    },
+    "the-last-tale-of-the-flower-bride.epub": null,
+    "the-marriage-portrait.epub": {
+        "He disclosed more details about the situation with Alfonso's mother and reiterated the urgency of Lucrezia conceiving an heir.": {
+            "questions": "What are the details about the situation with Alfonso's mother? Why is it urgent for Lucrezia to conceive an heir?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        }
+    },
+    "the-mimicking-of-known-successes.epub": {
+        "He refuses to explain his activities but denies killing Rechaure, a local eccentric at Valdegeld.": {
+            "questions": "Who is Rechaure? When was Rechaure mentioned before? Why is Rechaure's death relevant to the story?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "Someone else then attacks Mossa from behind.": {
+            "questions": "Who is the someone else? Why are they attacking Mossa?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        },
+        "Pleiti manages to get himself and Mossa to safety in time.": {
+            "questions": "Is Pleiti a male or female character? The summary refers to Pleiti as both \"her\" and \"himself.\"",
+            "types": [
+                "inconsistency"
+            ]
+        }
+    },
+    "the-night-travelers.epub": null,
+    "the-stolen-heir.epub": {
+        "At the Court of Moths, Wren helps free some prisoners, angering Oak.": {
+            "questions": "Why does freeing prisoners anger Oak?",
+            "types": [
+                "causal omission"
+            ]
+        },
+        "The stakes feel high for both.": {
+            "questions": "What are the stakes for Oak and Wren? Why do they feel high?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        },
+        "Wren wins the game.": {
+            "questions": "What game are they playing? Why is this game important?",
+            "types": [
+                "event omission",
+                "salience"
+            ]
+        },
+        "After uncovering Oak's lies about the heart, a furious Wren takes control of Lady Nore's forces.": {
+            "questions": "What heart is being referred to? What are Oak's lies about the heart?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        }
+    },
+    "the-survivalists.epub": {
+        "Brittany reveals she has amassed a large, hidden gun collection.": {
+            "questions": "Why does Brittany have a large, hidden gun collection? How does this relate to the story?",
+            "types": [
+                "causal omission",
+                "event omission"
+            ]
+        }
+    },
+    "the-true-love-experiment.epub": null,
+    "the-vibrant-years.epub": {
+        "However, her boss Joyce threatens to give the interview away.": {
+            "questions": "Why does Joyce threaten to give the interview away?",
+            "types": [
+                "causal omission"
+            ]
+        },
+        "Though their attraction grows, Rohan resists getting intimate with Cullie for unclear reasons.": {
+            "questions": "Why does Rohan resist getting intimate with Cullie?",
+            "types": [
+                "causal omission"
+            ]
+        }
+    },
+    "the-wager-a-tale-of-shipwreck-mutiny-and-murder.epub": {
+        "When it began, the judges surprisingly only questioned the men about the loss of the Wager itself, not the later alleged crimes on the island.": {
+            "questions": "Why did the judges only question the men about the loss of the Wager and not the alleged crimes on the island?",
+            "types": [
+                "causal omission"
+            ]
+        },
+        "There was no adjudication of the mutiny accusations or the shooting of an unarmed man by Cheap.": {
+            "questions": "Who was the unarmed man that Cheap shot? Why did Cheap shoot him?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        }
+    },
+    "the-wicked-bargain.epub": null,
+    "the-wishing-game.epub": {
+        "The next day, Lucy competes in more strange games based on the fictional Clock Island books.": {
+            "questions": "What are some examples of the strange games? How do they relate to the Clock Island books?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        }
+    },
+    "the-words-that-remain.epub": null,
+    "the-writing-retreat.epub": {
+        "In the basement, Daphne mentally connects with Lamia again, who says the imprisonment is part of Daphne's preparation for the \"Great Commission.\"": {
+            "questions": "What is the \"Great Commission\"? Why does Lamia want Daphne to prepare for it?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        }
+    },
+    "things-i-wish-i-told-my-mother.epub": null,
+    "thorne-princess.epub": {
+        "In Texas, Ransom secretly arranges for Hallie to stay longer than planned to protect her from danger in LA from the Russian mafia, who have a score to settle with Ransom.": {
+            "questions": "Why does the Russian mafia have a score to settle with Ransom?",
+            "types": [
+                "causal omission"
+            ]
+        },
+        "Ultimately, Ransom fingers Hallie against a wall but leaves her unsatisfied as punishment for kissing Max.": {
+            "questions": "Is this explicit sexual content necessary for the summary? Does it contribute to the main storyline?",
+            "types": [
+                "salience"
+            ]
+        },
+        "Ransom beats up Craig when he finds out.": {
+            "questions": "Who is Craig? What did Ransom find out about him?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        }
+    },
+    "tomorrow-and-tomorrow-and-tomorrow.epub": {
+        "The tensions came to a head when Marx was tragically killed in a shooting at their office.": {
+            "questions": "Who was responsible for the shooting? What was the motive behind it?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "Sadie realized Sam's trauma had driven his ambition.": {
+            "questions": "What trauma is being referred to? How did it drive Sam's ambition?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        }
+    },
+    "tress-of-the-emerald-sea.epub": {
+        "In truth, Crow plans to trade Tress to the dragon Xisis for a cure for her deadly spore eater affliction.": {
+            "questions": "What is the spore eater affliction? How does it affect Crow?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        },
+        "She learns spore magic from the undead surgeon Ulaam and studies the notes of sprouter Weev.": {
+            "questions": "What is spore magic? Who are Ulaam and Weev?",
+            "types": [
+                "entity omission"
+            ]
+        },
+        "As they approach the foreboding Midnight Sea, Tress experiments with controlling its dangerous midnight monsters using her growing spore mastery.": {
+            "questions": "What are midnight monsters? How does spore mastery work?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        },
+        "Tress is captured trying to sneak into the Sorceress's lair, but the crew rescues her, and the disguised sorcerer Hoid tricks the Sorceress into releasing Charlie.": {
+            "questions": "Who is Hoid? How does Hoid trick the Sorceress?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "But when a new threat emerges, seeking vengeance on Tress, she must again set sail on the Two Cups with her loyal crew on an exciting new adventure.": {
+            "questions": "Who is the new threat? Why do they seek vengeance on Tress?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        }
+    },
+    "unseelie.epub": {
+        "After confrontation with Raze's vengeful aunt Leira Wildfall, who seeks to stop them from obtaining an inherited legacy, Iselia drives their wagon into a faerie circle to escape.": {
+            "questions": "What is the inherited legacy that Leira Wildfall wants to stop them from obtaining? How is it related to their quest for the Mortal's Keep?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        },
+        "Raze shifts into a hawk in pursuit.": {
+            "questions": "How is Raze able to shift into a hawk? Is he a shapeshifter?",
+            "types": [
+                "entity omission"
+            ]
+        },
+        "They realize Isolde and Raze both possess innate shapeshifting abilities.": {
+            "questions": "How did they discover Isolde and Raze's shapeshifting abilities? What triggered the transformation?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "After a confrontation, Iselia uses her magic to create a portal back to the mortal realm with Gossamer, a mysterious imprisoned faerie who offers a bargain.": {
+            "questions": "What is the nature of the bargain Gossamer offers? Why is Gossamer imprisoned?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        },
+        "Gossamer remains tied to Iselia's mind and magic while unable to take full possession of her.": {
+            "questions": "Who is Gossamer? How did they become tied to Iselia's mind and magic?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "They arrive unexpectedly at Wildline Manor where Isolde and Olani were brought months ago as coerced workers.": {
+            "questions": "How did Isolde and Olani end up at Wildline Manor? Why were they coerced into working there?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "Iselia's magic unintentionally hatches the firedrake egg they retrieved.": {
+            "questions": "When and how did they retrieve the firedrake egg? What is the significance of the egg in the story?",
+            "types": [
+                "event omission",
+                "entity omission"
+            ]
+        }
+    },
+    "untethered-sky.epub": {
+        "Ester is jealous.": {
+            "questions": "Why is Ester jealous? Who or what is she jealous of?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "She feels it is the same manticore that killed her family years before.": {
+            "questions": "When did the manticore kill Ester's family? How does this event relate to her becoming a ruhker?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "Zahra ignores Ester's calls for help.": {
+            "questions": "Why does Zahra ignore Ester's calls for help?",
+            "types": [
+                "causal omission"
+            ]
+        },
+        "A wild male roc appears, and Zahra flies away with him.": {
+            "questions": "Why does Zahra suddenly leave Ester for the wild male roc?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        },
+        "Ester resigns herself to dying alone.": {
+            "questions": "Why is Ester resigning herself to dying alone? What led to this situation?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        }
+    },
+    "vera-wong-s-unsolicited-advice-for-murderers.epub": {
+        "Sana's first attempt at drawing again is interrupted when she spots a mysterious figure watching them from a distance.": {
+            "questions": "Who is the mysterious figure? Why are they watching Sana, Riki, and Vera?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "Though the figure runs off when Sana waves, she feels uneasy about the encounter.": {
+            "questions": "Who is the mysterious figure? Why are they watching Sana, Riki, and Vera?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        }
+    },
+    "victory-city.epub": {
+        "Zerelda Li, however, approves of Pampa Kampana's involvement.": {
+            "questions": "What is Zerelda Li approving of specifically? What is Pampa Kampana's involvement?",
+            "types": [
+                "entity omission",
+                "event omission"
+            ]
+        },
+        "As Krishnadevaraya starts living out his divine fantasies, Pampa Kampana worries about his growing disconnect from reality and knows she must eventually reveal the truth of her identity to him.": {
+            "questions": "What is the truth of Pampa Kampana's identity? Why is it significant?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        },
+        "In a fit of rage, Krishnadevaraya orders Pampa Kampana and Timmarasu blinded.": {
+            "questions": "Why does Krishnadevaraya order Pampa Kampana and Timmarasu blinded? What led to his rage?",
+            "types": [
+                "causal omission",
+                "event omission"
+            ]
+        },
+        "Both Zerelda Li and Tirumala Deva die in childbirth, leaving Tirumala Devi without an heir.": {
+            "questions": "How did Zerelda Li and Tirumala Deva both die in childbirth? Were they both pregnant at the same time?",
+            "types": [
+                "event omission",
+                "inconsistency"
+            ]
+        }
+    },
+    "walking-practice.epub": {
+        "The narrative then jumps ahead in time.": {
+            "questions": "How much time has passed? What happened during the time jump?",
+            "types": [
+                "event omission",
+                "discontinuity"
+            ]
+        },
+        "Mumu explains having been bedridden recovering from injuries for a week.": {
+            "questions": "What caused Mumu's injuries? How did they get injured?",
+            "types": [
+                "event omission"
+            ]
+        },
+        "Injured and exhausted, Mumu's mind becomes delusional on the train, blending past and present fears.": {
+            "questions": "What specific past and present fears is Mumu experiencing?",
+            "types": [
+                "entity omission"
+            ]
+        }
+    },
+    "we-don't-swim-here.epub": {
+        "Greg reveals he was not allowed to spend time in town or attend the same high school as his brother Nathan due to Lucia's restrictions.": {
+            "questions": "Why did Lucia impose these restrictions on Greg?",
+            "types": [
+                "causal omission"
+            ]
+        },
+        "Back home, someone is spotted lurking in their backyard at night.": {
+            "questions": "Who spotted the person lurking in the backyard?",
+            "types": [
+                "entity omission"
+            ]
+        },
+        "When alone, Lucia implies the pools were closed due to an unknown \"she\" and has a panic attack.": {
+            "questions": "Who is the unknown \"she\" Lucia is referring to? Why would this person cause the pools to be closed?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        }
+    },
+    "what-happens-next.epub": {
+        "She finds Ivan's keys in her grandmother's attic and tries starting his car left in the garage, hoping for answers.": {
+            "questions": "What answers is Faith hoping to find by starting Ivan's car?",
+            "types": [
+                "causal omission"
+            ]
+        }
+    },
+    "while-time-remains.epub": null,
+    "witch-king.epub": {
+        "While Ziede aids the mortals, Kai kills a ghoul and takes its eyes for a disguise.": {
+            "questions": "Why does Kai need a disguise? How does taking the ghoul's eyes help with the disguise?",
+            "types": [
+                "causal omission",
+                "entity omission"
+            ]
+        },
+        "More Immortal Blessed arrive, likely sent by Aclines' co-conspirators.": {
+            "questions": "Who are Aclines' co-conspirators? Why are they sending Immortal Blessed?",
+            "types": [
+                "entity omission",
+                "causal omission"
+            ]
+        }
+    },
+    "wrong-place-wrong-time.epub": null,
+    "yellowface.epub": {
+        "Shaken, June agrees to meet the ghost at the Exorcist Steps.": {
+            "questions": "What are the Exorcist Steps? Why are they called that?",
+            "types": [
+                "entity omission"
+            ]
+        },
+        "It turns out to be Candice, an editor June wrongfully got fired years ago.": {
+            "questions": "How did June get Candice fired? Why does Candice want revenge on June?",
+            "types": [
+                "event omission",
+                "causal omission"
+            ]
+        }
+    }
+}

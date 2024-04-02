@@ -1,46 +1,81 @@
-This repo hosts the code for [BooookScore: A systematic exploration of book-length summarization in the era of LLMs](https://arxiv.org/abs/2310.00785). More updates coming soon.
+# BooookScore
 
-# Updates
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-red.svg)](#python)
+[![arxiv](https://img.shields.io/badge/arXiv-2305.14251-b31b1b.svg)](https://arxiv.org/abs/2310.00785)
 
-- `2023/10/10` Upload files containing intermediate incremental summaries; upload GPT-4 and human annotations.
-- `2023/10/03` Initial commit.
+This repository hosts the official code and data release for our ICLR 2024 paper, [BooookScore: A systematic exploration of book-length summarization in the era of LLMs](https://arxiv.org/abs/2310.00785). There are 4 O's!
 
+If you find BooookScore useful, please cite:
+```
+@inproceedings{
+    chang2024booookscore,
+    title={BooookScore: A systematic exploration of book-length summarization in the era of {LLM}s},
+    author={Yapei Chang and Kyle Lo and Tanya Goyal and Mohit Iyyer},
+    booktitle={The Twelfth International Conference on Learning Representations},
+    year={2024},
+    url={https://arxiv.org/pdf/2310.00785.pdf}
+}
+```
 
-# Configure environment
+# Announcements
 
-1. Create virtual environment with `python3 -m virtualenv myenv`.
-2. Activate environment with `. ./myenv/bin/activate`.
-3. Install packages with `pip3 install -r requirements.txt`.
+- `2024/04/01` BooookScore is now available as a Python package!
+- `2024/02/27` We now have BooookScore v2, a version that batches sentences when obtaining model-generated annotations for summaries. Kudos to [@IlyaGusev](https://github.com/IlyaGusev) for implementing this!
+- `2023/10/10` Initial data release: all summaries, GPT-4 annotations, and human annotations.
 
-# Add your API key
+# Install BooookScore
 
-In `scripts/utils.py`, add your OpenAI API key at the top. By default the model used is GPT-4, you can change it in the `get_response` function. If you want to use another API, re-implement `get_response` and `obtain_response` accordingly.
+```
+pip install booookscore
+```
 
-# Pre-process data
+# Using BooookScore
 
-Before running the data pre-processing script, you need to have a pickle file with a dictionary, where keys are book names and values are full texts of the books. Refer to `data/example_all_books.pkl` for an example. Once you have this file ready, run the following command to chunk the data:
+## Getting chunked data
 
-`python3 scripts/chunk_data.py --input_path INPUT_PATH --chunk_size CHUNK_SIZE`
+Before running the chunking script, you need to have a **pickle** file containing a dictionary, where keys are book names and values are full texts of the books. Refer to `data/example_all_books.pkl` for an example. Once you have this file ready, run the following command to chunk the data:
 
-- `input_path` should be set to the pickle file described above.
+```
+python -m booookscore.chunk --chunk_size {chunk_size} --input_path {input_path} --output_path {output_path}
+```
 
-# Obtain summaries
+- `--chunk_size`: your desired chunk size (each chunk will not exceed this limit)
+- `--input_path`: should be set to the path storing the pickle file described above
+- `--output_path`: where to save the chunked data
+- `--include_empty_lines` (optional): if specified, it does not remove the empty lines that may exist in the input texts
 
-## Incremental summaries
+Example usage:
 
-`python3 scripts/get_inc_summaries.py --input_path INPUT_PATH --save_path SAVE_PATH --max_context_len MAX_CONTEXT_LEN --chunk_size CHUNK_SIZE`
+```
+python -m booookscore.chunk --chunk_size 2048 --input_path all_books.pkl --output_path all_books_2048.pkl
+```
 
-- `input_path` should be set to a pickle file containing chunked data where chunk size = `chunk_size`.
+## Obtain summaries
 
-If the running script is interrupted and you want to pick up where you left off, simply run the command again.
+```
+python -m booookscore.summ --book_path {book_path} --summ_path {summ_path} --model {model} --openai_key {openai_key} --method {method} --chunk_size {chunk_size} --max_context_len {max_context_len} --max_summary_len {max_summary_len}
+```
 
-## Hierarchical summaries
+- `--book_path`: the path to the chunked data (pickle file)
+- `--summ_path`: the path to save the generated summaries
+- `--model`: the name of the language model to use for summarization (currently only supports models in the OpenAI API)
+- `--openai_key`: the path to the txt file storing your OpenAI API key
+- `--method`: the summarization method to use, "inc" for incremental updating, "hier" for hierarchical merging
+- `--chunk_size`: the desired size of each chunk of text, must be consistent with your data in `book_path`
+- `max_context_len`: the maximum context window of the model
+- `max_summary_len`: the maximum number of tokens a summary can have
 
-`python3 scripts/get_hier_summaries.py --input_path INPUT_PATH --save_path SAVE_PATH --max_context_len MAX_CONTEXT_LEN --chunk_size CHUNK_SIZE`
+Example usage:
 
-- `input_path` should be set to a pickle file containing chunked data where chunk size = `chunk_size`.
+```
+python -m booookscore.summ --book_path all_books_chunked_4096.pkl --summ_path summaries.json --model gpt-4 --openai_key openai_key.txt --method hier --chunk_size 4096 --max_context_len 32000
+```
 
-If the running script is interrupted and you want to pick up where you left off, you'll need modify the output json file before you re-run. The json file is structured as follows:
+### Picking up from where you left off
+
+For incremental updating, if the running script is interrupted and you want to continue, simply run the script again using the same command.
+
+For hierarchical merging, if the running script is interrupted and you want to continue, you will need modify the output json file before you re-run the command. The json file is structured as follows:
 
 - nested dictionary
     - (str) book name:
@@ -52,26 +87,55 @@ If the running script is interrupted and you want to pick up where you left off,
     - ...
     - ...
 
-If the last book in the current dictionary doesn't have a 'final_summary' key and the only summary list present is for level 0, simply run the script again to continue where you left off.
+Now:
 
-If the last book in the current dictionary doesn't have a 'final_summary' key and there are summary lists present for levels higher than 0, you'll need to remove the summary list with the highest key (level), since it's very likely that the model hasn't fully gotten through that level. We will restart from that level. After removing the list, you can run the script again.
+- If the last book in the current dictionary doesn't have a 'final_summary' key and the only summary list present is for level 0, simply run the script again to continue where you left off.
+- If the last book in the current dictionary doesn't have a 'final_summary' key and there are summary lists present for levels higher than 0, you'll need to remove the summary list with the highest key (level), since it's very likely that the model hasn't fully gotten through that level. We will restart from that level. After removing the list, you can run the script again.
 
-# Compute BooookScore
+Better checkpointing for hierarchical merging will be implemented in future versions.
 
-`python3 scripts/get_booookscore.py --input_path INPUT_PATH`
+## Post-processing summaries
 
-- `input_path` should be set to a json file with book names as keys and final summaries as values (e.g., any file ending with `-cleaned.json` in the `summaries` folder).
-- GPT-4 annotations will be saved to a file with the same name as the input file in the `gpt4_annotations` directory.
-
-# Cite
+After generating summaries with incremental updating or hierarchical merging, we create a json file with a dictionary that maps book names to their final summaries. If the input file is `summaries.json`, then the extracted final summaries will be saved to `summaries_cleaned.json`.
 
 ```
-@misc{chang2023booookscore,
-      title={BooookScore: A systematic exploration of book-length summarization in the era of LLMs}, 
-      author={Yapei Chang and Kyle Lo and Tanya Goyal and Mohit Iyyer},
-      year={2023},
-      eprint={2310.00785},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
-}
+python -m booookscore.postprocess --input_path {input_path} --model {model} --openai_key {openai_key}
+```
+
+- `--input_path`: the path to the chunked data (pickle file)
+- `--model` (optional): the name of the language model to use for summarization (currently only supports models in the OpenAI API), defaults to `gpt-4`
+- `--openai_key` (optional): the path to the txt file storing your OpenAI API key
+- `--remove_artifacts` (optional): if specified, it will ask a language model remove artifacts from merging (must also specify `model` and `openai_key` in this case)
+
+Example usage (without artifact removal):
+
+```
+python -m booookscore.postprocess --input_path summaries.json --model {model} --openai_key {openai_key}
+```
+
+## Compute BooookScore
+
+```
+python -m booookscore.score --summ_path {summ_path} --annot_path {annot_path} --model {model} --openai_key {openai_key}
+```
+
+The input summaries must be stored in a json file that maps from book names to final book summaries.
+
+- `--summ_path`: the path to all summaries (must specify if there are no annotations yet)
+- `--annot_path`: the path to model-generated annotations
+- `--model`: the name of the language model to use for summarization (currently only supports models in the OpenAI API), defaults to `gpt-4`
+- `--openai_key`: the path to the txt file storing your OpenAI API key
+- `--v2` (optional): if specified, it will generate annotations using v2 code and prompt, which uses sentence batching instead of evaluating sentence by sentence (contributed by [@IlyaGusev](https://github.com/IlyaGusev)!)
+- `--batch_size` (optional): batch size to use if using v2, defaults to `10`
+
+Example usage (original BooookScore):
+
+```
+python -m booookscore.score --summ_path summaries/chatgpt-2048-hier-cleaned.json --annot_path annotations.json --model gpt-4 --openai_key openai_key.txt
+```
+
+Example usage (v2 BooookScore with sentence batching):
+
+```
+python -m booookscore.score --summ_path summaries/chatgpt-2048-hier-cleaned.json --annot_path annotations.json --model gpt-4 --openai_key openai_key.txt --v2 --batch_size 10
 ```

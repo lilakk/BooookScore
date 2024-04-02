@@ -1,0 +1,415 @@
+Given a book summary and a sentence from that summary, determine if that sentence causes any confusion. Types of confusion include the following:
+
+- Entity omission: an entity, real or abstract (person, object, place, concept, etc.) is mentioned, but key details are missing or unclear
+- Event omission: an event is mentioned, but key details are missing or unclear
+- Causal omission: the reason or motivation for something is missing or unclear
+- Salience: inclusion of trivial details that do not contribute to the main storyline
+- Discontinuity: an interruption in the flow of the narrative, including but not restricted to: sudden jumps between perspectives, time periods, or settings; poor transition between sentences or paragraphs; sentences or paragraphs that seem out of place; illogical sentence order or summary structure
+- Duplication: redundant repetition of similar information
+- Inconsistency: two parts of the summary contain contradicting information
+- Language: grammar issues; confusing wording or phrasing; etc.
+
+For something to qualify as a confusion, it must meet these two conditions:
+
+1. Without resolving the confusion, readers would struggle substantially to grasp the main narrative, or the summary would appear incoherent.
+2. The confusion can't be resolved solely using the information provided in the summary.
+
+If the given sentence involves confusion that meets these two qualifications, ask relevant clarifying questions and provide the confusion types. There can be multiple questions, and keep in mind that a sentence may involve multiple types of confusion. If the given sentence doesn't involve any confusion, simply say "no confusion". Some examples are provided below, followed by the summary and sentence that you need to annotate.
+
+---
+
+[Example summary 1]
+
+In the small town of Elm Avenue, teenage twins Aida and Salma are inseparable. When Aida mysteriously disappears, Salma recounts their childhood and the search for her sister begins. Sightings of Aida surface, but each time, witnesses mistake Salma for her missing twin. As the search continues, their parents' strained relationship is revealed, as well as Aida's secret relationship with a boy named Marlon. Despite their mother's obsession with Marlon as a suspect, he is cleared when numerous sightings of Aida appear across the country. A hiker eventually discovers Aida's boots, which leads to the sad conclusion that Aida has died. The family holds a private funeral for her, and the story explores the emotional impact of her disappearance and death.
+
+Meanwhile, the focus shifts to a new character, Fausto, and his relationship with Paz, as they navigate life in a hurricane-ravaged Miami neighborhood. Fausto and Paz become involved in illegal activities, running drugs for a man named Anibal. Fausto convinces Paz to continue their dangerous lifestyle with the promise of a better future together. Tensions rise as their actions put them at odds with Paz's father, Silvio, and Fausto's family. The story also introduces a character named Padre Miguelangel, who becomes involved in the couple's drug-running activities by accepting their dirty money for the church. As Fausto's criminal life catches up to him, he flees to Colombia, leaving Paz behind with the drug money and a heavy heart.
+
+In Colombia, Fausto meets a woman through a matchmaking agency, and they begin a relationship that leads to marriage. The woman moves to the United States with Fausto, where they face challenges in their relationship, including cultural misunderstandings and her longing for her family and life back in Colombia. Fausto's secretive nature and their desire to have a baby put additional strain on their marriage.
+
+The story then shifts to a new setting in Havana, Cuba, where a young man named Vladi navigates his relationships with two women, Natasha and Lily. Vladi aspires to be a writer but struggles with writer's block. Natasha's mother receives an offer from the government to buy their property, and she decides to use the money to send Natasha and Vladi to the United States. The couple must now confront their feelings for each other and the challenges of leaving their home country. Through it all, their love for their daughter keeps the couple together, even as they face their individual struggles and conflicts. As Vladi's relationship with both Natasha and Lily deepens, he questions his feelings for each of them, leading to a complicated love triangle. As their departure to the United States nears, Vladi wrestles with the decision of whether to be open about his feelings for Lily or to commit to Natasha. This decision becomes all the more difficult as Vladi considers the sacrifices he and Natasha will have to make to start their new life together in the United States.
+
+The story follows a woman named Indiana, who works in a factory and reminisces about her past life and relationships. Indiana shares an apartment with Soraya and has a crush on her coworker, Edgar. The factory workers are excited about the upcoming Christmas party, with Indiana planning to wear a stunning dress. The story explores Indiana's longing for love and her connection with Edgar as they grow closer and share their hopes and dreams. However, tragedy strikes when a van driven by Rusty pins Indiana against the factory wall, severely injuring her legs and pelvis. As she recovers, the story explores the emotional and physical pain she endures and how her relationships with those around her change as a result of the accident.
+
+The story goes to Havana, Cuba, and follows a taxi driver named Margarito "Mago" who feels unappreciated by his partner, Florencia. Their relationship is strained due to Florencia's vanity and her constant belittling of Mago. One day, Mago picks up a group of young girls who discuss their experiences with foreign men. He wonders if Florencia might have had similar experiences. Mago eventually meets a mysterious woman whom he'd encountered before, and they develop a connection as they both visit the San Lazaro church and hospital. Mago visits his father, who suffers from leprosy and memory loss, and reflects on his family history, relationships, and personal struggles. The story delves into Mago's feelings of loneliness and his search for connection while navigating the complexities of his relationships and the world around him.
+
+In New York City, a woman named Sara meets a man named Juan after her therapy session, and they bond over their shared Colombian heritage and the similarities between the rain in New York and Colombia. They share a brief encounter in a coffee shop, discussing their lives and experiences, highlighting their desire for connection. The story concludes with Sara reflecting on her encounter with Juan and her journey for connection, love, and healing. Over time, Juan reveals his dark past in Colombia, including his kidnapping, which left him deeply scarred. While listening to Juan's harrowing ordeals, Sara finds herself relating to his pain, having experienced her own trauma. Throughout their time together, Sara and Juan explore their pasts, finding a unique bond and sense of comfort in each other's company, as the story moves through its diverse and interconnected characters and settings.
+
+
+[Example sentence]
+In the small town of Elm Avenue, teenage twins Aida and Salma are inseparable.
+
+[Example response]
+Questions: no confusion
+Types: no confusion
+
+
+[Example sentence]
+When Aida mysteriously disappears, Salma recounts their childhood and the search for her sister begins.
+
+[Example response]
+Questions: no confusion
+Types: no confusion
+
+
+[Example sentence]
+Meanwhile, the focus shifts to a new character, Fausto, and his relationship with Paz, as they navigate life in a hurricane-ravaged Miami neighborhood.
+
+[Example response]
+Questions: Why are we suddenly switching to a new character? Does Aida have any connections with Fausto?
+Types: discontinuity
+
+
+[Example sentence]
+Fausto and Paz become involved in illegal activities, running drugs for a man named Anibal.
+
+[Example response]
+Questions: no confusion
+Types: no confusion
+
+
+[Example sentence]
+The story also introduces a character named Padre Miguelangel, who becomes involved in the couple's drug-running activities by accepting their dirty money for the church.
+
+[Example response]
+Questions: What is the significance of the Padre character in the story? Why is he included?
+Types: salience
+
+
+[Example sentence]
+In Colombia, Fausto meets a woman through a matchmaking agency, and they begin a relationship that leads to marriage.
+
+[Example response]
+Questions: no confusion
+Types: no confusion
+
+
+[Example sentence]
+The woman moves to the United States with Fausto, where they face challenges in their relationship, including cultural misunderstandings and her longing for her family and life back in Colombia.
+
+[Example response]
+Questions: no confusion
+Types: no confusion
+
+
+[Example sentence]
+Through it all, their love for their daughter keeps the couple together, even as they face their individual struggles and conflicts.
+
+[Example response]
+Questions: Why is the daughter introduced here and not earlier?
+Types: discontinuity
+
+
+[Example sentence]
+As Vladi's relationship with both Natasha and Lily deepens, he questions his feelings for each of them, leading to a complicated love triangle.
+
+[Example response]
+Questions: no confusion
+Types: no confusion
+
+
+[Example sentence]
+However, tragedy strikes when a van driven by Rusty pins Indiana against the factory wall, severely injuring her legs and pelvis.
+
+[Example response]
+Questions: Who is Rusty?
+Types: entity omission
+
+
+[Example sentence]
+As she recovers, the story explores the emotional and physical pain she endures and how her relationships with those around her change as a result of the accident.
+
+[Example response]
+Questions: no confusion
+Types: no confusion
+
+
+[Example sentence]
+The story concludes with Sara reflecting on her encounter with Juan and her journey for connection, love, and healing.
+
+[Example response]
+Questions: Why is the story conclusion in the middle of the paragraph and not at the end?
+Types: discontinuity
+
+
+[Example sentence]
+Over time, Juan reveals his dark past in Colombia, including his kidnapping, which left him deeply scarred.
+
+[Example response]
+Questions: no confusion
+Types: no confusion
+
+
+[Example sentence]
+The woman moves to the United States with Fausto, where they face challenges in their relationship, including cultural misunderstandings and her longing for her family and life back in Colombia.
+
+[Example response]
+Questions: Does the woman have a name? What happens with Paz?
+Types: entity omission, event omission
+
+
+[Example sentence]
+They share a brief encounter in a coffee shop, discussing their lives and experiences, highlighting their desire for connection.
+
+[Example response]
+Questions: no confusion
+Types: no confusion
+
+---
+
+[Example summary 2]
+
+Proctor Bennett, a ferryman in Prospera, assists people transitioning to new lives upon retirement. Struggling with dreams and discontent, his wife Elise suggests a change in his work. He meets a young girl named Caeli and forms a bond with her. Proctor is assigned the retirement of his estranged father and discovers a boat his father built as a tribute to Proctor's late mother, Cynthia. His father panics and flees, resulting in a chaotic chase on the pier.
+
+Deciding to quit being a ferryman, Proctor teaches Caeli how to swim. Proctor's superior, Amos Cordell, submits an incident report for his father's retirement. A mysterious man introduces Proctor to "Arrivalism." He learns that their old friend Warren, a medic, will join him and Elise for a concert. Uncertain about Warren's intentions, Proctor's future remains unclear.
+
+At the concert, Proctor meets Thea Dimopolous, an intriguing woman, and they flirt. However, he returns to Elise, adding tension to his uncertain future. Proctor discovers that Otto Winspear, from the State Security Service, interrogates his trainee, Jason Kim. Proctor seeks answers from his mother-in-law, Callista, about the investigation. Proctor and Jason visit his father's house, finding Proctor's old empty room and evidence of a recent paint job.
+
+Amos and Nabil West inform Proctor that the watchman he assaulted on the wharf has died, and Proctor is considered responsible. Jason Kim, his trainee, provides evidence against him. Proctor's life becomes more uncertain as he and Thea discover that Caeli seemingly does not exist. He faces consequences as his marriage struggles and his connection to Thea deepens.
+
+During a mission to find Caeli, Proctor is captured by watchmen while Thea escapes. Amidst chaos, Proctor experiences strange dreams and finds himself in a house where he weeps into a dress with a storm raging outside. Thea and an unknown man rescue him, hiding in a cabin where Thea watches over Proctor. He discovers that his health is failing, with a 9% life expectancy. Desperate, Proctor removes the monitor from his body, risking injury. With Thea's help, he survives but remains determined to find Caeli.
+
+Proctor ends up in a facility known as the Nursery. Intent on finding answers, he navigates challenges and deceptions in the Nursery. Aurelia Voss recognizes Proctor, and he finds a map that may unravel the mysteries of the facility.
+
+Rescued by Thea and Stefano, Proctor reunites with his mother, Cynthia, who he thought was dead. She reveals her involvement with the Arrivalist movement and that she faked her death for her work. She explains that Proctor's father also knew and worked with the movement. Proctor confronts his past and relationships while navigating the hidden Annex underground resistance network. He confronts Otto, learning that Elise is on her way to an "exciting new life" with Warren.
+
+During a car chase, Proctor's life is turned upside down. His search for Caeli leads him to Elise, who is experiencing strange dreams. Proctor and Thea believe Elise's dreams are the key to finding Caeli, setting out to uncover the truth. They must confront the true nature of their world as Proctor finds himself in a war, determined to reach Elise, who is caught in the chaos.
+
+Proctor is shot multiple times by Otto, who takes Elise hostage. As he lies dying, he hears Cynthia shoot at Otto. Proctor clings to hope, believing that he has found Caeli when Elise calls out her name. As the dream world dissolves, Cynthia comforts Proctor, accepting his fate.
+
+As the colonists prepare to leave, Proctor decides to stay behind and care for the remaining investors in stasis. Despite protests, he remains determined to fulfill his duty. In a farewell, Proctor marries his brother Malcolm to Cynthia and says goodbye to his loved ones. As the boat departs, Proctor is alone with his uncertain future.
+
+In the new settlement, Thea adjusts to her life, working hard and finding solace in nature. She meets Pappi, a fellow colonist, and they discuss their experiences and the mysteries of the planet. The colonists find purpose in their new lives on the alien world. Proctor, now an academy director, deals with students and school issues, seeking help from Callista to fund a roof replacement.
+
+Proctor returns home and finds Elise working in her backyard studio. They discuss their daughter's whereabouts and their plans for the evening. They prepare to celebrate their daughter Caeli's eighth birthday, enjoying dinner, cake, and presents before going sailing at Caeli's request. They return home, and Proctor tucks Caeli in, reminiscing about the day and wishing her a happy birthday.
+
+Proctor's life continues as he navigates the challenges of his new role as an academy director. He deals with school issues, such as funding for a roof replacement, and seeks help from his mother-in-law, Callista. Meanwhile, Proctor and Elise continue to search for their daughter Caeli, whose existence remains uncertain. They celebrate her eighth birthday, spending time together as a family and going sailing at Caeli's request. As Proctor tucks Caeli in, he reflects on the day and the challenges he has faced, wishing her a happy birthday and embracing the uncertainty of his future.
+
+
+[Example sentence]
+Proctor Bennett, a ferryman in Prospera, assists people transitioning to new lives upon retirement.
+
+[Example response]
+Questions: Where or what is Prospera?
+Types: entity omission
+
+
+[Example sentence]
+Struggling with dreams and discontent, his wife Elise suggests a change in his work.
+
+[Example response]
+Questions: no confusion
+Types: no confusion
+
+
+[Example sentence]
+Deciding to quit being a ferryman, Proctor teaches Caeli how to swim.
+
+[Example response]
+Questions: How does quitting being a ferryman relate to teaching a girl how to swim?
+Types: discontinuity, causal omission
+
+
+[Example sentence]
+A mysterious man introduces Proctor to "Arrivalism."
+
+[Example response]
+Questions: Who is this mysterious man? What is Arrivalism? Why is this detail included?
+Types: entity omission, salience
+
+
+[Example sentence]
+Uncertain about Warren's intentions, Proctor's future remains unclear.
+
+[Example response]
+Questions: no confusion
+Types: no confusion
+
+
+[Example sentence]
+At the concert, Proctor meets Thea Dimopolous, an intriguing woman, and they flirt.
+
+[Example response]
+Questions: no confusion
+Types: no confusion
+
+
+[Example sentence]
+Amos and Nabil West inform Proctor that the watchman he assaulted on the wharf has died, and Proctor is considered responsible.
+
+[Example response]
+Questions: Who is Nabil West? When did Proctor assault a watchman?
+Types: entity omission, event omission
+
+
+[Example sentence]
+Jason Kim, his trainee, provides evidence against him.
+
+[Example response]
+Questions: no confusion
+Types: no confusion
+
+
+[Example sentence]
+Proctor's life becomes more uncertain as he and Thea discover that Caeli seemingly does not exist.
+
+[Example response]
+Questions: Why is Thea back in the picture? Didn't Proctor return to Elise? How is it that Caeli seems to not exist?
+Types: discontinuity, inconsistency, entity omission
+
+
+[Example sentence]
+During a mission to find Caeli, Proctor is captured by watchmen while Thea escapes.
+
+[Example response]
+Questions: no confusion
+Types: no confusion
+
+
+[Example sentence]
+He faces consequences as his marriage struggles and his connection to Thea deepens.
+
+[Example response]
+Questions: What type of consequences?
+Types: entity omission
+
+
+[Example sentence]
+During a mission to find Caeli, Proctor is captured by watchmen while Thea escapes.
+
+[Example response]
+Questions: Is Caeli lost? What happened to Caeli?
+Types: entity omission, event omission
+
+
+[Example sentence]
+Thea and an unknown man rescue him, hiding in a cabin where Thea watches over Proctor.
+
+[Example response]
+Questions: no confusion
+Types: no confusion
+
+
+[Example sentence]
+Desperate, Proctor removes the monitor from his body, risking injury.
+
+[Example response]
+Questions: What monitor? Why does he have a monitor?
+Types: entity omission, causal omission
+
+
+[Example sentence]
+With Thea's help, he survives but remains determined to find Caeli.
+
+[Example response]
+Questions: no confusion
+Types: no confusion
+
+
+[Example sentence]
+She reveals her involvement with the Arrivalist movement and that she faked her death for her work.
+
+[Example response]
+Questions: What is the Arrivalist movement?
+Types: entity omission
+
+
+[Example sentence]
+She explains that Proctor's father also knew and worked with the movement.
+
+[Example response]
+Questions: no confusion
+Types: no confusion
+
+
+[Example sentence]
+During a car chase, Proctor's life is turned upside down.
+
+[Example response]
+Questions: Why is there a car chase? Who is chasing who?
+Types: event omission, causal omission, discontinuity
+
+
+[Example sentence]
+His search for Caeli leads him to Elise, who is experiencing strange dreams.
+
+[Example response]
+Questions: no confusion
+Types: no confusion
+
+
+[Example sentence]
+Proctor and Thea believe Elise's dreams are the key to finding Caeli, setting out to uncover the truth.
+
+[Example response]
+Questions: no confusion
+Types: no confusion
+
+
+[Example sentence]
+As the dream world dissolves, Cynthia comforts Proctor, accepting his fate.
+
+[Example response]
+Questions: When does the dream world begin? What is a dream and what is real? What is Proctor's fate?
+Types: discontinuity, entity omission
+
+
+[Example sentence]
+In a farewell, Proctor marries his brother Malcolm to Cynthia and says goodbye to his loved ones.
+
+[Example response]
+Questions: If Cynthia is his mother and Malcolm is his brother, how can a mother and son marry? With what authority does Proctor marry these two?
+Types: inconsistency, event omission
+
+
+[Example sentence]
+They discuss their daughter's whereabouts and their plans for the evening.
+
+[Example response]
+Questions: no confusion
+Types: no confusion
+
+
+[Example sentence]
+They prepare to celebrate their daughter Caeli's eighth birthday, enjoying dinner, cake, and presents before going sailing at Caeli's request.
+
+[Example response]
+Questions: Is Caeli the daughter of Elise and Proctor or a young girl that Proctor meets?
+Types: entity omission, inconsistency
+
+
+[Example sentence]
+As the boat departs, Proctor is alone with his uncertain future.
+
+[Example response]
+Questions: Is Proctor's future uncertain or does how have a position as an academy director?
+Types: inconsistency, entity omission
+
+
+[Example sentence]
+He deals with school issues, such as funding for a roof replacement, and seeks help from his mother-in-law, Callista.
+
+[Example response]
+Questions: Why is the same information repeated in the summary?
+Types: duplication
+
+
+[Example sentence]
+They prepare to celebrate their daughter Caeli's eighth birthday, enjoying dinner, cake, and presents before going sailing at Caeli's request.
+
+[Example response]
+Questions: Does Caeli exist or not?
+Types: entity omission, inconsistency
+
+---
+
+[Your summary]
+
+{}
+
+
+[Your sentence]
+
+{}
+
+
+[Your response] Determine if it the sentence above involves confusion that can't be clarified using information from any part of the given summary, and those which, if left unresolved, would make the summary highly incoherent or significantly hinder readers from understanding the main storyline. If you don't identify any confusion like that, simply say "no confusion" for both questions and types in your response.

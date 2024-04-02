@@ -1,0 +1,9 @@
+Below is a summary of a book:
+
+---
+
+{}
+
+---
+
+Your task is to edit the book summary by removing any phrases that indicate it was developed progressively. Delete terms such as "in the ... segment," "in ... part of the story," "in the ... excerpt," "in the updated summary," and any similar phrases. The goal is to make the summary read as if it was written all at once, not in stages. In addition, eliminate any elements taken from non-narrative sections like the table of contents, acknowledgments, author's biography, author's note, information of the author's other works, and so on. Apart from these adjustments, do not make any other changes to the summary.

@@ -1,0 +1,25 @@
+{
+    "Detail": {
+        "inc": 18,
+        "hier": 0,
+        "draw": 2
+    },
+    "Structure": {
+        "inc": 0,
+        "hier": 20,
+        "draw": 0
+    },
+    "Logic": {
+        "inc": 0,
+        "hier": 17,
+        "draw": 3
+    },
+    "Contradiction": 6,
+    "Inc Omission": 20,
+    "Hier Omission": 20,
+    "Preference": {
+        "inc": 0,
+        "hier": 20,
+        "draw": 0
+    }
+}

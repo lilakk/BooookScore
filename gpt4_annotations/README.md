@@ -1,1 +1,0 @@
-This directory contains all GPT-4 annotations for summaries generated under different configurations.
