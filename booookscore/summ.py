@@ -150,8 +150,6 @@ class Summarizer():
             summaries_dict[level].append(summary)
             i += 1
 
-            json.dump(summaries, open(self.summ_path, 'w'))
-
         # If the summaries still too large, recursively call the function for the next level
         if len(summaries_dict[level]) > 1:
             # save the current level summaries
@@ -194,26 +192,17 @@ class Summarizer():
                 summaries[book]['summaries_dict'] = defaultdict(list, {int(k): v for k, v in summaries[book]['summaries_dict'].items()})
 
         for i, book in tqdm(enumerate(data), total=len(data), desc="Iterating over books"):
-            if 'yellowface' not in book:
-                continue
-            if book in summaries and 'final_summary' in summaries[book]:
+            if book in summaries:
                 print("Already processed, skipping...")
                 continue
             chunks = data[book]
-            if book in summaries and 'summaries_dict' in summaries[book]:
-                if len(summaries[book]['summaries_dict']) == 1 and len(summaries[book]['summaries_dict'][0]) < len(chunks):
-                    level = 0
-                elif len(summaries[book]['summaries_dict']) == 1 and len(summaries[book]['summaries_dict'][0]) == len(chunks):
-                    level = len(summaries[book]['summaries_dict']) - 1
-                    chunks = summaries[book]['summaries_dict'][level]
-            else:
-                summaries[book] = {
-                    'summaries_dict': defaultdict(list)
-                }
-            final_summary, summaries = self.summarize_book(book, chunks, summaries)
-            summaries[book]['final_summary'] = final_summary
-            with open(self.summ_path, 'w') as f:
-                json.dump(summaries, f)
+            summaries[book] = {
+                'summaries_dict': defaultdict(list)
+            }
+        final_summary, summaries = self.summarize_book(book, chunks, summaries)
+        summaries[book]['final_summary'] = final_summary
+        with open(self.summ_path, 'w') as f:
+            json.dump(summaries, f)
 
     def compress(self, response, summary, chunk, summary_len, word_limit, num_chunks, j):
         chunk_trims = 0
@@ -280,8 +269,6 @@ class Summarizer():
             new_data = json.load(open(self.summ_path, "r"))
         
         for i, book in tqdm(enumerate(data), total=len(data), desc="Iterating over books"):
-            if 'yellowface' not in book:
-                continue
             if book in new_data and len(new_data[book]) >= len(data[book]):
                 print(f"Skipping {book}")
                 continue
@@ -320,7 +307,7 @@ class Summarizer():
                 prev_summary = response
                 new_chunks.append(response)
 
-                if (j + 1) % 5 == 0:
+                if (j + 1) % 10 == 0:
                     new_data[book] = new_chunks
                     json.dump(new_data, open(self.summ_path, 'w'))
                 

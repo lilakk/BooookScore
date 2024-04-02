@@ -36,24 +36,27 @@ pip install booookscore
 Before running the chunking script, you need to have a **pickle** file containing a dictionary, where keys are book names and values are full texts of the books. Refer to `data/example_all_books.pkl` for an example. Once you have this file ready, run the following command to chunk the data:
 
 ```
-python -m booookscore.chunk --chunk_size {chunk_size} --input_path {input_path} --output_path {output_path}
+python -m booookscore.chunk --chunk_size {chunk_size} --input_path {input_path}
 ```
 
 - `--chunk_size`: your desired chunk size (each chunk will not exceed this limit)
 - `--input_path`: should be set to the path storing the pickle file described above
-- `--output_path`: where to save the chunked data
 - `--include_empty_lines` (optional): if specified, it does not remove the empty lines that may exist in the input texts
 
 Example usage:
 
 ```
-python -m booookscore.chunk --chunk_size 2048 --input_path all_books.pkl --output_path all_books_2048.pkl
+python -m booookscore.chunk --chunk_size 2048 --input_path all_books.pkl
 ```
+
+In this example, the chunked data will be saved to `all_books_2048.pkl`.
 
 ## Obtain summaries
 
 ```
-python -m booookscore.summ --book_path {book_path} --summ_path {summ_path} --model {model} --openai_key {openai_key} --method {method} --chunk_size {chunk_size} --max_context_len {max_context_len} --max_summary_len {max_summary_len}
+python -m booookscore.summ --book_path {book_path} --summ_path {summ_path} --model {model} 
+    --openai_key {openai_key} --method {method} --chunk_size {chunk_size} 
+    --max_context_len {max_context_len} --max_summary_len {max_summary_len}
 ```
 
 - `--book_path`: the path to the chunked data (pickle file)
@@ -68,38 +71,21 @@ python -m booookscore.summ --book_path {book_path} --summ_path {summ_path} --mod
 Example usage:
 
 ```
-python -m booookscore.summ --book_path all_books_chunked_4096.pkl --summ_path summaries.json --model gpt-4 --openai_key openai_key.txt --method hier --chunk_size 4096 --max_context_len 32000
+python -m booookscore.summ --book_path all_books_chunked_4096.pkl --summ_path summaries.json 
+    --model gpt-4 --openai_key openai_key.txt --method hier --chunk_size 4096 --max_context_len 32000
 ```
 
-### Picking up from where you left off
+### Checkpointing
 
-For incremental updating, if the running script is interrupted and you want to continue, simply run the script again using the same command.
-
-For hierarchical merging, if the running script is interrupted and you want to continue, you will need modify the output json file before you re-run the command. The json file is structured as follows:
-
-- nested dictionary
-    - (str) book name:
-        - '0': (list) level-0 summaries
-        - '1': (list) level-1 summaries
-        ...
-        - 'n': (list) level-n summaries
-        - 'final_summary': (str) final summary, same as the summary in the level-n summaries list
-    - ...
-    - ...
-
-Now:
-
-- If the last book in the current dictionary doesn't have a 'final_summary' key and the only summary list present is for level 0, simply run the script again to continue where you left off.
-- If the last book in the current dictionary doesn't have a 'final_summary' key and there are summary lists present for levels higher than 0, you'll need to remove the summary list with the highest key (level), since it's very likely that the model hasn't fully gotten through that level. We will restart from that level. After removing the list, you can run the script again.
-
-Better checkpointing for hierarchical merging will be implemented in future versions.
+Incremental updating saves progress every 10 chunks. Hierarchical merging saves progress every book. Improved checkpointing for hierarchical merging will be implemented in future versions.
 
 ## Post-processing summaries
 
 After generating summaries with incremental updating or hierarchical merging, we create a json file with a dictionary that maps book names to their final summaries. If the input file is `summaries.json`, then the extracted final summaries will be saved to `summaries_cleaned.json`.
 
 ```
-python -m booookscore.postprocess --input_path {input_path} --model {model} --openai_key {openai_key}
+python -m booookscore.postprocess --input_path {input_path} 
+    --model {model} --openai_key {openai_key}
 ```
 
 - `--input_path`: the path to the chunked data (pickle file)
@@ -110,13 +96,15 @@ python -m booookscore.postprocess --input_path {input_path} --model {model} --op
 Example usage (without artifact removal):
 
 ```
-python -m booookscore.postprocess --input_path summaries.json --model {model} --openai_key {openai_key}
+python -m booookscore.postprocess --input_path summaries.json 
+    --model {model} --openai_key {openai_key}
 ```
 
 ## Compute BooookScore
 
 ```
-python -m booookscore.score --summ_path {summ_path} --annot_path {annot_path} --model {model} --openai_key {openai_key}
+python -m booookscore.score --summ_path {summ_path} --annot_path {annot_path} 
+    --model {model} --openai_key {openai_key}
 ```
 
 The input summaries must be stored in a json file that maps from book names to final book summaries.
@@ -131,11 +119,13 @@ The input summaries must be stored in a json file that maps from book names to f
 Example usage (original BooookScore):
 
 ```
-python -m booookscore.score --summ_path summaries/chatgpt-2048-hier-cleaned.json --annot_path annotations.json --model gpt-4 --openai_key openai_key.txt
+python -m booookscore.score --summ_path summaries/chatgpt-2048-hier-cleaned.json 
+    --annot_path annotations.json --model gpt-4 --openai_key openai_key.txt
 ```
 
 Example usage (v2 BooookScore with sentence batching):
 
 ```
-python -m booookscore.score --summ_path summaries/chatgpt-2048-hier-cleaned.json --annot_path annotations.json --model gpt-4 --openai_key openai_key.txt --v2 --batch_size 10
+python -m booookscore.score --summ_path summaries/chatgpt-2048-hier-cleaned.json 
+    --annot_path annotations.json --model gpt-4 --openai_key openai_key.txt --v2 --batch_size 10
 ```
