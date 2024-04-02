@@ -1,9 +1,9 @@
-# BooookScore
+# 📖 BooookScore
 
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-red.svg)](#python)
 [![arxiv](https://img.shields.io/badge/arXiv-2305.14251-b31b1b.svg)](https://arxiv.org/abs/2310.00785)
 
-This repository hosts the official code and data release for our ICLR 2024 paper, [BooookScore: A systematic exploration of book-length summarization in the era of LLMs](https://arxiv.org/abs/2310.00785). There are 4 O's!
+This repository hosts the official code and data release for our ICLR 2024 paper, [BooookScore: A systematic exploration of book-length summarization in the era of LLMs](https://arxiv.org/abs/2310.00785). There are 4 O's! 😁
 
 If you find BooookScore useful, please cite:
 ```
@@ -17,19 +17,19 @@ If you find BooookScore useful, please cite:
 }
 ```
 
-# Announcements
+# 📢 Announcements
 
 - `2024/04/01` BooookScore is now available as a Python package!
 - `2024/02/27` We now have BooookScore v2, a version that batches sentences when obtaining model-generated annotations for summaries. Kudos to [@IlyaGusev](https://github.com/IlyaGusev) for implementing this!
 - `2023/10/10` Initial data release: all summaries, GPT-4 annotations, and human annotations.
 
-# Install BooookScore
+# ⬇️ Install BooookScore
 
 ```
 pip install booookscore
 ```
 
-# Using BooookScore
+# 🤩 Using BooookScore
 
 ## Getting chunked data
 
@@ -77,7 +77,7 @@ python -m booookscore.summ --book_path all_books_chunked_4096.pkl --summ_path su
 
 ### Checkpointing
 
-Incremental updating saves progress every 10 chunks. Hierarchical merging saves progress every book. Improved checkpointing for hierarchical merging will be implemented in future versions.
+**Incremental updating** saves progress every 10 chunks. **Hierarchical merging** saves progress every book. Improved checkpointing (and data structure as well) for hierarchical merging will be implemented in future versions!
 
 ## Post-processing summaries
 
