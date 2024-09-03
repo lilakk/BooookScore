@@ -23,9 +23,14 @@ Some TODO's for future updates are at the end of this README. We also welcome op
 
 # 📢 Announcements
 
+- `2024/09/03` Added a Google form link for requesting the BooookScore dataset.
 - `2024/04/01` BooookScore is now available as a Python package!
 - `2024/02/27` We now have BooookScore v2, a version that batches sentences when obtaining model-generated annotations for summaries. Kudos to [@IlyaGusev](https://github.com/IlyaGusev) for implementing this!
 - `2023/10/10` Initial data release: all summaries, GPT-4 annotations, and human annotations.
+
+# 💿 Requesting a copy of the dataset
+
+If you are interested in getting a copy of the BooookScore dataset, please fill out [this form](https://forms.gle/FfrJpHz54BdDEaj59). Note that we can only release the dataset to academic labs.
 
 # ⬇️ Install BooookScore
 
