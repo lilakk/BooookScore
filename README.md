@@ -1,4 +1,4 @@
-# 📖 BooookScore
+# <img src="misc/title.png" alt="BooookScore" width="300" height="40"> [: A systematic exploration of book-length summarization in the era of LLMs](https://arxiv.org/pdf/2310.00785)
 
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-red.svg)](#python)
 [![arxiv](https://img.shields.io/badge/arXiv-2305.14251-b31b1b.svg)](https://arxiv.org/abs/2310.00785)
