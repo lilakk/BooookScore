@@ -12,8 +12,8 @@ all_labels = ['entity omission', 'event omission', 'causal omission', 'salience'
 
 
 class Scorer():
-    def __init__(self, openai_key, model, bsize=None):
-        self.client = OpenAIClient(openai_key, model)
+    def __init__(self, model, bsize=None):
+        self.client = OpenAIClient(model)
         self.summary_path = args.summary_path
         self.annot_path = args.annot_path
         self.bsize = bsize
@@ -134,9 +134,8 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--summary_path", type=str, help="Path to the input data")
     parser.add_argument("--annot_path", type=str, help="Path to the annotated data")
-    parser.add_argument("--openai_key", type=str, help="Path to the OpenAI key")
     parser.add_argument("--model", type=str, default="gpt-4")
     parser.add_argument("--bsize", type=int, default=None, help="Set to None to disable batching")
     args = parser.parse_args()
 
-    scorer = Scorer(args.openai_key, args.model, args.bsize)
+    scorer = Scorer(args.model, args.bsize)

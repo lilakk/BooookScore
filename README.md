@@ -63,9 +63,11 @@ python -m booookscore.chunk --chunk_size 2048
 
 ## Obtain summaries
 
+API keys are read from environment variables (`OPENAI_API_KEY`, `ANTHROPIC_API_KEY`, `GEMINI_API_KEY`, `XAI_API_KEY`, `TOGETHER_API_KEY`). A `.env` file in the working directory is loaded automatically.
+
 ```
 python -m booookscore.summ --book_path {book_path} --summ_path {summ_path} 
-    --model {model} --api {api} --api_key {api_key} --method {method} --chunk_size {chunk_size} 
+    --model {model} --api {api} --method {method} --chunk_size {chunk_size} 
     --max_context_len {max_context_len} --max_summary_len {max_summary_len}
 ```
 
@@ -73,7 +75,6 @@ python -m booookscore.summ --book_path {book_path} --summ_path {summ_path}
 - `--summ_path`: the path to save the generated summaries
 - `--model`: name of the model to use, must be supported by the API you're using
 - `--api`: which API to use, currently supports `openai`, `anthropic`, `together`
-- `--api_key`: the path to the txt file storing your API key
 - `--method`: the summarization method to use, "inc" for incremental updating, "hier" for hierarchical merging
 - `--chunk_size`: the desired size of each chunk of text, must be consistent with your data in `book_path`
 - `max_context_len`: the maximum context window of the model
@@ -83,7 +84,7 @@ Example usage (GPT 4):
 
 ```
 python -m booookscore.summ --book_path all_books_chunked_4096.pkl 
-    --summ_path summaries.json --model gpt-4 --api openai --api_key api_key.txt 
+    --summ_path summaries.json --model gpt-4 --api openai 
     --method hier --chunk_size 4096 --max_context_len 8192
 ```
 
@@ -92,7 +93,7 @@ Example usage (Claude 3 Opus):
 ```
 python -m booookscore.summ --book_path all_books_chunked_150000.pkl 
     --summ_path summaries.json --model claude-3-opus-20240229 
-    --api anthropic --api_key api_key.txt --method hier 
+    --api anthropic --method hier 
     --chunk_size 150000 --max_context_len 200000
 ```
 
@@ -101,7 +102,7 @@ Example usage (Mixtral 8x7B):
 ```
 python -m booookscore.summ --book_path all_books_chunked_30000.pkl 
     --summ_path summaries.json --model mistralai/Mixtral-8x7B-Instruct-v0.1
-    --api together --api_key api_key.txt --method hier 
+    --api together --method hier 
     --chunk_size 30000 --max_context_len 32000
 ```
 
@@ -115,14 +116,13 @@ After generating summaries with incremental updating or hierarchical merging, we
 
 ```
 python -m booookscore.postprocess --input_path {input_path} 
-    --model {model} --api {api} --api_key {api_key}
+    --model {model} --api {api}
 ```
 
 - `--input_path`: the path to the chunked data (pickle file)
 - `--model` (optional): which model to use if you want a LLM to remove summary artifacts
 - `--api` (optional): which API to use, currently supports `openai`, `anthropic`, `together`
-- `--api_key` (optional): the path to the txt file storing your OpenAI API key
-- `--remove_artifacts` (optional): if specified, it will ask a language model remove artifacts from merging (must also specify `model` and `api_key` in this case)
+- `--remove_artifacts` (optional): if specified, it will ask a language model remove artifacts from merging (must also specify `model` in this case)
 
 Example usage (without artifact removal):
 
@@ -134,14 +134,14 @@ Example usage (with artifact removal):
 
 ```
 python -m booookscore.postprocess --input_path summaries.json --model gpt-4 
-    --api openai --api_key api_key.txt --remove_artifacts
+    --api openai --remove_artifacts
 ```
 
 ## Compute BooookScore
 
 ```
 python -m booookscore.score --summ_path {summ_path} --annot_path {annot_path} 
-    --model {model} --api {api} --api_key {api_key}
+    --model {model} --api {api}
 ```
 
 The input summaries must be stored in a json file that maps from book names to final book summaries.
@@ -150,7 +150,6 @@ The input summaries must be stored in a json file that maps from book names to f
 - `--annot_path`: the path to model-generated annotations
 - `--model`: which model to use
 - `--api`: which API to use, currently supports `openai`, `anthropic`, `together`
-- `--api_key`: the path to the txt file storing your API key
 - `--v2` (optional): if specified, it will generate annotations using v2 code and prompt, which uses sentence batching instead of evaluating sentence by sentence (contributed by [@IlyaGusev](https://github.com/IlyaGusev)!)
 - `--batch_size` (optional): batch size to use if using v2
 
@@ -159,7 +158,7 @@ Example usage (original BooookScore):
 ```
 python -m booookscore.score --summ_path summaries/chatgpt-2048-hier-cleaned.json 
     --annot_path annotations.json --model gpt-4 
-    --api openai --api_key api_key.txt
+    --api openai
 ```
 
 Example usage (v2 BooookScore with sentence batching):
@@ -167,7 +166,7 @@ Example usage (v2 BooookScore with sentence batching):
 ```
 python -m booookscore.score --summ_path summaries/chatgpt-2048-hier-cleaned.json 
     --annot_path annotations.json --model gpt-4 --api openai 
-    --api_key api_key.txt --v2 --batch_size 10
+    --v2 --batch_size 10
 ```
 
 # ✅ TODO's for future versions

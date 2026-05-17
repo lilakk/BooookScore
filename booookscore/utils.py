@@ -14,6 +14,10 @@ from google.genai import types
 from xai_sdk import Client as xAIClient
 from xai_sdk.chat import user, system
 
+# Load a .env file (if present) so every client can read its key from the
+# environment.
+load_dotenv()
+
 encoding = tiktoken.get_encoding('cl100k_base')
 
 
@@ -22,20 +26,19 @@ def count_tokens(text):
 
 
 class APIClient():
-    def __init__(self, api, key_path, model):
-        assert key_path.endswith(".txt"), "api key path must be a txt file."
+    def __init__(self, api, model=None):
         self.api = api
         self.model = model
         if api == "openai":
-            self.client = OpenAIClient(key_path, model)
+            self.client = OpenAIClient(model)
         elif api == "anthropic":
-            self.client = AnthropicClient(key_path, model)
+            self.client = AnthropicClient(model)
         elif api == "together":
-            self.client = TogetherClient(key_path, model)
+            self.client = TogetherClient(model)
         elif api == "gemini":
-            self.client = GeminiClient(key_path, model)
+            self.client = GeminiClient(model)
         elif api == "xai":
-            self.client = XAIClient(key_path, model)
+            self.client = XAIClient(model)
         elif api == "claude-code":
             self.client = ClaudeCodeClient(model)
         else:
@@ -55,9 +58,7 @@ class APIClient():
 
 
 class BaseClient:
-    def __init__(self, key_path, model):
-        with open(key_path, "r") as f:
-            self.key = f.read().strip()
+    def __init__(self, model=None):
         self.model = model
 
     def obtain_response(
@@ -83,8 +84,8 @@ class BaseClient:
 
 
 class OpenAIClient(BaseClient):
-    def __init__(self, key_path, model):
-        super().__init__(key_path, model)
+    def __init__(self, model=None):
+        super().__init__(model)
         self.client = OpenAI()
 
     def send_request(self, prompt, max_tokens, temperature):
@@ -96,10 +97,10 @@ class OpenAIClient(BaseClient):
 
 
 class AnthropicClient(BaseClient):
-    def __init__(self, key_path, model):
-        super().__init__(key_path, model)
-        self.key = os.getenv("ANTHROPIC_API_KEY")
-        self.client = Anthropic(api_key=self.key)
+    def __init__(self, model=None):
+        super().__init__(model)
+        # Anthropic() reads ANTHROPIC_API_KEY from the environment.
+        self.client = Anthropic()
 
     def send_request(self, prompt, max_tokens, temperature):
         try:
@@ -118,9 +119,12 @@ class AnthropicClient(BaseClient):
 
 
 class TogetherClient(BaseClient):
-    def __init__(self, key_path, model):
-        super().__init__(key_path, model)
-        self.client = OpenAI(api_key=self.key, base_url="https://api.together.xyz/v1")
+    def __init__(self, model=None):
+        super().__init__(model)
+        self.client = OpenAI(
+            api_key=os.getenv("TOGETHER_API_KEY"),
+            base_url="https://api.together.xyz/v1",
+        )
 
     def send_request(self, prompt, max_tokens, temperature):
         response = self.client.chat.completions.create(
@@ -133,11 +137,9 @@ class TogetherClient(BaseClient):
 
 
 class GeminiClient(BaseClient):
-    def __init__(self, key_path, model):
-        super().__init__(key_path, model)
-        load_dotenv()
+    def __init__(self, model=None):
+        super().__init__(model)
         self.client = genai.Client()
-        self.model = model
 
     def send_request(self, prompt, max_tokens, temperature):
         response = self.client.models.generate_content(
@@ -166,12 +168,9 @@ class GeminiClient(BaseClient):
         return response
 
 class XAIClient(BaseClient):
-    def __init__(self, key_path, model):
-        super().__init__(key_path, model)
-        load_dotenv()
-        api_key = os.getenv("XAI_API_KEY")
-        self.client = xAIClient(api_key=api_key,)
-        self.model = model
+    def __init__(self, model=None):
+        super().__init__(model)
+        self.client = xAIClient(api_key=os.getenv("XAI_API_KEY"))
 
     def send_request(self, prompt, max_tokens, temperature):
         chat = self.client.chat.create(model=self.model, max_tokens=max_tokens, temperature=temperature)
