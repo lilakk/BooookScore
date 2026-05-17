@@ -6,6 +6,7 @@ import json
 from nltk.tokenize import sent_tokenize
 from collections import defaultdict
 from utils import OpenAIClient
+from time import sleep
 
 all_labels = ['entity omission', 'event omission', 'causal omission', 'salience', 'discontinuity', 'duplication', 'inconsistency', 'language']
 
@@ -20,7 +21,7 @@ class Scorer():
     def validate_response(self, response):
         lines = response.split('\n')
         if len(lines) < 2:
-            print("Number of lines is less than 2")
+            print("Number of lines is less than 2: ", lines)
             return False, [], []
         
         # only keep the lines with questions and types
@@ -76,19 +77,19 @@ class Scorer():
             for sentence in tqdm.tqdm(sentences, total=len(sentences), desc="Iterating over sentences"):
                 print(f"SENTENCE:\n\n{sentence}\n")
                 prompt = template.format(summary, sentence)
-                max_len = 100
+                max_len = 2000
                 print(f"MAX LEN: {max_len}")
 
                 response = self.client.obtain_response(prompt, max_tokens=max_len, temperature=0)
                 print(f"RESPONSE:\n\n{response}\n")
 
-                valid, questions, types = validate_response(response)
+                valid, questions, types = self.validate_response(response)
 
                 while not valid:
                     print("Invalid response, please try again")
                     response = self.client.obtain_response(prompt, max_tokens=max_len, temperature=0)
                     print(f"RESPONSE:\n\n{response}\n")
-                    valid, questions, types = validate_response(response)
+                    valid, questions, types = self.validate_response(response)
                 
                 if questions is not None:
                     annots[book][sentence] = {
@@ -97,6 +98,8 @@ class Scorer():
                     }
                     with open(self.annot_path, 'w') as f:
                         json.dump(annots, f)
+
+                sleep(1.5)
             
             if len(annots[book]) == 0:
                 annots[book] = None
